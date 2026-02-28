@@ -5,8 +5,12 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "main.cpp" 2
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 1 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 1 3
+# 189 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config" 1 3
 # 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site" 1 3
@@ -39,18 +43,3472 @@
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/availability.h" 3
 # 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config" 2 3
 # 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config" 3
-# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 2 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+struct __equal_tag {};
+struct __plus_tag {};
+struct __less_tag {};
+# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+template <class _CanonicalTag, class _Operation, class... _Args>
+inline const bool __desugars_to_v = false;
+
+}}
+# 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+struct __equal_to {
+  template <class _T1, class _T2>
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr bool operator()(const _T1& __x, const _T2& __y) const {
+    return __x == __y;
+  }
+};
+
+template <class _Tp, class _Up>
+inline const bool __desugars_to_v<__equal_tag, __equal_to, _Tp, _Up> = true;
+
+
+
+template <class _T1 = void, class _T2 = _T1>
+struct __less {};
+
+template <>
+struct __less<void, void> {
+  template <class _Tp, class _Up>
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr bool operator()(const _Tp& __lhs, const _Up& __rhs) const {
+    return __lhs < __rhs;
+  }
+};
+
+template <class _Tp>
+inline const bool __desugars_to_v<__less_tag, __less<>, _Tp, _Tp> = true;
+
+}}
+# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
+#pragma clang diagnostic pop
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+[[noreturn]] __attribute__((availability(macos, strict, introduced = 13.3))) __attribute__((availability(ios, strict, introduced = 16.3))) __attribute__((availability(tvos, strict, introduced = 16.3))) __attribute__((availability(watchos, strict, introduced = 9.3))) __attribute__((availability(bridgeos, strict, introduced = 7.5))) __attribute__((__visibility__("default")))
+__attribute__((__format__(__printf__, 1, 2))) void __libcpp_verbose_abort(const char* __format, ...);
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+}}
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+#pragma GCC diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma GCC diagnostic ignored "-Wdeprecated"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+template <class _Tp>
+_Tp&& __declval(int);
+template <class _Tp>
+_Tp __declval(long);
+#pragma GCC diagnostic pop
+
+template <class _Tp>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) decltype(std::__declval<_Tp>(0)) declval() noexcept {
+  static_assert(!__is_same(_Tp, _Tp),
+                "std::declval can only be used in an unevaluated context. "
+                "It's likely that your current usage is trying to extract a value from the function.");
+}
+
+}}
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Compare>
+struct __debug_less {
+  _Compare& __comp_;
+  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __debug_less(_Compare& __c) : __comp_(__c) {}
+
+  template <class _Tp, class _Up>
+  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator()(const _Tp& __x, const _Up& __y) {
+    bool __r = __comp_(__x, __y);
+    if (__r)
+      __do_compare_assert(0, __y, __x);
+    return __r;
+  }
+
+  template <class _Tp, class _Up>
+  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator()(_Tp& __x, _Up& __y) {
+    bool __r = __comp_(__x, __y);
+    if (__r)
+      __do_compare_assert(0, __y, __x);
+    return __r;
+  }
+
+  template <class _LHS, class _RHS>
+  constexpr inline
+      __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) decltype((void)std::declval<_Compare&>()(std::declval<_LHS&>(), std::declval<_RHS&>()))
+      __do_compare_assert(int, _LHS& __l, _RHS& __r) {
+    ((void)0);
+    (void)__l;
+    (void)__r;
+  }
+
+  template <class _LHS, class _RHS>
+  constexpr inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __do_compare_assert(long, _LHS&, _RHS&) {}
+};
+
+
+
+
+
+
+template <class _Comp>
+using __comp_ref_type = _Comp&;
+
+
+}}
+# 65 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 1 3
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, _Tp __v>
+struct integral_constant {
+  static constexpr const _Tp value = __v;
+  typedef _Tp value_type;
+  typedef integral_constant type;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr operator value_type() const noexcept { return value; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr value_type operator()() const noexcept { return value; }
+
+};
+
+template <class _Tp, _Tp __v>
+constexpr const _Tp integral_constant<_Tp, __v>::value;
+
+typedef integral_constant<bool, true> true_type;
+typedef integral_constant<bool, false> false_type;
+
+template <bool _Val>
+using _BoolConstant __attribute__((__nodebug__)) = integral_constant<bool, _Val>;
+
+
+
+
+
+
+}}
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_const {
+  using type __attribute__((__nodebug__)) = __remove_const(_Tp);
+};
+
+template <class _Tp>
+using __remove_const_t = __remove_const(_Tp);
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+template <class _Tp>
+using remove_const_t = __remove_const_t<_Tp>;
+
+
+}}
+# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_volatile {
+  using type __attribute__((__nodebug__)) = __remove_volatile(_Tp);
+};
+
+template <class _Tp>
+using __remove_volatile_t = __remove_volatile(_Tp);
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+template <class _Tp>
+using remove_volatile_t = __remove_volatile_t<_Tp>;
+
+
+}}
+# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_cv {
+  using type __attribute__((__nodebug__)) = __remove_cv(_Tp);
+};
+
+template <class _Tp>
+using __remove_cv_t = __remove_cv(_Tp);
+# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+template <class _Tp>
+using remove_cv_t = __remove_cv_t<_Tp>;
+
+
+}}
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp> struct __libcpp_is_floating_point : public false_type {};
+template <> struct __libcpp_is_floating_point<float> : public true_type {};
+template <> struct __libcpp_is_floating_point<double> : public true_type {};
+template <> struct __libcpp_is_floating_point<long double> : public true_type {};
+
+
+template <class _Tp>
+struct is_floating_point : public __libcpp_is_floating_point<__remove_cv_t<_Tp> > {};
+
+
+
+
+
+
+}}
+# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp> struct __libcpp_is_integral { enum { value = 0 }; };
+template <> struct __libcpp_is_integral<bool> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<char> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<signed char> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<unsigned char> { enum { value = 1 }; };
+
+template <> struct __libcpp_is_integral<wchar_t> { enum { value = 1 }; };
+
+
+
+
+template <> struct __libcpp_is_integral<char16_t> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<char32_t> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<short> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<unsigned short> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<int> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<unsigned int> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<long> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<unsigned long> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<long long> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<unsigned long long> { enum { value = 1 }; };
+
+template <> struct __libcpp_is_integral<__int128_t> { enum { value = 1 }; };
+template <> struct __libcpp_is_integral<__uint128_t> { enum { value = 1 }; };
+
+
+
+
+
+template <class _Tp>
+struct is_integral : _BoolConstant<__is_integral(_Tp)> {};
+# 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+}}
+# 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_arithmetic
+    : public integral_constant<bool, is_integral<_Tp>::value || is_floating_point<_Tp>::value> {};
+
+
+
+
+
+
+}}
+# 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+struct is_signed : _BoolConstant<__is_signed(_Tp)> {};
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+}}
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp> struct __libcpp_is_signed_integer : public false_type {};
+template <> struct __libcpp_is_signed_integer<signed char> : public true_type {};
+template <> struct __libcpp_is_signed_integer<signed short> : public true_type {};
+template <> struct __libcpp_is_signed_integer<signed int> : public true_type {};
+template <> struct __libcpp_is_signed_integer<signed long> : public true_type {};
+template <> struct __libcpp_is_signed_integer<signed long long> : public true_type {};
+
+template <> struct __libcpp_is_signed_integer<__int128_t> : public true_type {};
+
+
+
+}}
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp> struct __libcpp_is_unsigned_integer : public false_type {};
+template <> struct __libcpp_is_unsigned_integer<unsigned char> : public true_type {};
+template <> struct __libcpp_is_unsigned_integer<unsigned short> : public true_type {};
+template <> struct __libcpp_is_unsigned_integer<unsigned int> : public true_type {};
+template <> struct __libcpp_is_unsigned_integer<unsigned long> : public true_type {};
+template <> struct __libcpp_is_unsigned_integer<unsigned long long> : public true_type {};
+
+template <> struct __libcpp_is_unsigned_integer<__uint128_t> : public true_type {};
+
+
+
+}}
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+
+
+#pragma clang diagnostic push
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+}}
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _T1, class _T2>
+struct is_convertible : public integral_constant<bool, __is_convertible(_T1, _T2)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+}}
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
+#pragma clang diagnostic pop
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
+# 89 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h" 1 3
+# 90 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 3
+typedef long int ptrdiff_t;
+# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 3
+typedef long unsigned int size_t;
+# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 108 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
+# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h" 1 3
+# 114 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
+# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 128 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h" 3
+typedef long double max_align_t;
+# 129 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
+# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
+
+
+
+
+
+typedef decltype(nullptr) nullptr_t;
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+using ::size_t __attribute__((__using_if_exists__));
+
+}}
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_function : integral_constant<bool, __is_function(_Tp)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_reference : _BoolConstant<__is_reference(_Tp)> {};
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+template <class _Tp>
+struct is_lvalue_reference : _BoolConstant<__is_lvalue_reference(_Tp)> {};
+
+template <class _Tp>
+struct is_rvalue_reference : _BoolConstant<__is_rvalue_reference(_Tp)> {};
+# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+}}
+# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_all_extents {
+  using type __attribute__((__nodebug__)) = __remove_all_extents(_Tp);
+};
+
+template <class _Tp>
+using __remove_all_extents_t = __remove_all_extents(_Tp);
+# 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+template <class _Tp>
+using remove_all_extents_t = __remove_all_extents_t<_Tp>;
+
+
+}}
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 2 3
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+
+
+#pragma clang diagnostic push
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+struct is_destructible : _BoolConstant<__is_destructible(_Tp)> {};
+# 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+}}
+# 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+struct is_nothrow_destructible : integral_constant<bool, __is_nothrow_destructible(_Tp)> {};
+# 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+}}
+# 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+}}
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class _Up>
+struct is_same : _BoolConstant<__is_same(_Tp, _Up)> {};
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+template <class _Tp, class _Up>
+using _IsSame = _BoolConstant<__is_same(_Tp, _Up)>;
+
+template <class _Tp, class _Up>
+using _IsNotSame = _BoolConstant<!__is_same(_Tp, _Up)>;
+
+}}
+# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct __libcpp_is_referenceable : integral_constant<bool, __is_referenceable(_Tp)> {};
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+}}
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+using __add_lvalue_reference_t = __add_lvalue_reference(_Tp);
+# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+template <class _Tp>
+struct add_lvalue_reference {
+  using type __attribute__((__nodebug__)) = __add_lvalue_reference_t<_Tp>;
+};
+
+
+template <class _Tp>
+using add_lvalue_reference_t = __add_lvalue_reference_t<_Tp>;
+
+
+}}
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+using __add_rvalue_reference_t = __add_rvalue_reference(_Tp);
+# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+template <class _Tp>
+struct add_rvalue_reference {
+  using type = __add_rvalue_reference_t<_Tp>;
+};
+
+
+template <class _Tp>
+using add_rvalue_reference_t = __add_rvalue_reference_t<_Tp>;
+
+
+}}
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class... _Args>
+struct is_constructible : public integral_constant<bool, __is_constructible(_Tp, _Args...)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_copy_constructible
+    : public integral_constant<bool, __is_constructible(_Tp, __add_lvalue_reference_t<const _Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_move_constructible
+    : public integral_constant<bool, __is_constructible(_Tp, __add_rvalue_reference_t<_Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_default_constructible : public integral_constant<bool, __is_constructible(_Tp)> {};
+
+
+
+
+
+
+}}
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+}}
+# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+}}
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <bool>
+struct _IfImpl;
+
+template <>
+struct _IfImpl<true> {
+  template <class _IfRes, class _ElseRes>
+  using _Select __attribute__((__nodebug__)) = _IfRes;
+};
+
+template <>
+struct _IfImpl<false> {
+  template <class _IfRes, class _ElseRes>
+  using _Select __attribute__((__nodebug__)) = _ElseRes;
+};
+
+template <bool _Cond, class _IfRes, class _ElseRes>
+using _If __attribute__((__nodebug__)) = typename _IfImpl<_Cond>::template _Select<_IfRes, _ElseRes>;
+
+template <bool _Bp, class _If, class _Then>
+struct conditional {
+  using type __attribute__((__nodebug__)) = _If;
+};
+template <class _If, class _Then>
+struct conditional<false, _If, _Then> {
+  using type __attribute__((__nodebug__)) = _Then;
+};
+
+
+template <bool _Bp, class _IfRes, class _ElseRes>
+using conditional_t __attribute__((__nodebug__)) = typename conditional<_Bp, _IfRes, _ElseRes>::type;
+
+
+
+template <bool _Bp, class _If, class _Then>
+using __conditional_t __attribute__((__nodebug__)) = typename conditional<_Bp, _If, _Then>::type;
+
+}}
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_void : _BoolConstant<__is_same(__remove_cv(_Tp), void)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_reference {
+  using type __attribute__((__nodebug__)) = __remove_reference_t(_Tp);
+};
+
+template <class _Tp>
+using __libcpp_remove_reference_t = __remove_reference_t(_Tp);
+# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+template <class _Tp>
+using remove_reference_t = __libcpp_remove_reference_t<_Tp>;
+
+
+}}
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+using __add_pointer_t = __add_pointer(_Tp);
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+template <class _Tp>
+struct add_pointer {
+  using type __attribute__((__nodebug__)) = __add_pointer_t<_Tp>;
+};
+
+
+template <class _Tp>
+using add_pointer_t = __add_pointer_t<_Tp>;
+
+
+}}
+# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+template <class _Tp>
+struct is_array : public false_type {};
+template <class _Tp>
+struct is_array<_Tp[]> : public true_type {};
+template <class _Tp, size_t _Np>
+struct is_array<_Tp[_Np]> : public true_type {};
+# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+}}
+# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+struct remove_extent {
+  using type __attribute__((__nodebug__)) = __remove_extent(_Tp);
+};
+
+template <class _Tp>
+using __remove_extent_t = __remove_extent(_Tp);
+# 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+template <class _Tp>
+using remove_extent_t = __remove_extent_t<_Tp>;
+
+
+}}
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
+#pragma clang diagnostic pop
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+
+
+#pragma clang diagnostic push
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+using __decay_t __attribute__((__nodebug__)) = __decay(_Tp);
+
+template <class _Tp>
+struct decay {
+  using type __attribute__((__nodebug__)) = __decay_t<_Tp>;
+};
+# 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+template <class _Tp>
+using decay_t = __decay_t<_Tp>;
+
+
+}}
+# 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+using __remove_cvref_t __attribute__((__nodebug__)) = __remove_cvref(_Tp);
+
+
+
+
+
+template <class _Tp, class _Up>
+struct __is_same_uncvref : _IsSame<__remove_cvref_t<_Tp>, __remove_cvref_t<_Up> > {};
+# 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+}}
+# 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+
+
+
+template <class...>
+using __void_t = void;
+
+}}
+# 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+
+
+#pragma clang diagnostic push
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+template <class _Tp, class _Up, class = void>
+struct __common_type2_imp {};
+
+
+
+template <class _Tp, class _Up>
+struct __common_type2_imp<_Tp, _Up, __void_t<decltype(true ? std::declval<_Tp>() : std::declval<_Up>())> > {
+  typedef __attribute__((__nodebug__)) __decay_t<decltype(true ? std::declval<_Tp>() : std::declval<_Up>())> type;
+};
+
+template <class, class = void>
+struct __common_type_impl {};
+
+template <class... _Tp>
+struct __common_types;
+template <class... _Tp>
+struct common_type;
+
+template <class _Tp, class _Up>
+struct __common_type_impl< __common_types<_Tp, _Up>, __void_t<typename common_type<_Tp, _Up>::type> > {
+  typedef typename common_type<_Tp, _Up>::type type;
+};
+
+template <class _Tp, class _Up, class _Vp, class... _Rest>
+struct __common_type_impl<__common_types<_Tp, _Up, _Vp, _Rest...>, __void_t<typename common_type<_Tp, _Up>::type> >
+    : __common_type_impl<__common_types<typename common_type<_Tp, _Up>::type, _Vp, _Rest...> > {};
+
+
+
+template <>
+struct common_type<> {};
+
+
+
+template <class _Tp>
+struct common_type<_Tp> : public common_type<_Tp, _Tp> {};
+
+
+
+
+template <class _Tp, class _Up>
+struct common_type<_Tp, _Up>
+    : __conditional_t<_IsSame<_Tp, __decay_t<_Tp> >::value && _IsSame<_Up, __decay_t<_Up> >::value,
+                      __common_type2_imp<_Tp, _Up>,
+                      common_type<__decay_t<_Tp>, __decay_t<_Up> > > {};
+
+
+
+template <class _Tp, class _Up, class _Vp, class... _Rest>
+struct common_type<_Tp, _Up, _Vp, _Rest...>
+    : __common_type_impl<__common_types<_Tp, _Up, _Vp, _Rest...> > {};
+
+
+template <class... _Tp>
+using common_type_t = typename common_type<_Tp...>::type;
+
+
+}}
+# 100 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _From>
+struct __copy_cv {
+  template <class _To>
+  using __apply = _To;
+};
+
+template <class _From>
+struct __copy_cv<const _From> {
+  template <class _To>
+  using __apply = const _To;
+};
+
+template <class _From>
+struct __copy_cv<volatile _From> {
+  template <class _To>
+  using __apply = volatile _To;
+};
+
+template <class _From>
+struct __copy_cv<const volatile _From> {
+  template <class _To>
+  using __apply = const volatile _To;
+};
+
+template <class _From, class _To>
+using __copy_cv_t = typename __copy_cv<_From>::template __apply<_To>;
+
+}}
+# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _From, class _To>
+struct __copy_cvref {
+  using type = __copy_cv_t<_From, _To>;
+};
+
+template <class _From, class _To>
+struct __copy_cvref<_From&, _To> {
+  using type = __add_lvalue_reference_t<__copy_cv_t<_From, _To> >;
+};
+
+template <class _From, class _To>
+struct __copy_cvref<_From&&, _To> {
+  using type = __add_rvalue_reference_t<__copy_cv_t<_From, _To> >;
+};
+
+template <class _From, class _To>
+using __copy_cvref_t = typename __copy_cvref<_From, _To>::type;
+
+}}
+# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+
+
+#pragma clang diagnostic push
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+}}
+# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+}}
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
+#pragma clang diagnostic pop
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 2 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+using __make_const_lvalue_ref = const __libcpp_remove_reference_t<_Tp>&;
+
+}}
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp&&
+forward([[_Clang::__lifetimebound__]] __libcpp_remove_reference_t<_Tp>& __t) noexcept {
+  return static_cast<_Tp&&>(__t);
+}
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp&&
+forward([[_Clang::__lifetimebound__]] __libcpp_remove_reference_t<_Tp>&& __t) noexcept {
+  static_assert(!is_lvalue_reference<_Tp>::value, "cannot forward an rvalue as an lvalue");
+  return static_cast<_Tp&&>(__t);
+}
+
+}}
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 2 3
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+
+
+#pragma clang diagnostic push
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+}}
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
+#pragma clang diagnostic pop
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_class : public integral_constant<bool, __is_class(_Tp)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_enum : public integral_constant<bool, __is_enum(_Tp)> {};
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+}}
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_union : public integral_constant<bool, __is_union(_Tp)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+}}
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp, size_t _Dim = 0>
+struct extent : integral_constant<size_t, __array_extent(_Tp, _Dim)> {};
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+}}
+# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class _Arg>
+struct is_nothrow_assignable : public integral_constant<bool, __is_nothrow_assignable(_Tp, _Arg)> {
+};
+
+
+
+
+
+
+template <class _Tp>
+struct is_nothrow_copy_assignable
+    : public integral_constant<
+          bool,
+          __is_nothrow_assignable(__add_lvalue_reference_t<_Tp>, __add_lvalue_reference_t<const _Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_nothrow_move_assignable
+    : public integral_constant<bool,
+                               __is_nothrow_assignable(__add_lvalue_reference_t<_Tp>, __add_rvalue_reference_t<_Tp>)> {
+};
+
+
+
+
+
+
+}}
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
+#pragma clang diagnostic pop
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template < class _Tp, class... _Args>
+struct is_nothrow_constructible
+    : public integral_constant<bool, __is_nothrow_constructible(_Tp, _Args...)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_nothrow_copy_constructible
+    : public integral_constant< bool, __is_nothrow_constructible(_Tp, __add_lvalue_reference_t<const _Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_nothrow_move_constructible
+    : public integral_constant<bool, __is_nothrow_constructible(_Tp, __add_rvalue_reference_t<_Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_nothrow_default_constructible
+    : public integral_constant<bool, __is_nothrow_constructible(_Tp)> {};
+
+
+
+
+
+
+}}
+# 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
+#pragma clang diagnostic pop
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 1 3
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 2 3
+
+#pragma clang diagnostic push
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr __libcpp_remove_reference_t<_Tp>&&
+move([[_Clang::__lifetimebound__]] _Tp&& __t) noexcept {
+  typedef __attribute__((__nodebug__)) __libcpp_remove_reference_t<_Tp> _Up;
+  return static_cast<_Up&&>(__t);
+}
+
+template <class _Tp>
+using __move_if_noexcept_result_t =
+    __conditional_t<!is_nothrow_move_constructible<_Tp>::value && is_copy_constructible<_Tp>::value, const _Tp&, _Tp&&>;
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr __move_if_noexcept_result_t<_Tp>
+move_if_noexcept([[_Clang::__lifetimebound__]] _Tp& __x) noexcept {
+  return std::move(__x);
+}
+
+}}
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 2 3
+
+#pragma clang diagnostic push
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _T1, class _T2 = _T1>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _T1 exchange(_T1& __obj, _T2&& __new_value) noexcept(
+    is_nothrow_move_constructible<_T1>::value && is_nothrow_assignable<_T1&, _T2>::value) {
+  _T1 __old_value = std::move(__obj);
+  __obj = std::forward<_T2>(__new_value);
+  return __old_value;
+}
+
+
+}}
+# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
+#pragma clang diagnostic pop
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <bool, class _Tp = void>
+struct enable_if {};
+template <class _Tp>
+struct enable_if<true, _Tp> {
+  typedef _Tp type;
+};
+
+template <bool _Bp, class _Tp = void>
+using __enable_if_t __attribute__((__nodebug__)) = typename enable_if<_Bp, _Tp>::type;
+
+
+template <bool _Bp, class _Tp = void>
+using enable_if_t = typename enable_if<_Bp, _Tp>::type;
+
+
+}}
+# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
+#pragma clang diagnostic pop
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class _Up>
+struct is_assignable : _BoolConstant<__is_assignable(_Tp, _Up)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_copy_assignable
+    : public integral_constant<bool,
+                               __is_assignable(__add_lvalue_reference_t<_Tp>, __add_lvalue_reference_t<const _Tp>)> {};
+
+
+
+
+
+
+template <class _Tp>
+struct is_move_assignable
+    : public integral_constant<bool, __is_assignable(__add_lvalue_reference_t<_Tp>, __add_rvalue_reference_t<_Tp>)> {};
+
+
+
+
+
+
+}}
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 1 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+
+
+#pragma clang diagnostic push
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class _Up, class = void>
+inline const bool __is_swappable_with_v = false;
+
+template <class _Tp>
+inline const bool __is_swappable_v = __is_swappable_with_v<_Tp&, _Tp&>;
+
+template <class _Tp, class _Up, bool = __is_swappable_with_v<_Tp, _Up> >
+inline const bool __is_nothrow_swappable_with_v = false;
+
+template <class _Tp>
+inline const bool __is_nothrow_swappable_v = __is_nothrow_swappable_with_v<_Tp&, _Tp&>;
+
+
+template <class _Tp>
+using __swap_result_t = __enable_if_t<is_move_constructible<_Tp>::value && is_move_assignable<_Tp>::value>;
+
+
+
+
+
+template <class _Tp>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __swap_result_t<_Tp> swap(_Tp& __x, _Tp& __y)
+    noexcept(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value);
+
+template <class _Tp, size_t _Np, __enable_if_t<__is_swappable_v<_Tp>, int> = 0>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102")))
+                              void swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np]) noexcept(__is_nothrow_swappable_v<_Tp>);
+
+
+
+template <class _Tp, class _Up>
+inline const bool __is_swappable_with_v<_Tp,
+                                        _Up,
+                                        __void_t<decltype(swap(std::declval<_Tp>(), std::declval<_Up>())),
+                                                 decltype(swap(std::declval<_Up>(), std::declval<_Tp>()))> > = true;
+
+
+template <class _Tp, class _Up>
+inline const bool __is_nothrow_swappable_with_v<_Tp, _Up, true> =
+    noexcept(swap(std::declval<_Tp>(), std::declval<_Up>())) &&
+    noexcept(swap(std::declval<_Up>(), std::declval<_Tp>()));
+# 102 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+}}
+# 102 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
+#pragma clang diagnostic pop
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 1 3
+# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version" 1 3
 # 272 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version" 3
-# 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 2 3
+# 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
 
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 1 3
-# 218 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
+# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
+# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
+# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 108 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
+# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
+# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
+# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
+# 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+# 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h" 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 3
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
+# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
+# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
+# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 108 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
+# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
+# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
+# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+using ::max_align_t __attribute__((__using_if_exists__));
+
+
+}}
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
+#pragma clang diagnostic pop
+# 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
+# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
+# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
+# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 108 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
+# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
+# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
+# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+using ::nullptr_t;
+
+}}
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
+#pragma clang diagnostic pop
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
+# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
+# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
+# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
+# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 108 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
+# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
+# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
+# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
+# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+using ::ptrdiff_t __attribute__((__using_if_exists__));
+
+}}
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
+#pragma clang diagnostic pop
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
+
+#pragma clang diagnostic push
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+template <class _Tp>
+using __swap_result_t = __enable_if_t<is_move_constructible<_Tp>::value && is_move_assignable<_Tp>::value>;
+
+
+
+
+
+template <class _Tp>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __swap_result_t<_Tp> swap(_Tp& __x, _Tp& __y)
+    noexcept(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value) {
+  _Tp __t(std::move(__x));
+  __x = std::move(__y);
+  __y = std::move(__t);
+}
+
+template <class _Tp, size_t _Np, __enable_if_t<__is_swappable_v<_Tp>, int> >
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np])
+    noexcept(__is_nothrow_swappable_v<_Tp>) {
+  for (size_t __i = 0; __i != _Np; ++__i) {
+    swap(__a[__i], __b[__i]);
+  }
+}
+
+}}
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
+#pragma clang diagnostic pop
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
+
+#pragma clang diagnostic push
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+}}
+# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+struct is_object : _BoolConstant<__is_object(_Tp)> {};
+
+
+
+
+
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+}}
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+}}
+# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 1 3
+# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+}}
+# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
+#pragma clang diagnostic pop
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+}}
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 1 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+}}
+# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
+#pragma clang diagnostic pop
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 1 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <size_t, class>
+struct tuple_element;
+
+
+
+template <class...>
+class tuple;
+
+template <class>
+struct tuple_size;
+
+template <size_t _Ip, class... _Tp>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, tuple<_Tp...> >::type&
+get(tuple<_Tp...>&) noexcept;
+
+template <size_t _Ip, class... _Tp>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, tuple<_Tp...> >::type&
+get(const tuple<_Tp...>&) noexcept;
+
+template <size_t _Ip, class... _Tp>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, tuple<_Tp...> >::type&&
+get(tuple<_Tp...>&&) noexcept;
+
+template <size_t _Ip, class... _Tp>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, tuple<_Tp...> >::type&&
+get(const tuple<_Tp...>&&) noexcept;
+
+
+
+}}
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class, class>
+struct pair;
+
+template <size_t _Ip, class _T1, class _T2>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, pair<_T1, _T2> >::type&
+get(pair<_T1, _T2>&) noexcept;
+
+template <size_t _Ip, class _T1, class _T2>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, pair<_T1, _T2> >::type&
+get(const pair<_T1, _T2>&) noexcept;
+
+
+template <size_t _Ip, class _T1, class _T2>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
+get(pair<_T1, _T2>&&) noexcept;
+
+template <size_t _Ip, class _T1, class _T2>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
+get(const pair<_T1, _T2>&&) noexcept;
+
+
+}}
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
+#pragma clang diagnostic pop
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 1 3
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <template <class...> class _Templ, class... _Args, class = _Templ<_Args...> >
+true_type __sfinae_test_impl(int);
+template <template <class...> class, class...>
+false_type __sfinae_test_impl(...);
+
+template <template <class...> class _Templ, class... _Args>
+using _IsValidExpansion __attribute__((__nodebug__)) = decltype(std::__sfinae_test_impl<_Templ, _Args...>(0));
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp>
+using __test_for_primary_template = __enable_if_t<_IsSame<_Tp, typename _Tp::__primary_template>::value>;
+
+template <class _Tp>
+using __is_primary_template = _IsValidExpansion<__test_for_primary_template, _Tp>;
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+struct __nat {
+
+  __nat() = delete;
+  __nat(const __nat&) = delete;
+  __nat& operator=(const __nat&) = delete;
+  ~__nat() = delete;
+
+};
+
+}}
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Hp, class _Tp>
+struct __type_list {
+  typedef _Hp _Head;
+  typedef _Tp _Tail;
+};
+
+template <class _TypeList, size_t _Size, bool = _Size <= sizeof(typename _TypeList::_Head)>
+struct __find_first;
+
+template <class _Hp, class _Tp, size_t _Size>
+struct __find_first<__type_list<_Hp, _Tp>, _Size, true> {
+  typedef __attribute__((__nodebug__)) _Hp type;
+};
+
+template <class _Hp, class _Tp, size_t _Size>
+struct __find_first<__type_list<_Hp, _Tp>, _Size, false> {
+  typedef __attribute__((__nodebug__)) typename __find_first<_Tp, _Size>::type type;
+};
+
+}}
+# 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
+#pragma clang diagnostic pop
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 2 3
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+
+
+#pragma clang diagnostic push
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+template <class _Tp>
+using __make_signed_t = __make_signed(_Tp);
+# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+template <class _Tp>
+struct make_signed {
+  using type __attribute__((__nodebug__)) = __make_signed_t<_Tp>;
+};
+
+
+template <class _Tp>
+using make_signed_t = __make_signed_t<_Tp>;
+
+
+}}
+# 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
+#pragma clang diagnostic pop
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 2 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+
+
+#pragma clang diagnostic push
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+}}
+# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
+#pragma clang diagnostic pop
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 1 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+
+
+#pragma clang diagnostic push
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+}}
+# 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
+#pragma clang diagnostic pop
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <bool>
+struct _OrImpl;
+
+template <>
+struct _OrImpl<true> {
+  template <class _Res, class _First, class... _Rest>
+  using _Result __attribute__((__nodebug__)) =
+      typename _OrImpl<!bool(_First::value) && sizeof...(_Rest) != 0>::template _Result<_First, _Rest...>;
+};
+
+template <>
+struct _OrImpl<false> {
+  template <class _Res, class...>
+  using _Result = _Res;
+};
+
+
+
+
+
+
+
+template <class... _Args>
+using _Or __attribute__((__nodebug__)) = typename _OrImpl<sizeof...(_Args) != 0>::template _Result<false_type, _Args...>;
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+}}
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
+#pragma clang diagnostic pop
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
+# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+
+
+#pragma clang diagnostic push
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+template <class _Iter>
+struct iterator_traits;
+
+struct input_iterator_tag {};
+struct output_iterator_tag {};
+struct forward_iterator_tag : public input_iterator_tag {};
+struct bidirectional_iterator_tag : public forward_iterator_tag {};
+struct random_access_iterator_tag : public bidirectional_iterator_tag {};
+
+
+
+
+template <class _Iter>
+struct __iter_traits_cache {
+  using type = _If< __is_primary_template<iterator_traits<_Iter> >::value, _Iter, iterator_traits<_Iter> >;
+};
+template <class _Iter>
+using _ITER_TRAITS = typename __iter_traits_cache<_Iter>::type;
+
+struct __iter_concept_concept_test {
+  template <class _Iter>
+  using _Apply = typename _ITER_TRAITS<_Iter>::iterator_concept;
+};
+struct __iter_concept_category_test {
+  template <class _Iter>
+  using _Apply = typename _ITER_TRAITS<_Iter>::iterator_category;
+};
+struct __iter_concept_random_fallback {
+  template <class _Iter>
+  using _Apply = __enable_if_t< __is_primary_template<iterator_traits<_Iter> >::value, random_access_iterator_tag >;
+};
+
+template <class _Iter, class _Tester>
+struct __test_iter_concept : _IsValidExpansion<_Tester::template _Apply, _Iter>, _Tester {};
+
+template <class _Iter>
+struct __iter_concept_cache {
+  using type = _Or< __test_iter_concept<_Iter, __iter_concept_concept_test>,
+                    __test_iter_concept<_Iter, __iter_concept_category_test>,
+                    __test_iter_concept<_Iter, __iter_concept_random_fallback> >;
+};
+
+template <class _Iter>
+using _ITER_CONCEPT = typename __iter_concept_cache<_Iter>::type::template _Apply<_Iter>;
+
+template <class _Tp>
+struct __has_iterator_typedefs {
+private:
+  template <class _Up>
+  static false_type __test(...);
+  template <class _Up>
+  static true_type
+  __test(__void_t<typename _Up::iterator_category>* = nullptr,
+         __void_t<typename _Up::difference_type>* = nullptr,
+         __void_t<typename _Up::value_type>* = nullptr,
+         __void_t<typename _Up::reference>* = nullptr,
+         __void_t<typename _Up::pointer>* = nullptr);
+
+public:
+  static const bool value = decltype(__test<_Tp>(nullptr, nullptr, nullptr, nullptr, nullptr))::value;
+};
+
+template <class _Tp>
+struct __has_iterator_category {
+private:
+  template <class _Up>
+  static false_type __test(...);
+  template <class _Up>
+  static true_type __test(typename _Up::iterator_category* = nullptr);
+
+public:
+  static const bool value = decltype(__test<_Tp>(nullptr))::value;
+};
+
+template <class _Tp>
+struct __has_iterator_concept {
+private:
+  template <class _Up>
+  static false_type __test(...);
+  template <class _Up>
+  static true_type __test(typename _Up::iterator_concept* = nullptr);
+
+public:
+  static const bool value = decltype(__test<_Tp>(nullptr))::value;
+};
+# 372 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+template <class _Iter, bool>
+struct __iterator_traits {};
+
+template <class _Iter, bool>
+struct __iterator_traits_impl {};
+
+template <class _Iter>
+struct __iterator_traits_impl<_Iter, true> {
+  typedef typename _Iter::difference_type difference_type;
+  typedef typename _Iter::value_type value_type;
+  typedef typename _Iter::pointer pointer;
+  typedef typename _Iter::reference reference;
+  typedef typename _Iter::iterator_category iterator_category;
+};
+
+template <class _Iter>
+struct __iterator_traits<_Iter, true>
+    : __iterator_traits_impl< _Iter,
+                              is_convertible<typename _Iter::iterator_category, input_iterator_tag>::value ||
+                                  is_convertible<typename _Iter::iterator_category, output_iterator_tag>::value > {};
+
+
+
+
+
+
+template <class _Iter>
+struct iterator_traits : __iterator_traits<_Iter, __has_iterator_typedefs<_Iter>::value> {
+  using __primary_template = iterator_traits;
+};
+
+
+template <class _Tp>
+
+
+
+struct iterator_traits<_Tp*> {
+  typedef ptrdiff_t difference_type;
+  typedef __remove_cv_t<_Tp> value_type;
+  typedef _Tp* pointer;
+  typedef _Tp& reference;
+  typedef random_access_iterator_tag iterator_category;
+
+
+
+};
+
+template <class _Tp, class _Up, bool = __has_iterator_category<iterator_traits<_Tp> >::value>
+struct __has_iterator_category_convertible_to : is_convertible<typename iterator_traits<_Tp>::iterator_category, _Up> {
+};
+
+template <class _Tp, class _Up>
+struct __has_iterator_category_convertible_to<_Tp, _Up, false> : false_type {};
+
+template <class _Tp, class _Up, bool = __has_iterator_concept<_Tp>::value>
+struct __has_iterator_concept_convertible_to : is_convertible<typename _Tp::iterator_concept, _Up> {};
+
+template <class _Tp, class _Up>
+struct __has_iterator_concept_convertible_to<_Tp, _Up, false> : false_type {};
+
+template <class _Tp>
+using __has_input_iterator_category = __has_iterator_category_convertible_to<_Tp, input_iterator_tag>;
+
+template <class _Tp>
+using __has_forward_iterator_category = __has_iterator_category_convertible_to<_Tp, forward_iterator_tag>;
+
+template <class _Tp>
+using __has_bidirectional_iterator_category = __has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>;
+
+template <class _Tp>
+using __has_random_access_iterator_category = __has_iterator_category_convertible_to<_Tp, random_access_iterator_tag>;
+# 457 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+template <class _Tp>
+struct __libcpp_is_contiguous_iterator : false_type {};
+
+
+
+template <class _Up>
+struct __libcpp_is_contiguous_iterator<_Up*> : true_type {};
+
+template <class _Iter>
+class __wrap_iter;
+
+template <class _Tp>
+using __has_exactly_input_iterator_category =
+    integral_constant<bool,
+                      __has_iterator_category_convertible_to<_Tp, input_iterator_tag>::value &&
+                          !__has_iterator_category_convertible_to<_Tp, forward_iterator_tag>::value>;
+
+template <class _Tp>
+using __has_exactly_forward_iterator_category =
+    integral_constant<bool,
+                      __has_iterator_category_convertible_to<_Tp, forward_iterator_tag>::value &&
+                          !__has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>::value>;
+
+template <class _Tp>
+using __has_exactly_bidirectional_iterator_category =
+    integral_constant<bool,
+                      __has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>::value &&
+                          !__has_iterator_category_convertible_to<_Tp, random_access_iterator_tag>::value>;
+
+template <class _InputIterator>
+using __iter_value_type = typename iterator_traits<_InputIterator>::value_type;
+
+template <class _InputIterator>
+using __iter_key_type = __remove_const_t<typename iterator_traits<_InputIterator>::value_type::first_type>;
+
+template <class _InputIterator>
+using __iter_mapped_type = typename iterator_traits<_InputIterator>::value_type::second_type;
+
+template <class _InputIterator>
+using __iter_to_alloc_type =
+    pair<const typename iterator_traits<_InputIterator>::value_type::first_type,
+         typename iterator_traits<_InputIterator>::value_type::second_type>;
+
+template <class _Iter>
+using __iterator_category_type = typename iterator_traits<_Iter>::iterator_category;
+
+template <class _Iter>
+using __iterator_pointer_type = typename iterator_traits<_Iter>::pointer;
+
+template <class _Iter>
+using __iter_diff_t = typename iterator_traits<_Iter>::difference_type;
+
+template <class _Iter>
+using __iter_reference = typename iterator_traits<_Iter>::reference;
+# 528 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+}}
+# 528 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
+#pragma clang diagnostic pop
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 2 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Compare, class _ForwardIterator>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
+__max_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp) {
+  static_assert(
+      __has_forward_iterator_category<_ForwardIterator>::value, "std::max_element requires a ForwardIterator");
+  if (__first != __last) {
+    _ForwardIterator __i = __first;
+    while (++__i != __last)
+      if (__comp(*__first, *__i))
+        __first = __i;
+  }
+  return __first;
+}
+
+template <class _ForwardIterator, class _Compare>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
+max_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp) {
+  return std::__max_element<__comp_ref_type<_Compare> >(__first, __last, __comp);
+}
+
+template <class _ForwardIterator>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
+max_element(_ForwardIterator __first, _ForwardIterator __last) {
+  return std::max_element(__first, __last, __less<>());
+}
+
+}}
+# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
+#pragma clang diagnostic pop
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list" 1 3
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list" 3
+
+
+namespace std
+{
+
+
+
+template <class _Ep>
+class initializer_list {
+  const _Ep* __begin_;
+  size_t __size_;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr initializer_list(const _Ep* __b, size_t __s) noexcept
+      : __begin_(__b),
+        __size_(__s) {}
+
+public:
+  typedef _Ep value_type;
+  typedef const _Ep& reference;
+  typedef const _Ep& const_reference;
+  typedef size_t size_type;
+
+  typedef const _Ep* iterator;
+  typedef const _Ep* const_iterator;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr initializer_list() noexcept : __begin_(nullptr), __size_(0) {}
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr size_t size() const noexcept { return __size_; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* begin() const noexcept { return __begin_; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* end() const noexcept { return __begin_ + __size_; }
+};
+
+template <class _Ep>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* begin(initializer_list<_Ep> __il) noexcept {
+  return __il.begin();
+}
+
+template <class _Ep>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* end(initializer_list<_Ep> __il) noexcept {
+  return __il.end();
+}
+
+
+
+}
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
+
+#pragma clang diagnostic push
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Tp, class _Compare>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Tp&
+max([[_Clang::__lifetimebound__]] const _Tp& __a, [[_Clang::__lifetimebound__]] const _Tp& __b, _Compare __comp) {
+  return __comp(__a, __b) ? __b : __a;
+}
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Tp&
+max([[_Clang::__lifetimebound__]] const _Tp& __a, [[_Clang::__lifetimebound__]] const _Tp& __b) {
+  return std::max(__a, __b, __less<>());
+}
+
+
+
+template <class _Tp, class _Compare>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp
+max(initializer_list<_Tp> __t, _Compare __comp) {
+  return *std::__max_element<__comp_ref_type<_Compare> >(__t.begin(), __t.end(), __comp);
+}
+
+template <class _Tp>
+[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp max(initializer_list<_Tp> __t) {
+  return *std::max_element(__t.begin(), __t.end(), __less<>());
+}
+
+
+
+}}
+# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
+#pragma clang diagnostic pop
+# 190 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 1 3
+# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h" 1 3
 # 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/memory.h" 1 3
@@ -175,122 +3633,58 @@ class __attribute__((__preferred_name__(string)))
 }}
 # 105 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h" 3
 #pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 2 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 
 
 #pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
  namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
 
-class __attribute__((__visibility__("default"))) ios_base;
-
 template <class _CharT, class _Traits = char_traits<_CharT> >
-class basic_ios;
+class basic_filebuf;
+template <class _CharT, class _Traits = char_traits<_CharT> >
+class basic_ifstream;
+template <class _CharT, class _Traits = char_traits<_CharT> >
+class basic_ofstream;
+template <class _CharT, class _Traits = char_traits<_CharT> >
+class basic_fstream;
 
-using ios = basic_ios<char>;
+using filebuf = basic_filebuf<char>;
+using ifstream = basic_ifstream<char>;
+using ofstream = basic_ofstream<char>;
+using fstream = basic_fstream<char>;
 
-using wios = basic_ios<wchar_t>;
+
+using wfilebuf = basic_filebuf<wchar_t>;
+using wifstream = basic_ifstream<wchar_t>;
+using wofstream = basic_ofstream<wchar_t>;
+using wfstream = basic_fstream<wchar_t>;
 
 
 template <class _CharT, class _Traits>
-class __attribute__((__preferred_name__(ios))) __attribute__((__preferred_name__(wios))) basic_ios;
-
-
-
-
-
-using streamoff = long long;
-
-
-}}
-# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
-#pragma clang diagnostic pop
-# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _StateT>
-class fpos {
-private:
-  _StateT __st_;
-  streamoff __off_;
-
-public:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos(streamoff __off = streamoff()) : __st_(), __off_(__off) {}
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) operator streamoff() const { return __off_; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _StateT state() const { return __st_; }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void state(_StateT __st) { __st_ = __st; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos& operator+=(streamoff __off) {
-    __off_ += __off;
-    return *this;
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos operator+(streamoff __off) const {
-    fpos __t(*this);
-    __t += __off;
-    return __t;
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos& operator-=(streamoff __off) {
-    __off_ -= __off;
-    return *this;
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos operator-(streamoff __off) const {
-    fpos __t(*this);
-    __t -= __off;
-    return __t;
-  }
-};
-
-template <class _StateT>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamoff operator-(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
-  return streamoff(__x) - streamoff(__y);
-}
-
-template <class _StateT>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
-  return streamoff(__x) == streamoff(__y);
-}
-
-template <class _StateT>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
-  return streamoff(__x) != streamoff(__y);
-}
+class __attribute__((__preferred_name__(filebuf))) __attribute__((__preferred_name__(wfilebuf))) basic_filebuf;
+template <class _CharT, class _Traits>
+class __attribute__((__preferred_name__(ifstream))) __attribute__((__preferred_name__(wifstream))) basic_ifstream;
+template <class _CharT, class _Traits>
+class __attribute__((__preferred_name__(ofstream))) __attribute__((__preferred_name__(wofstream))) basic_ofstream;
+template <class _CharT, class _Traits>
+class __attribute__((__preferred_name__(fstream))) __attribute__((__preferred_name__(wfstream))) basic_fstream;
 
 }}
-# 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+# 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
 #pragma clang diagnostic pop
-# 220 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
+# 193 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale" 1 3
 # 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api.h" 1 3
@@ -580,123 +3974,6 @@ const char * querylocale(int, locale_t);
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 1 3
 # 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <bool, class _Tp = void>
-struct enable_if {};
-template <class _Tp>
-struct enable_if<true, _Tp> {
-  typedef _Tp type;
-};
-
-template <bool _Bp, class _Tp = void>
-using __enable_if_t __attribute__((__nodebug__)) = typename enable_if<_Bp, _Tp>::type;
-
-
-template <bool _Bp, class _Tp = void>
-using enable_if_t = typename enable_if<_Bp, _Tp>::type;
-
-
-}}
-# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, _Tp __v>
-struct integral_constant {
-  static constexpr const _Tp value = __v;
-  typedef _Tp value_type;
-  typedef integral_constant type;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr operator value_type() const noexcept { return value; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr value_type operator()() const noexcept { return value; }
-
-};
-
-template <class _Tp, _Tp __v>
-constexpr const _Tp integral_constant<_Tp, __v>::value;
-
-typedef integral_constant<bool, true> true_type;
-typedef integral_constant<bool, false> false_type;
-
-template <bool _Val>
-using _BoolConstant __attribute__((__nodebug__)) = integral_constant<bool, _Val>;
-
-
-
-
-
-
-}}
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class _Up>
-struct is_same : _BoolConstant<__is_same(_Tp, _Up)> {};
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-template <class _Tp, class _Up>
-using _IsSame = _BoolConstant<__is_same(_Tp, _Up)>;
-
-template <class _Tp, class _Up>
-using _IsNotSame = _BoolConstant<!__is_same(_Tp, _Up)>;
-
-}}
-# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 2 3
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 3
 
 
@@ -718,500 +3995,6 @@ using _IsNotSame = _BoolConstant<!__is_same(_Tp, _Up)>;
 # 276 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h" 3
 #pragma clang diagnostic pop
 # 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 2 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 1 3
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
-# 89 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_header_macro.h" 1 3
-# 90 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 3
-typedef long int ptrdiff_t;
-# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 3
-typedef long unsigned int size_t;
-# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 3
-typedef long unsigned int rsize_t;
-# 104 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
-# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h" 1 3
-# 114 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
-# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 128 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h" 3
-typedef long double max_align_t;
-# 129 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
-# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
-
-
-
-
-
-typedef decltype(nullptr) nullptr_t;
-# 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h" 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_const {
-  using type __attribute__((__nodebug__)) = __remove_const(_Tp);
-};
-
-template <class _Tp>
-using __remove_const_t = __remove_const(_Tp);
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-template <class _Tp>
-using remove_const_t = __remove_const_t<_Tp>;
-
-
-}}
-# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_volatile {
-  using type __attribute__((__nodebug__)) = __remove_volatile(_Tp);
-};
-
-template <class _Tp>
-using __remove_volatile_t = __remove_volatile(_Tp);
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-template <class _Tp>
-using remove_volatile_t = __remove_volatile_t<_Tp>;
-
-
-}}
-# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_cv {
-  using type __attribute__((__nodebug__)) = __remove_cv(_Tp);
-};
-
-template <class _Tp>
-using __remove_cv_t = __remove_cv(_Tp);
-# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-template <class _Tp>
-using remove_cv_t = __remove_cv_t<_Tp>;
-
-
-}}
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cv.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp> struct __libcpp_is_integral { enum { value = 0 }; };
-template <> struct __libcpp_is_integral<bool> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<char> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<signed char> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<unsigned char> { enum { value = 1 }; };
-
-template <> struct __libcpp_is_integral<wchar_t> { enum { value = 1 }; };
-
-
-
-
-template <> struct __libcpp_is_integral<char16_t> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<char32_t> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<short> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<unsigned short> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<int> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<unsigned int> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<long> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<unsigned long> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<long long> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<unsigned long long> { enum { value = 1 }; };
-
-template <> struct __libcpp_is_integral<__int128_t> { enum { value = 1 }; };
-template <> struct __libcpp_is_integral<__uint128_t> { enum { value = 1 }; };
-
-
-
-
-
-template <class _Tp>
-struct is_integral : _BoolConstant<__is_integral(_Tp)> {};
-# 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-}}
-# 72 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_integral.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h" 3
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
-# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
-# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
-# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 1 3
-# 104 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
-# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
-# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
-# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-using ::max_align_t __attribute__((__using_if_exists__));
-
-
-}}
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/max_align_t.h" 3
-#pragma clang diagnostic pop
-# 55 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
-# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
-# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
-# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 1 3
-# 104 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
-# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
-# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
-# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-using ::nullptr_t;
-
-}}
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h" 3
-#pragma clang diagnostic pop
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
-# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
-# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
-# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 1 3
-# 104 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
-# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
-# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
-# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-using ::ptrdiff_t __attribute__((__using_if_exists__));
-
-}}
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/ptrdiff_t.h" 3
-#pragma clang diagnostic pop
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 1 3
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 1 3
-# 93 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h" 1 3
-# 94 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h" 1 3
-# 99 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h" 1 3
-# 104 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h" 1 3
-# 109 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 118 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_nullptr_t.h" 1 3
-# 119 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 133 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 3
-# 1 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h" 1 3
-# 134 "/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h" 2 3
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h" 2 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 2 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-using ::size_t __attribute__((__using_if_exists__));
-
-}}
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/size_t.h" 3
-#pragma clang diagnostic pop
-# 58 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef" 2 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 2 3
 # 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 3
 
 
@@ -1233,965 +4016,6 @@ using ::size_t __attribute__((__using_if_exists__));
 # 84 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/common_comparison_category.h" 3
 #pragma clang diagnostic pop
 # 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 1 3
-# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _T1, class _T2>
-struct is_convertible : public integral_constant<bool, __is_convertible(_T1, _T2)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-#pragma GCC diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma GCC diagnostic ignored "-Wdeprecated"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-template <class _Tp>
-_Tp&& __declval(int);
-template <class _Tp>
-_Tp __declval(long);
-#pragma GCC diagnostic pop
-
-template <class _Tp>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) decltype(std::__declval<_Tp>(0)) declval() noexcept {
-  static_assert(!__is_same(_Tp, _Tp),
-                "std::declval can only be used in an unevaluated context. "
-                "It's likely that your current usage is trying to extract a value from the function.");
-}
-
-}}
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/declval.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-}}
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/convertible_to.h" 3
-#pragma clang diagnostic pop
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-}}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <bool>
-struct _IfImpl;
-
-template <>
-struct _IfImpl<true> {
-  template <class _IfRes, class _ElseRes>
-  using _Select __attribute__((__nodebug__)) = _IfRes;
-};
-
-template <>
-struct _IfImpl<false> {
-  template <class _IfRes, class _ElseRes>
-  using _Select __attribute__((__nodebug__)) = _ElseRes;
-};
-
-template <bool _Cond, class _IfRes, class _ElseRes>
-using _If __attribute__((__nodebug__)) = typename _IfImpl<_Cond>::template _Select<_IfRes, _ElseRes>;
-
-template <bool _Bp, class _If, class _Then>
-struct conditional {
-  using type __attribute__((__nodebug__)) = _If;
-};
-template <class _If, class _Then>
-struct conditional<false, _If, _Then> {
-  using type __attribute__((__nodebug__)) = _Then;
-};
-
-
-template <bool _Bp, class _IfRes, class _ElseRes>
-using conditional_t __attribute__((__nodebug__)) = typename conditional<_Bp, _IfRes, _ElseRes>::type;
-
-
-
-template <bool _Bp, class _If, class _Then>
-using __conditional_t __attribute__((__nodebug__)) = typename conditional<_Bp, _If, _Then>::type;
-
-}}
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct __libcpp_is_referenceable : integral_constant<bool, __is_referenceable(_Tp)> {};
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-}}
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_void : _BoolConstant<__is_same(__remove_cv(_Tp), void)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_void.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_reference {
-  using type __attribute__((__nodebug__)) = __remove_reference_t(_Tp);
-};
-
-template <class _Tp>
-using __libcpp_remove_reference_t = __remove_reference_t(_Tp);
-# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-template <class _Tp>
-using remove_reference_t = __libcpp_remove_reference_t<_Tp>;
-
-
-}}
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_reference.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-using __add_pointer_t = __add_pointer(_Tp);
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-template <class _Tp>
-struct add_pointer {
-  using type __attribute__((__nodebug__)) = __add_pointer_t<_Tp>;
-};
-
-
-template <class _Tp>
-using add_pointer_t = __add_pointer_t<_Tp>;
-
-
-}}
-# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_pointer.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-template <class _Tp>
-struct is_array : public false_type {};
-template <class _Tp>
-struct is_array<_Tp[]> : public true_type {};
-template <class _Tp, size_t _Np>
-struct is_array<_Tp[_Np]> : public true_type {};
-# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-}}
-# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_array.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_function : integral_constant<bool, __is_function(_Tp)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_extent {
-  using type __attribute__((__nodebug__)) = __remove_extent(_Tp);
-};
-
-template <class _Tp>
-using __remove_extent_t = __remove_extent(_Tp);
-# 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-template <class _Tp>
-using remove_extent_t = __remove_extent_t<_Tp>;
-
-
-}}
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_extent.h" 3
-#pragma clang diagnostic pop
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 2 3
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-
-
-#pragma clang diagnostic push
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-using __decay_t __attribute__((__nodebug__)) = __decay(_Tp);
-
-template <class _Tp>
-struct decay {
-  using type __attribute__((__nodebug__)) = __decay_t<_Tp>;
-};
-# 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-template <class _Tp>
-using decay_t = __decay_t<_Tp>;
-
-
-}}
-# 71 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-using __remove_cvref_t __attribute__((__nodebug__)) = __remove_cvref(_Tp);
-
-
-
-
-
-template <class _Tp, class _Up>
-struct __is_same_uncvref : _IsSame<__remove_cvref_t<_Tp>, __remove_cvref_t<_Up> > {};
-# 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-}}
-# 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-
-
-
-template <class...>
-using __void_t = void;
-
-}}
-# 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/void_t.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 2 3
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-
-
-#pragma clang diagnostic push
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-template <class _Tp, class _Up, class = void>
-struct __common_type2_imp {};
-
-
-
-template <class _Tp, class _Up>
-struct __common_type2_imp<_Tp, _Up, __void_t<decltype(true ? std::declval<_Tp>() : std::declval<_Up>())> > {
-  typedef __attribute__((__nodebug__)) __decay_t<decltype(true ? std::declval<_Tp>() : std::declval<_Up>())> type;
-};
-
-template <class, class = void>
-struct __common_type_impl {};
-
-template <class... _Tp>
-struct __common_types;
-template <class... _Tp>
-struct common_type;
-
-template <class _Tp, class _Up>
-struct __common_type_impl< __common_types<_Tp, _Up>, __void_t<typename common_type<_Tp, _Up>::type> > {
-  typedef typename common_type<_Tp, _Up>::type type;
-};
-
-template <class _Tp, class _Up, class _Vp, class... _Rest>
-struct __common_type_impl<__common_types<_Tp, _Up, _Vp, _Rest...>, __void_t<typename common_type<_Tp, _Up>::type> >
-    : __common_type_impl<__common_types<typename common_type<_Tp, _Up>::type, _Vp, _Rest...> > {};
-
-
-
-template <>
-struct common_type<> {};
-
-
-
-template <class _Tp>
-struct common_type<_Tp> : public common_type<_Tp, _Tp> {};
-
-
-
-
-template <class _Tp, class _Up>
-struct common_type<_Tp, _Up>
-    : __conditional_t<_IsSame<_Tp, __decay_t<_Tp> >::value && _IsSame<_Up, __decay_t<_Up> >::value,
-                      __common_type2_imp<_Tp, _Up>,
-                      common_type<__decay_t<_Tp>, __decay_t<_Up> > > {};
-
-
-
-template <class _Tp, class _Up, class _Vp, class... _Rest>
-struct common_type<_Tp, _Up, _Vp, _Rest...>
-    : __common_type_impl<__common_types<_Tp, _Up, _Vp, _Rest...> > {};
-
-
-template <class... _Tp>
-using common_type_t = typename common_type<_Tp...>::type;
-
-
-}}
-# 100 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _From>
-struct __copy_cv {
-  template <class _To>
-  using __apply = _To;
-};
-
-template <class _From>
-struct __copy_cv<const _From> {
-  template <class _To>
-  using __apply = const _To;
-};
-
-template <class _From>
-struct __copy_cv<volatile _From> {
-  template <class _To>
-  using __apply = volatile _To;
-};
-
-template <class _From>
-struct __copy_cv<const volatile _From> {
-  template <class _To>
-  using __apply = const volatile _To;
-};
-
-template <class _From, class _To>
-using __copy_cv_t = typename __copy_cv<_From>::template __apply<_To>;
-
-}}
-# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cv.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-using __add_lvalue_reference_t = __add_lvalue_reference(_Tp);
-# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-template <class _Tp>
-struct add_lvalue_reference {
-  using type __attribute__((__nodebug__)) = __add_lvalue_reference_t<_Tp>;
-};
-
-
-template <class _Tp>
-using add_lvalue_reference_t = __add_lvalue_reference_t<_Tp>;
-
-
-}}
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_lvalue_reference.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-using __add_rvalue_reference_t = __add_rvalue_reference(_Tp);
-# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-template <class _Tp>
-struct add_rvalue_reference {
-  using type = __add_rvalue_reference_t<_Tp>;
-};
-
-
-template <class _Tp>
-using add_rvalue_reference_t = __add_rvalue_reference_t<_Tp>;
-
-
-}}
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _From, class _To>
-struct __copy_cvref {
-  using type = __copy_cv_t<_From, _To>;
-};
-
-template <class _From, class _To>
-struct __copy_cvref<_From&, _To> {
-  using type = __add_lvalue_reference_t<__copy_cv_t<_From, _To> >;
-};
-
-template <class _From, class _To>
-struct __copy_cvref<_From&&, _To> {
-  using type = __add_rvalue_reference_t<__copy_cv_t<_From, _To> >;
-};
-
-template <class _From, class _To>
-using __copy_cvref_t = typename __copy_cvref<_From, _To>::type;
-
-}}
-# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_reference : _BoolConstant<__is_reference(_Tp)> {};
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-template <class _Tp>
-struct is_lvalue_reference : _BoolConstant<__is_lvalue_reference(_Tp)> {};
-
-template <class _Tp>
-struct is_rvalue_reference : _BoolConstant<__is_rvalue_reference(_Tp)> {};
-# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-}}
-# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 2 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-
-
-#pragma clang diagnostic push
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-}}
-# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-}}
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/common_reference_with.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 1 3
-# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp&&
-forward([[_Clang::__lifetimebound__]] __libcpp_remove_reference_t<_Tp>& __t) noexcept {
-  return static_cast<_Tp&&>(__t);
-}
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp&&
-forward([[_Clang::__lifetimebound__]] __libcpp_remove_reference_t<_Tp>&& __t) noexcept {
-  static_assert(!is_lvalue_reference<_Tp>::value, "cannot forward an rvalue as an lvalue");
-  return static_cast<_Tp&&>(__t);
-}
-
-}}
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-}}
-# 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/boolean_testable.h" 3
-#pragma clang diagnostic pop
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 2 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-using __make_const_lvalue_ref = const __libcpp_remove_reference_t<_Tp>&;
-
-}}
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_const_lvalue_ref.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 2 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-}}
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 1 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-}}
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/totally_ordered.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h" 2 3
 # 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h" 3
 
 
@@ -2370,36 +4194,6 @@ using __unary_function = unary_function<_Arg, _Result>;
 # 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_function.h" 3
 #pragma clang diagnostic pop
 # 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-struct __equal_tag {};
-struct __plus_tag {};
-struct __less_tag {};
-# 35 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-template <class _CanonicalTag, class _Operation, class... _Args>
-inline const bool __desugars_to_v = false;
-
-}}
-# 38 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h" 2 3
 # 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h" 3
 
 
@@ -3118,39 +4912,6 @@ struct __is_reference_wrapper : public __is_reference_wrapper_impl<__remove_cv_t
 # 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h" 3
 #pragma clang diagnostic pop
 # 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h" 2 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-struct __nat {
-
-  __nat() = delete;
-  __nat(const __nat&) = delete;
-  __nat& operator=(const __nat&) = delete;
-  ~__nat() = delete;
-
-};
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/nat.h" 3
-#pragma clang diagnostic pop
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h" 2 3
 # 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h" 3
 
 
@@ -3871,45 +5632,7 @@ __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h" 1 3
 # 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_traits.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/construct_at.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/construct_at.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-[[noreturn]] __attribute__((availability(macos, strict, introduced = 13.3))) __attribute__((availability(ios, strict, introduced = 16.3))) __attribute__((availability(tvos, strict, introduced = 16.3))) __attribute__((availability(watchos, strict, introduced = 9.3))) __attribute__((availability(bridgeos, strict, introduced = 7.5))) __attribute__((__visibility__("default")))
-__attribute__((__format__(__printf__, 1, 2))) void __libcpp_verbose_abort(const char* __format, ...);
-# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-}}
-# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler" 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 2 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert" 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/construct_at.h" 2 3
-
-
-
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/construct_at.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/voidify.h" 1 3
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/voidify.h" 3
 
@@ -3942,164 +5665,7 @@ __attribute__((__always_inline__)) __attribute__((__visibility__("hidden"))) __a
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 1 3
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
 
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class... _Args>
-struct is_constructible : public integral_constant<bool, __is_constructible(_Tp, _Args...)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_copy_constructible
-    : public integral_constant<bool, __is_constructible(_Tp, __add_lvalue_reference_t<const _Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_move_constructible
-    : public integral_constant<bool, __is_constructible(_Tp, __add_rvalue_reference_t<_Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_default_constructible : public integral_constant<bool, __is_constructible(_Tp)> {};
-
-
-
-
-
-
-}}
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template < class _Tp, class... _Args>
-struct is_nothrow_constructible
-    : public integral_constant<bool, __is_nothrow_constructible(_Tp, _Args...)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_nothrow_copy_constructible
-    : public integral_constant< bool, __is_nothrow_constructible(_Tp, __add_lvalue_reference_t<const _Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_nothrow_move_constructible
-    : public integral_constant<bool, __is_nothrow_constructible(_Tp, __add_rvalue_reference_t<_Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_nothrow_default_constructible
-    : public integral_constant<bool, __is_nothrow_constructible(_Tp)> {};
-
-
-
-
-
-
-}}
-# 59 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 2 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 2 3
-
-#pragma clang diagnostic push
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr __libcpp_remove_reference_t<_Tp>&&
-move([[_Clang::__lifetimebound__]] _Tp&& __t) noexcept {
-  typedef __attribute__((__nodebug__)) __libcpp_remove_reference_t<_Tp> _Up;
-  return static_cast<_Up&&>(__t);
-}
-
-template <class _Tp>
-using __move_if_noexcept_result_t =
-    __conditional_t<!is_nothrow_move_constructible<_Tp>::value && is_copy_constructible<_Tp>::value, const _Tp&, _Tp&&>;
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr __move_if_noexcept_result_t<_Tp>
-move_if_noexcept([[_Clang::__lifetimebound__]] _Tp& __x) noexcept {
-  return std::move(__x);
-}
-
-}}
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h" 3
-#pragma clang diagnostic pop
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/construct_at.h" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new" 1 3
 # 96 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h" 1 3
@@ -5827,48 +7393,6 @@ using add_volatile_t = typename add_volatile<_Tp>::type;
 #pragma clang diagnostic pop
 # 428 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Hp, class _Tp>
-struct __type_list {
-  typedef _Hp _Head;
-  typedef _Tp _Tail;
-};
-
-template <class _TypeList, size_t _Size, bool = _Size <= sizeof(typename _TypeList::_Head)>
-struct __find_first;
-
-template <class _Hp, class _Tp, size_t _Size>
-struct __find_first<__type_list<_Hp, _Tp>, _Size, true> {
-  typedef __attribute__((__nodebug__)) _Hp type;
-};
-
-template <class _Hp, class _Tp, size_t _Size>
-struct __find_first<__type_list<_Hp, _Tp>, _Size, false> {
-  typedef __attribute__((__nodebug__)) typename __find_first<_Tp, _Size>::type type;
-};
-
-}}
-# 40 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h" 2 3
 # 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h" 3
 
 
@@ -6077,33 +7601,7 @@ struct alignment_of : public integral_constant<size_t, alignof(_Tp)> {};
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
 
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp, size_t _Dim = 0>
-struct extent : integral_constant<size_t, __array_extent(_Tp, _Dim)> {};
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-}}
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h" 3
-#pragma clang diagnostic pop
-# 436 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h" 1 3
 # 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/has_virtual_destructor.h" 3
 
@@ -6165,156 +7663,11 @@ struct is_abstract : public integral_constant<bool, __is_abstract(_Tp)> {};
 # 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_abstract.h" 3
 #pragma clang diagnostic pop
 # 439 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp> struct __libcpp_is_floating_point : public false_type {};
-template <> struct __libcpp_is_floating_point<float> : public true_type {};
-template <> struct __libcpp_is_floating_point<double> : public true_type {};
-template <> struct __libcpp_is_floating_point<long double> : public true_type {};
-
-
-template <class _Tp>
-struct is_floating_point : public __libcpp_is_floating_point<__remove_cv_t<_Tp> > {};
 
 
 
 
 
-
-}}
-# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_arithmetic
-    : public integral_constant<bool, is_integral<_Tp>::value || is_floating_point<_Tp>::value> {};
-
-
-
-
-
-
-}}
-# 32 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h" 3
-#pragma clang diagnostic pop
-# 440 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class _Up>
-struct is_assignable : _BoolConstant<__is_assignable(_Tp, _Up)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_copy_assignable
-    : public integral_constant<bool,
-                               __is_assignable(__add_lvalue_reference_t<_Tp>, __add_lvalue_reference_t<const _Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_move_assignable
-    : public integral_constant<bool, __is_assignable(__add_lvalue_reference_t<_Tp>, __add_rvalue_reference_t<_Tp>)> {};
-
-
-
-
-
-
-}}
-# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_assignable.h" 3
-#pragma clang diagnostic pop
-# 442 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_class : public integral_constant<bool, __is_class(_Tp)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_class.h" 3
-#pragma clang diagnostic pop
-# 444 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_compound.h" 1 3
 # 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_compound.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h" 1 3
@@ -6409,69 +7762,7 @@ struct is_compound : _BoolConstant<__is_compound(_Tp)> {};
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
 
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-struct remove_all_extents {
-  using type __attribute__((__nodebug__)) = __remove_all_extents(_Tp);
-};
-
-template <class _Tp>
-using __remove_all_extents_t = __remove_all_extents(_Tp);
-# 48 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-template <class _Tp>
-using remove_all_extents_t = __remove_all_extents_t<_Tp>;
-
-
-}}
-# 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 2 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-
-
-#pragma clang diagnostic push
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-struct is_destructible : _BoolConstant<__is_destructible(_Tp)> {};
-# 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-}}
-# 95 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_destructible.h" 3
-#pragma clang diagnostic pop
-# 449 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_empty.h" 1 3
 # 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_empty.h" 3
 
@@ -6502,31 +7793,7 @@ struct is_empty : public integral_constant<bool, __is_empty(_Tp)> {};
 # 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_empty.h" 3
 #pragma clang diagnostic pop
 # 450 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
 
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_enum : public integral_constant<bool, __is_enum(_Tp)> {};
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-}}
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h" 3
-#pragma clang diagnostic pop
-# 451 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 
 
 
@@ -6565,117 +7832,10 @@ struct
 #pragma clang diagnostic pop
 # 456 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class _Arg>
-struct is_nothrow_assignable : public integral_constant<bool, __is_nothrow_assignable(_Tp, _Arg)> {
-};
 
 
 
 
-
-
-template <class _Tp>
-struct is_nothrow_copy_assignable
-    : public integral_constant<
-          bool,
-          __is_nothrow_assignable(__add_lvalue_reference_t<_Tp>, __add_lvalue_reference_t<const _Tp>)> {};
-
-
-
-
-
-
-template <class _Tp>
-struct is_nothrow_move_assignable
-    : public integral_constant<bool,
-                               __is_nothrow_assignable(__add_lvalue_reference_t<_Tp>, __add_rvalue_reference_t<_Tp>)> {
-};
-
-
-
-
-
-
-}}
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h" 3
-#pragma clang diagnostic pop
-# 458 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 1 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-struct is_nothrow_destructible : integral_constant<bool, __is_nothrow_destructible(_Tp)> {};
-# 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-}}
-# 61 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_nothrow_destructible.h" 3
-#pragma clang diagnostic pop
-# 460 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_object : _BoolConstant<__is_object(_Tp)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h" 3
-#pragma clang diagnostic pop
-# 461 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_pod.h" 1 3
 # 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_pod.h" 3
 
@@ -6792,33 +7952,7 @@ struct is_scalar : _BoolConstant<__is_scalar(_Tp)> {};
 # 67 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_scalar.h" 3
 #pragma clang diagnostic pop
 # 467 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
 
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-struct is_signed : _BoolConstant<__is_signed(_Tp)> {};
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-}}
-# 57 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h" 3
-#pragma clang diagnostic pop
-# 468 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h" 1 3
 # 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_standard_layout.h" 3
 
@@ -7101,36 +8235,7 @@ struct is_trivially_destructible
 # 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h" 3
 #pragma clang diagnostic pop
 # 474 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
 
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-struct is_union : public integral_constant<bool, __is_union(_Tp)> {};
-
-
-
-
-
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_union.h" 3
-#pragma clang diagnostic pop
-# 475 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h" 1 3
 # 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h" 3
 
@@ -7186,43 +8291,7 @@ struct is_volatile : _BoolConstant<__is_volatile(_Tp)> {};
 # 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_volatile.h" 3
 #pragma clang diagnostic pop
 # 478 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 1 3
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
 
-
-#pragma clang diagnostic push
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-template <class _Tp>
-using __make_signed_t = __make_signed(_Tp);
-# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-template <class _Tp>
-struct make_signed {
-  using type __attribute__((__nodebug__)) = __make_signed_t<_Tp>;
-};
-
-
-template <class _Tp>
-using make_signed_t = __make_signed_t<_Tp>;
-
-
-}}
-# 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_signed.h" 3
-#pragma clang diagnostic pop
-# 479 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h" 1 3
 # 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h" 3
 
@@ -9113,58 +10182,7 @@ public:
 #pragma clang diagnostic pop
 # 28 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/shared_ptr.h" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <size_t, class>
-struct tuple_element;
-
-
-
-template <class...>
-class tuple;
-
-template <class>
-struct tuple_size;
-
-template <size_t _Ip, class... _Tp>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, tuple<_Tp...> >::type&
-get(tuple<_Tp...>&) noexcept;
-
-template <size_t _Ip, class... _Tp>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, tuple<_Tp...> >::type&
-get(const tuple<_Tp...>&) noexcept;
-
-template <size_t _Ip, class... _Tp>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, tuple<_Tp...> >::type&&
-get(tuple<_Tp...>&&) noexcept;
-
-template <size_t _Ip, class... _Tp>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, tuple<_Tp...> >::type&&
-get(const tuple<_Tp...>&&) noexcept;
-
-
-
-}}
-# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h" 2 3
+# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h" 1 3
 # 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/integer_sequence.h" 1 3
@@ -9290,70 +10308,7 @@ struct __dependent_type : public _Tp {};
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 1 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
 
-
-#pragma clang diagnostic push
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class _Up, class = void>
-inline const bool __is_swappable_with_v = false;
-
-template <class _Tp>
-inline const bool __is_swappable_v = __is_swappable_with_v<_Tp&, _Tp&>;
-
-template <class _Tp, class _Up, bool = __is_swappable_with_v<_Tp, _Up> >
-inline const bool __is_nothrow_swappable_with_v = false;
-
-template <class _Tp>
-inline const bool __is_nothrow_swappable_v = __is_nothrow_swappable_with_v<_Tp&, _Tp&>;
-
-
-template <class _Tp>
-using __swap_result_t = __enable_if_t<is_move_constructible<_Tp>::value && is_move_assignable<_Tp>::value>;
-
-
-
-
-
-template <class _Tp>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __swap_result_t<_Tp> swap(_Tp& __x, _Tp& __y)
-    noexcept(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value);
-
-template <class _Tp, size_t _Np, __enable_if_t<__is_swappable_v<_Tp>, int> = 0>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102")))
-                              void swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np]) noexcept(__is_nothrow_swappable_v<_Tp>);
-
-
-
-template <class _Tp, class _Up>
-inline const bool __is_swappable_with_v<_Tp,
-                                        _Up,
-                                        __void_t<decltype(swap(std::declval<_Tp>(), std::declval<_Up>())),
-                                                 decltype(swap(std::declval<_Up>(), std::declval<_Tp>()))> > = true;
-
-
-template <class _Tp, class _Up>
-inline const bool __is_nothrow_swappable_with_v<_Tp, _Up, true> =
-    noexcept(swap(std::declval<_Tp>(), std::declval<_Up>())) &&
-    noexcept(swap(std::declval<_Up>(), std::declval<_Tp>()));
-# 102 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-}}
-# 102 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_swappable.h" 3
-#pragma clang diagnostic pop
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h" 2 3
 
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/piecewise_construct.h" 1 3
@@ -9553,57 +10508,6 @@ swap(__compressed_pair<_T1, _T2>& __x, __compressed_pair<_T1, _T2>& __y)
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h" 1 3
 # 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 1 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 2 3
-
-#pragma clang diagnostic push
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp>
-using __swap_result_t = __enable_if_t<is_move_constructible<_Tp>::value && is_move_assignable<_Tp>::value>;
-
-
-
-
-
-template <class _Tp>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __swap_result_t<_Tp> swap(_Tp& __x, _Tp& __y)
-    noexcept(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value) {
-  _Tp __t(std::move(__x));
-  __x = std::move(__y);
-  __y = std::move(__t);
-}
-
-template <class _Tp, size_t _Np, __enable_if_t<__is_swappable_v<_Tp>, int> >
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np])
-    noexcept(__is_nothrow_swappable_v<_Tp>) {
-  for (size_t __i = 0; __i != _Np; ++__i) {
-    swap(__a[__i], __b[__i]);
-  }
-}
-
-}}
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h" 2 3
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h" 3
 
 
@@ -9635,304 +10539,7 @@ inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_e
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h" 1 3
 # 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp> struct __libcpp_is_signed_integer : public false_type {};
-template <> struct __libcpp_is_signed_integer<signed char> : public true_type {};
-template <> struct __libcpp_is_signed_integer<signed short> : public true_type {};
-template <> struct __libcpp_is_signed_integer<signed int> : public true_type {};
-template <> struct __libcpp_is_signed_integer<signed long> : public true_type {};
-template <> struct __libcpp_is_signed_integer<signed long long> : public true_type {};
-
-template <> struct __libcpp_is_signed_integer<__int128_t> : public true_type {};
-
-
-
-}}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _Tp> struct __libcpp_is_unsigned_integer : public false_type {};
-template <> struct __libcpp_is_unsigned_integer<unsigned char> : public true_type {};
-template <> struct __libcpp_is_unsigned_integer<unsigned short> : public true_type {};
-template <> struct __libcpp_is_unsigned_integer<unsigned int> : public true_type {};
-template <> struct __libcpp_is_unsigned_integer<unsigned long> : public true_type {};
-template <> struct __libcpp_is_unsigned_integer<unsigned long long> : public true_type {};
-
-template <> struct __libcpp_is_unsigned_integer<__uint128_t> : public true_type {};
-
-
-
-}}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 2 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-
-
-#pragma clang diagnostic push
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-}}
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 1 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-
-
-#pragma clang diagnostic push
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-}}
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-}}
-# 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/destructible.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-}}
-# 53 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/constructible.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 1 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-}}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
-
-
-
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 1 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 2 3
-
-#pragma clang diagnostic push
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-template <class _T1, class _T2 = _T1>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _T1 exchange(_T1& __obj, _T2&& __new_value) noexcept(
-    is_nothrow_move_constructible<_T1>::value && is_nothrow_assignable<_T1&, _T2>::value) {
-  _T1 __old_value = std::move(__obj);
-  __obj = std::forward<_T2>(__new_value);
-  return __old_value;
-}
-
-
-}}
-# 37 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exchange.h" 3
-#pragma clang diagnostic pop
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 2 3
-
-#pragma clang diagnostic push
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-}}
-# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/swappable.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 2 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-}}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/movable.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-}}
-# 39 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/copyable.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 2 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h" 1 3
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h" 3
 
@@ -10073,441 +10680,8 @@ inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_e
 
 
 
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 1 3
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
 
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <template <class...> class _Templ, class... _Args, class = _Templ<_Args...> >
-true_type __sfinae_test_impl(int);
-template <template <class...> class, class...>
-false_type __sfinae_test_impl(...);
-
-template <template <class...> class _Templ, class... _Args>
-using _IsValidExpansion __attribute__((__nodebug__)) = decltype(std::__sfinae_test_impl<_Templ, _Args...>(0));
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 2 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp>
-using __test_for_primary_template = __enable_if_t<_IsSame<_Tp, typename _Tp::__primary_template>::value>;
-
-template <class _Tp>
-using __is_primary_template = _IsValidExpansion<__test_for_primary_template, _Tp>;
-
-}}
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 2 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-
-
-#pragma clang diagnostic push
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-}}
-# 77 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h" 3
-#pragma clang diagnostic pop
-# 31 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h" 1 3
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 1 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class, class>
-struct pair;
-
-template <size_t _Ip, class _T1, class _T2>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, pair<_T1, _T2> >::type&
-get(pair<_T1, _T2>&) noexcept;
-
-template <size_t _Ip, class _T1, class _T2>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, pair<_T1, _T2> >::type&
-get(const pair<_T1, _T2>&) noexcept;
-
-
-template <size_t _Ip, class _T1, class _T2>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
-get(pair<_T1, _T2>&&) noexcept;
-
-template <size_t _Ip, class _T1, class _T2>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
-get(const pair<_T1, _T2>&&) noexcept;
-
-
-}}
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h" 3
-#pragma clang diagnostic pop
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 1 3
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-
-
-#pragma clang diagnostic push
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-}}
-# 79 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h" 3
-#pragma clang diagnostic pop
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <bool>
-struct _OrImpl;
-
-template <>
-struct _OrImpl<true> {
-  template <class _Res, class _First, class... _Rest>
-  using _Result __attribute__((__nodebug__)) =
-      typename _OrImpl<!bool(_First::value) && sizeof...(_Rest) != 0>::template _Result<_First, _Rest...>;
-};
-
-template <>
-struct _OrImpl<false> {
-  template <class _Res, class...>
-  using _Result = _Res;
-};
-
-
-
-
-
-
-
-template <class... _Args>
-using _Or __attribute__((__nodebug__)) = typename _OrImpl<sizeof...(_Args) != 0>::template _Result<false_type, _Args...>;
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-}}
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h" 3
-#pragma clang diagnostic pop
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 2 3
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-
-
-#pragma clang diagnostic push
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 45 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-# 66 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-template <class _Iter>
-struct iterator_traits;
-
-struct input_iterator_tag {};
-struct output_iterator_tag {};
-struct forward_iterator_tag : public input_iterator_tag {};
-struct bidirectional_iterator_tag : public forward_iterator_tag {};
-struct random_access_iterator_tag : public bidirectional_iterator_tag {};
-
-
-
-
-template <class _Iter>
-struct __iter_traits_cache {
-  using type = _If< __is_primary_template<iterator_traits<_Iter> >::value, _Iter, iterator_traits<_Iter> >;
-};
-template <class _Iter>
-using _ITER_TRAITS = typename __iter_traits_cache<_Iter>::type;
-
-struct __iter_concept_concept_test {
-  template <class _Iter>
-  using _Apply = typename _ITER_TRAITS<_Iter>::iterator_concept;
-};
-struct __iter_concept_category_test {
-  template <class _Iter>
-  using _Apply = typename _ITER_TRAITS<_Iter>::iterator_category;
-};
-struct __iter_concept_random_fallback {
-  template <class _Iter>
-  using _Apply = __enable_if_t< __is_primary_template<iterator_traits<_Iter> >::value, random_access_iterator_tag >;
-};
-
-template <class _Iter, class _Tester>
-struct __test_iter_concept : _IsValidExpansion<_Tester::template _Apply, _Iter>, _Tester {};
-
-template <class _Iter>
-struct __iter_concept_cache {
-  using type = _Or< __test_iter_concept<_Iter, __iter_concept_concept_test>,
-                    __test_iter_concept<_Iter, __iter_concept_category_test>,
-                    __test_iter_concept<_Iter, __iter_concept_random_fallback> >;
-};
-
-template <class _Iter>
-using _ITER_CONCEPT = typename __iter_concept_cache<_Iter>::type::template _Apply<_Iter>;
-
-template <class _Tp>
-struct __has_iterator_typedefs {
-private:
-  template <class _Up>
-  static false_type __test(...);
-  template <class _Up>
-  static true_type
-  __test(__void_t<typename _Up::iterator_category>* = nullptr,
-         __void_t<typename _Up::difference_type>* = nullptr,
-         __void_t<typename _Up::value_type>* = nullptr,
-         __void_t<typename _Up::reference>* = nullptr,
-         __void_t<typename _Up::pointer>* = nullptr);
-
-public:
-  static const bool value = decltype(__test<_Tp>(nullptr, nullptr, nullptr, nullptr, nullptr))::value;
-};
-
-template <class _Tp>
-struct __has_iterator_category {
-private:
-  template <class _Up>
-  static false_type __test(...);
-  template <class _Up>
-  static true_type __test(typename _Up::iterator_category* = nullptr);
-
-public:
-  static const bool value = decltype(__test<_Tp>(nullptr))::value;
-};
-
-template <class _Tp>
-struct __has_iterator_concept {
-private:
-  template <class _Up>
-  static false_type __test(...);
-  template <class _Up>
-  static true_type __test(typename _Up::iterator_concept* = nullptr);
-
-public:
-  static const bool value = decltype(__test<_Tp>(nullptr))::value;
-};
-# 372 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-template <class _Iter, bool>
-struct __iterator_traits {};
-
-template <class _Iter, bool>
-struct __iterator_traits_impl {};
-
-template <class _Iter>
-struct __iterator_traits_impl<_Iter, true> {
-  typedef typename _Iter::difference_type difference_type;
-  typedef typename _Iter::value_type value_type;
-  typedef typename _Iter::pointer pointer;
-  typedef typename _Iter::reference reference;
-  typedef typename _Iter::iterator_category iterator_category;
-};
-
-template <class _Iter>
-struct __iterator_traits<_Iter, true>
-    : __iterator_traits_impl< _Iter,
-                              is_convertible<typename _Iter::iterator_category, input_iterator_tag>::value ||
-                                  is_convertible<typename _Iter::iterator_category, output_iterator_tag>::value > {};
-
-
-
-
-
-
-template <class _Iter>
-struct iterator_traits : __iterator_traits<_Iter, __has_iterator_typedefs<_Iter>::value> {
-  using __primary_template = iterator_traits;
-};
-
-
-template <class _Tp>
-
-
-
-struct iterator_traits<_Tp*> {
-  typedef ptrdiff_t difference_type;
-  typedef __remove_cv_t<_Tp> value_type;
-  typedef _Tp* pointer;
-  typedef _Tp& reference;
-  typedef random_access_iterator_tag iterator_category;
-
-
-
-};
-
-template <class _Tp, class _Up, bool = __has_iterator_category<iterator_traits<_Tp> >::value>
-struct __has_iterator_category_convertible_to : is_convertible<typename iterator_traits<_Tp>::iterator_category, _Up> {
-};
-
-template <class _Tp, class _Up>
-struct __has_iterator_category_convertible_to<_Tp, _Up, false> : false_type {};
-
-template <class _Tp, class _Up, bool = __has_iterator_concept<_Tp>::value>
-struct __has_iterator_concept_convertible_to : is_convertible<typename _Tp::iterator_concept, _Up> {};
-
-template <class _Tp, class _Up>
-struct __has_iterator_concept_convertible_to<_Tp, _Up, false> : false_type {};
-
-template <class _Tp>
-using __has_input_iterator_category = __has_iterator_category_convertible_to<_Tp, input_iterator_tag>;
-
-template <class _Tp>
-using __has_forward_iterator_category = __has_iterator_category_convertible_to<_Tp, forward_iterator_tag>;
-
-template <class _Tp>
-using __has_bidirectional_iterator_category = __has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>;
-
-template <class _Tp>
-using __has_random_access_iterator_category = __has_iterator_category_convertible_to<_Tp, random_access_iterator_tag>;
-# 457 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-template <class _Tp>
-struct __libcpp_is_contiguous_iterator : false_type {};
-
-
-
-template <class _Up>
-struct __libcpp_is_contiguous_iterator<_Up*> : true_type {};
-
-template <class _Iter>
-class __wrap_iter;
-
-template <class _Tp>
-using __has_exactly_input_iterator_category =
-    integral_constant<bool,
-                      __has_iterator_category_convertible_to<_Tp, input_iterator_tag>::value &&
-                          !__has_iterator_category_convertible_to<_Tp, forward_iterator_tag>::value>;
-
-template <class _Tp>
-using __has_exactly_forward_iterator_category =
-    integral_constant<bool,
-                      __has_iterator_category_convertible_to<_Tp, forward_iterator_tag>::value &&
-                          !__has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>::value>;
-
-template <class _Tp>
-using __has_exactly_bidirectional_iterator_category =
-    integral_constant<bool,
-                      __has_iterator_category_convertible_to<_Tp, bidirectional_iterator_tag>::value &&
-                          !__has_iterator_category_convertible_to<_Tp, random_access_iterator_tag>::value>;
-
-template <class _InputIterator>
-using __iter_value_type = typename iterator_traits<_InputIterator>::value_type;
-
-template <class _InputIterator>
-using __iter_key_type = __remove_const_t<typename iterator_traits<_InputIterator>::value_type::first_type>;
-
-template <class _InputIterator>
-using __iter_mapped_type = typename iterator_traits<_InputIterator>::value_type::second_type;
-
-template <class _InputIterator>
-using __iter_to_alloc_type =
-    pair<const typename iterator_traits<_InputIterator>::value_type::first_type,
-         typename iterator_traits<_InputIterator>::value_type::second_type>;
-
-template <class _Iter>
-using __iterator_category_type = typename iterator_traits<_Iter>::iterator_category;
-
-template <class _Iter>
-using __iterator_pointer_type = typename iterator_traits<_Iter>::pointer;
-
-template <class _Iter>
-using __iter_diff_t = typename iterator_traits<_Iter>::difference_type;
-
-template <class _Iter>
-using __iter_reference = typename iterator_traits<_Iter>::reference;
-# 528 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-}}
-# 528 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h" 3
-#pragma clang diagnostic pop
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h" 2 3
 # 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h" 3
 
 
@@ -10857,61 +11031,6 @@ __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit
 # 135 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h" 3
 #pragma clang diagnostic pop
 # 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h" 2 3
-
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list" 1 3
-# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list" 3
-
-
-namespace std
-{
-
-
-
-template <class _Ep>
-class initializer_list {
-  const _Ep* __begin_;
-  size_t __size_;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr initializer_list(const _Ep* __b, size_t __s) noexcept
-      : __begin_(__b),
-        __size_(__s) {}
-
-public:
-  typedef _Ep value_type;
-  typedef const _Ep& reference;
-  typedef const _Ep& const_reference;
-  typedef size_t size_type;
-
-  typedef const _Ep* iterator;
-  typedef const _Ep* const_iterator;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr initializer_list() noexcept : __begin_(nullptr), __size_(0) {}
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr size_t size() const noexcept { return __size_; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* begin() const noexcept { return __begin_; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* end() const noexcept { return __begin_ + __size_; }
-};
-
-template <class _Ep>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* begin(initializer_list<_Ep> __il) noexcept {
-  return __il.begin();
-}
-
-template <class _Ep>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Ep* end(initializer_list<_Ep> __il) noexcept {
-  return __il.end();
-}
-
-
-
-}
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h" 2 3
 # 36 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h" 3
 
 
@@ -12576,62 +12695,7 @@ struct __libcpp_is_trivially_lexicographically_comparable
 # 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h" 2 3
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h" 1 3
-# 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-struct __equal_to {
-  template <class _T1, class _T2>
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr bool operator()(const _T1& __x, const _T2& __y) const {
-    return __x == __y;
-  }
-};
-
-template <class _Tp, class _Up>
-inline const bool __desugars_to_v<__equal_tag, __equal_to, _Tp, _Up> = true;
-
-
-
-template <class _T1 = void, class _T2 = _T1>
-struct __less {};
-
-template <>
-struct __less<void, void> {
-  template <class _Tp, class _Up>
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr bool operator()(const _Tp& __lhs, const _Up& __rhs) const {
-    return __lhs < __rhs;
-  }
-};
-
-template <class _Tp>
-inline const bool __desugars_to_v<__less_tag, __less<>, _Tp, _Tp> = true;
-
-}}
-# 47 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h" 3
-#pragma clang diagnostic pop
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h" 2 3
-
-
-
-
-
-
-
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_valid_range.h" 1 3
 # 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_valid_range.h" 3
 
@@ -13115,72 +13179,7 @@ __for_each_segment(_SegmentedIterator __first, _SegmentedIterator __last, _Funct
 # 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h" 2 3
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h" 1 3
-# 13 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-
-
-#pragma clang diagnostic push
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Compare>
-struct __debug_less {
-  _Compare& __comp_;
-  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __debug_less(_Compare& __c) : __comp_(__c) {}
-
-  template <class _Tp, class _Up>
-  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator()(const _Tp& __x, const _Up& __y) {
-    bool __r = __comp_(__x, __y);
-    if (__r)
-      __do_compare_assert(0, __y, __x);
-    return __r;
-  }
-
-  template <class _Tp, class _Up>
-  constexpr __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator()(_Tp& __x, _Up& __y) {
-    bool __r = __comp_(__x, __y);
-    if (__r)
-      __do_compare_assert(0, __y, __x);
-    return __r;
-  }
-
-  template <class _LHS, class _RHS>
-  constexpr inline
-      __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) decltype((void)std::declval<_Compare&>()(std::declval<_LHS&>(), std::declval<_RHS&>()))
-      __do_compare_assert(int, _LHS& __l, _RHS& __r) {
-    ((void)0);
-    (void)__l;
-    (void)__r;
-  }
-
-  template <class _LHS, class _RHS>
-  constexpr inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __do_compare_assert(long, _LHS&, _RHS&) {}
-};
-
-
-
-
-
-
-template <class _Comp>
-using __comp_ref_type = _Comp&;
-
-
-}}
-# 65 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h" 3
-#pragma clang diagnostic pop
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h" 2 3
+# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_element.h" 1 3
 # 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_element.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/identity.h" 1 3
@@ -14551,6 +14550,8 @@ char * strsignal(int __sig);
 
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h" 1 3 4
+# 50 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h" 3 4
+typedef __darwin_size_t rsize_t;
 # 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h" 2 3 4
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_errno_t.h" 1 3 4
 # 30 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_errno_t.h" 3 4
@@ -21294,60 +21295,49 @@ namespace std {
 # 89 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception" 3
 # 1412 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/tuple" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd" 1 3
-# 109 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 110 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 
 
 #pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
  namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
 
-template <class _CharT, class _Traits = char_traits<_CharT> >
-class basic_filebuf;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-class basic_ifstream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-class basic_ofstream;
-template <class _CharT, class _Traits = char_traits<_CharT> >
-class basic_fstream;
+class __attribute__((__visibility__("default"))) ios_base;
 
-using filebuf = basic_filebuf<char>;
-using ifstream = basic_ifstream<char>;
-using ofstream = basic_ofstream<char>;
-using fstream = basic_fstream<char>;
+template <class _CharT, class _Traits = char_traits<_CharT> >
+class basic_ios;
 
+using ios = basic_ios<char>;
 
-using wfilebuf = basic_filebuf<wchar_t>;
-using wifstream = basic_ifstream<wchar_t>;
-using wofstream = basic_ofstream<wchar_t>;
-using wfstream = basic_fstream<wchar_t>;
+using wios = basic_ios<wchar_t>;
 
 
 template <class _CharT, class _Traits>
-class __attribute__((__preferred_name__(filebuf))) __attribute__((__preferred_name__(wfilebuf))) basic_filebuf;
-template <class _CharT, class _Traits>
-class __attribute__((__preferred_name__(ifstream))) __attribute__((__preferred_name__(wifstream))) basic_ifstream;
-template <class _CharT, class _Traits>
-class __attribute__((__preferred_name__(ofstream))) __attribute__((__preferred_name__(wofstream))) basic_ofstream;
-template <class _CharT, class _Traits>
-class __attribute__((__preferred_name__(fstream))) __attribute__((__preferred_name__(wfstream))) basic_fstream;
+class __attribute__((__preferred_name__(ios))) __attribute__((__preferred_name__(wios))) basic_ios;
+
+
+
+
+
+using streamoff = long long;
+
 
 }}
-# 51 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/fstream.h" 3
+# 41 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ios.h" 3
 #pragma clang diagnostic pop
-# 110 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd" 2 3
-
+# 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/istream.h" 1 3
 # 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/istream.h" 3
 
@@ -22348,110 +22338,7 @@ using ::localeconv __attribute__((__using_if_exists__));
 
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string" 1 3
-# 589 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 1 3
-# 14 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Compare, class _ForwardIterator>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
-__max_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp) {
-  static_assert(
-      __has_forward_iterator_category<_ForwardIterator>::value, "std::max_element requires a ForwardIterator");
-  if (__first != __last) {
-    _ForwardIterator __i = __first;
-    while (++__i != __last)
-      if (__comp(*__first, *__i))
-        __first = __i;
-  }
-  return __first;
-}
-
-template <class _ForwardIterator, class _Compare>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
-max_element(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp) {
-  return std::__max_element<__comp_ref_type<_Compare> >(__first, __last, __comp);
-}
-
-template <class _ForwardIterator>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _ForwardIterator
-max_element(_ForwardIterator __first, _ForwardIterator __last) {
-  return std::max_element(__first, __last, __less<>());
-}
-
-}}
-# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max_element.h" 3
-#pragma clang diagnostic pop
-# 15 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
-# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 2 3
-
-#pragma clang diagnostic push
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Tp, class _Compare>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Tp&
-max([[_Clang::__lifetimebound__]] const _Tp& __a, [[_Clang::__lifetimebound__]] const _Tp& __b, _Compare __comp) {
-  return __comp(__a, __b) ? __b : __a;
-}
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr const _Tp&
-max([[_Clang::__lifetimebound__]] const _Tp& __a, [[_Clang::__lifetimebound__]] const _Tp& __b) {
-  return std::max(__a, __b, __less<>());
-}
-
-
-
-template <class _Tp, class _Compare>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp
-max(initializer_list<_Tp> __t, _Compare __comp) {
-  return *std::__max_element<__comp_ref_type<_Compare> >(__t.begin(), __t.end(), __comp);
-}
-
-template <class _Tp>
-[[__nodiscard__]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr _Tp max(initializer_list<_Tp> __t) {
-  return *std::max_element(__t.begin(), __t.end(), __less<>());
-}
-
-
-
-}}
-# 54 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h" 3
-#pragma clang diagnostic pop
-# 590 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string" 2 3
-
+# 591 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h" 1 3
 # 12 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find.h" 1 3
@@ -24500,7 +24387,80 @@ __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit
 
 
 
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
 
+
+#pragma clang diagnostic push
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 20 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _StateT>
+class fpos {
+private:
+  _StateT __st_;
+  streamoff __off_;
+
+public:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos(streamoff __off = streamoff()) : __st_(), __off_(__off) {}
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) operator streamoff() const { return __off_; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _StateT state() const { return __st_; }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void state(_StateT __st) { __st_ = __st; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos& operator+=(streamoff __off) {
+    __off_ += __off;
+    return *this;
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos operator+(streamoff __off) const {
+    fpos __t(*this);
+    __t += __off;
+    return __t;
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos& operator-=(streamoff __off) {
+    __off_ -= __off;
+    return *this;
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fpos operator-(streamoff __off) const {
+    fpos __t(*this);
+    __t -= __off;
+    return __t;
+  }
+};
+
+template <class _StateT>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamoff operator-(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+  return streamoff(__x) - streamoff(__y);
+}
+
+template <class _StateT>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+  return streamoff(__x) == streamoff(__y);
+}
+
+template <class _StateT>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(const fpos<_StateT>& __x, const fpos<_StateT>& __y) {
+  return streamoff(__x) != streamoff(__y);
+}
+
+}}
+# 74 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h" 3
+#pragma clang diagnostic pop
+# 601 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h" 1 3
 # 26 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h" 3
 
@@ -44158,73 +44118,25 @@ private:
 }}
 # 1517 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale" 3
 #pragma clang diagnostic pop
-# 221 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 1 3
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-
-
-#pragma clang diagnostic push
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-class __attribute__((__visibility__("default"))) error_condition;
-class __attribute__((__visibility__("default"))) error_code;
-
-class __attribute__((__visibility__("hidden"))) __do_message;
-
-class __attribute__((__visibility__("default"))) error_category {
-public:
-  virtual ~error_category() noexcept;
+# 194 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
 
 
 
 
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr error_category() noexcept = default;
 
-  error_category(const error_category&) = delete;
-  error_category& operator=(const error_category&) = delete;
 
-  virtual const char* name() const noexcept = 0;
-  virtual error_condition default_error_condition(int __ev) const noexcept;
-  virtual bool equivalent(int __code, const error_condition& __condition) const noexcept;
-  virtual bool equivalent(const error_code& __code, int __condition) const noexcept;
-  virtual string message(int __ev) const = 0;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(const error_category& __rhs) const noexcept { return this == &__rhs; }
-# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(const error_category& __rhs) const noexcept { return !(*this == __rhs); }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(const error_category& __rhs) const noexcept { return this < &__rhs; }
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem" 1 3
+# 566 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem" 3
 
 
 
-  friend class __attribute__((__visibility__("hidden"))) __do_message;
-};
 
-class __attribute__((__visibility__("hidden"))) __do_message : public error_category {
-public:
-  string message(int __ev) const override;
-};
 
-__attribute__((__const__)) __attribute__((__visibility__("default"))) const error_category& generic_category() noexcept;
-__attribute__((__const__)) __attribute__((__visibility__("default"))) const error_category& system_category() noexcept;
 
-}}
-# 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
-#pragma clang diagnostic pop
-# 222 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 1 3
+# 148 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h" 1 3
 # 104 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno" 1 3
@@ -44386,8 +44298,73 @@ enum class errc{
 }}
 # 264 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h" 3
 #pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 2 3
+# 149 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
 
+
+#pragma clang diagnostic push
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+class __attribute__((__visibility__("default"))) error_condition;
+class __attribute__((__visibility__("default"))) error_code;
+
+class __attribute__((__visibility__("hidden"))) __do_message;
+
+class __attribute__((__visibility__("default"))) error_category {
+public:
+  virtual ~error_category() noexcept;
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr error_category() noexcept = default;
+
+  error_category(const error_category&) = delete;
+  error_category& operator=(const error_category&) = delete;
+
+  virtual const char* name() const noexcept = 0;
+  virtual error_condition default_error_condition(int __ev) const noexcept;
+  virtual bool equivalent(int __code, const error_condition& __condition) const noexcept;
+  virtual bool equivalent(const error_code& __code, int __condition) const noexcept;
+  virtual string message(int __ev) const = 0;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(const error_category& __rhs) const noexcept { return this == &__rhs; }
+# 56 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(const error_category& __rhs) const noexcept { return !(*this == __rhs); }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(const error_category& __rhs) const noexcept { return this < &__rhs; }
+
+
+
+  friend class __attribute__((__visibility__("hidden"))) __do_message;
+};
+
+class __attribute__((__visibility__("hidden"))) __do_message : public error_category {
+public:
+  string message(int __ev) const override;
+};
+
+__attribute__((__const__)) __attribute__((__visibility__("default"))) const error_category& generic_category() noexcept;
+__attribute__((__const__)) __attribute__((__visibility__("default"))) const error_category& system_category() noexcept;
+
+}}
+# 73 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h" 3
+#pragma clang diagnostic pop
+# 150 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 1 3
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h" 1 3
 # 24 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h" 3
 
@@ -44621,7 +44598,7 @@ struct hash<error_code> : public __unary_function<error_code, size_t> {
 }}
 # 141 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h" 3
 #pragma clang diagnostic pop
-# 223 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
+# 151 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 2 3
 
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h" 1 3
 # 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h" 3
@@ -44670,1513 +44647,10 @@ public:
 }}
 # 52 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h" 3
 #pragma clang diagnostic pop
-# 225 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-# 240 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 244 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-
-#pragma clang diagnostic push
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-typedef ptrdiff_t streamsize;
-
-class __attribute__((__visibility__("default"))) ios_base {
-public:
-  class __attribute__((__visibility__("default"))) failure;
-
-  typedef unsigned int fmtflags;
-  static const fmtflags boolalpha = 0x0001;
-  static const fmtflags dec = 0x0002;
-  static const fmtflags fixed = 0x0004;
-  static const fmtflags hex = 0x0008;
-  static const fmtflags internal = 0x0010;
-  static const fmtflags left = 0x0020;
-  static const fmtflags oct = 0x0040;
-  static const fmtflags right = 0x0080;
-  static const fmtflags scientific = 0x0100;
-  static const fmtflags showbase = 0x0200;
-  static const fmtflags showpoint = 0x0400;
-  static const fmtflags showpos = 0x0800;
-  static const fmtflags skipws = 0x1000;
-  static const fmtflags unitbuf = 0x2000;
-  static const fmtflags uppercase = 0x4000;
-  static const fmtflags adjustfield = left | right | internal;
-  static const fmtflags basefield = dec | oct | hex;
-  static const fmtflags floatfield = scientific | fixed;
-
-  typedef unsigned int iostate;
-  static const iostate badbit = 0x1;
-  static const iostate eofbit = 0x2;
-  static const iostate failbit = 0x4;
-  static const iostate goodbit = 0x0;
-
-  typedef unsigned int openmode;
-  static const openmode app = 0x01;
-  static const openmode ate = 0x02;
-  static const openmode binary = 0x04;
-  static const openmode in = 0x08;
-  static const openmode out = 0x10;
-  static const openmode trunc = 0x20;
-
-
-
-
-  enum seekdir { beg, cur, end };
-
-
-  typedef iostate io_state;
-  typedef openmode open_mode;
-  typedef seekdir seek_dir;
-
-  typedef std::streamoff streamoff;
-  typedef std::streampos streampos;
-
-
-  class __attribute__((__visibility__("default"))) Init;
-
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags flags() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags flags(fmtflags __fmtfl);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags setf(fmtflags __fmtfl);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags setf(fmtflags __fmtfl, fmtflags __mask);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void unsetf(fmtflags __mask);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize precision() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize precision(streamsize __prec);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize width() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize width(streamsize __wide);
-
-
-  locale imbue(const locale& __loc);
-  locale getloc() const;
-
-
-  static int xalloc();
-  long& iword(int __index);
-  void*& pword(int __index);
-
-
-  virtual ~ios_base();
-
-
-  enum event { erase_event, imbue_event, copyfmt_event };
-  typedef void (*event_callback)(event, ios_base&, int __index);
-  void register_callback(event_callback __fn, int __index);
-
-  ios_base(const ios_base&) = delete;
-  ios_base& operator=(const ios_base&) = delete;
-
-  static bool sync_with_stdio(bool __sync = true);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate rdstate() const;
-  void clear(iostate __state = goodbit);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void setstate(iostate __state);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool good() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool eof() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool fail() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool bad() const;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate exceptions() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void exceptions(iostate __iostate);
-
-  void __set_badbit_and_consider_rethrow();
-  void __set_failbit_and_consider_rethrow();
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __setstate_nothrow(iostate __state) {
-    if (__rdbuf_)
-      __rdstate_ |= __state;
-    else
-      __rdstate_ |= __state | ios_base::badbit;
-  }
-
-protected:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base() : __loc_(nullptr) {
-
-
-
-
-
-
-  }
-
-  void init(void* __sb);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void* rdbuf() const { return __rdbuf_; }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void rdbuf(void* __sb) {
-    __rdbuf_ = __sb;
-    clear();
-  }
-
-  void __call_callbacks(event);
-  void copyfmt(const ios_base&);
-  void move(ios_base&);
-  void swap(ios_base&) noexcept;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void set_rdbuf(void* __sb) { __rdbuf_ = __sb; }
-
-private:
-
-  fmtflags __fmtflags_;
-  streamsize __precision_;
-  streamsize __width_;
-  iostate __rdstate_;
-  iostate __exceptions_;
-  void* __rdbuf_;
-  void* __loc_;
-  event_callback* __fn_;
-  int* __index_;
-  size_t __event_size_;
-  size_t __event_cap_;
-
-
-
-  static atomic<int> __xindex_;
-
-
-
-  long* __iarray_;
-  size_t __iarray_size_;
-  size_t __iarray_cap_;
-  void** __parray_;
-  size_t __parray_size_;
-  size_t __parray_cap_;
-};
-
-
-enum class io_errc{stream = 1};
-
-
-template <>
-struct is_error_code_enum<io_errc> : public true_type {};
-
-
-
-
-
-
-__attribute__((__visibility__("default"))) const error_category& iostream_category() noexcept;
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) error_code make_error_code(io_errc __e) noexcept {
-  return error_code(static_cast<int>(__e), iostream_category());
-}
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) error_condition make_error_condition(io_errc __e) noexcept {
-  return error_condition(static_cast<int>(__e), iostream_category());
-}
-
-class __attribute__((__visibility__("default"))) ios_base::failure : public system_error {
-public:
-  explicit failure(const string& __msg, const error_code& __ec = io_errc::stream);
-  explicit failure(const char* __msg, const error_code& __ec = io_errc::stream);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) failure(const failure&) noexcept = default;
-  ~failure() noexcept override;
-};
-
-[[noreturn]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __throw_failure(char const* __msg) {
-
-  throw ios_base::failure(__msg);
-
-
-
-}
-
-class __attribute__((__visibility__("default"))) ios_base::Init {
-public:
-  Init();
-  ~Init();
-};
-
-
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::flags() const { return __fmtflags_; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::flags(fmtflags __fmtfl) {
-  fmtflags __r = __fmtflags_;
-  __fmtflags_ = __fmtfl;
-  return __r;
-}
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::setf(fmtflags __fmtfl) {
-  fmtflags __r = __fmtflags_;
-  __fmtflags_ |= __fmtfl;
-  return __r;
-}
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::unsetf(fmtflags __mask) { __fmtflags_ &= ~__mask; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::setf(fmtflags __fmtfl, fmtflags __mask) {
-  fmtflags __r = __fmtflags_;
-  unsetf(__mask);
-  __fmtflags_ |= __fmtfl & __mask;
-  return __r;
-}
-
-
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::precision() const { return __precision_; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::precision(streamsize __prec) {
-  streamsize __r = __precision_;
-  __precision_ = __prec;
-  return __r;
-}
-
-
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::width() const { return __width_; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::width(streamsize __wide) {
-  streamsize __r = __width_;
-  __width_ = __wide;
-  return __r;
-}
-
-
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::iostate ios_base::rdstate() const { return __rdstate_; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::setstate(iostate __state) { clear(__rdstate_ | __state); }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::good() const { return __rdstate_ == 0; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::eof() const { return (__rdstate_ & eofbit) != 0; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::fail() const { return (__rdstate_ & (failbit | badbit)) != 0; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::bad() const { return (__rdstate_ & badbit) != 0; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::iostate ios_base::exceptions() const { return __exceptions_; }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::exceptions(iostate __iostate) {
-  __exceptions_ = __iostate;
-  clear(__rdstate_);
-}
-
-template <class _Traits>
-
-
-struct __attribute__((__packed__)) _FillHelper {
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __init() { __set_ = false; }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _FillHelper& operator=(typename _Traits::int_type __x) {
-    __set_ = true;
-    __fill_val_ = __x;
-    return *this;
-  }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool __is_set() const { return __set_; }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) typename _Traits::int_type __get() const { return __fill_val_; }
-
-private:
-  typename _Traits::int_type __fill_val_;
-  bool __set_;
-};
-
-template <class _Traits>
-struct __attribute__((__packed__)) _SentinelValueFill {
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __init() { __fill_val_ = _Traits::eof(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _SentinelValueFill& operator=(typename _Traits::int_type __x) {
-    __fill_val_ = __x;
-    return *this;
-  }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool __is_set() const { return __fill_val_ != _Traits::eof(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) typename _Traits::int_type __get() const { return __fill_val_; }
-
-private:
-  typename _Traits::int_type __fill_val_;
-};
-
-template <class _CharT, class _Traits>
-class basic_ios : public ios_base {
-public:
-
-  typedef _CharT char_type;
-  typedef _Traits traits_type;
-
-  typedef typename traits_type::int_type int_type;
-  typedef typename traits_type::pos_type pos_type;
-  typedef typename traits_type::off_type off_type;
-
-  static_assert(is_same<_CharT, typename traits_type::char_type>::value,
-                "traits_type::char_type must be the same type as CharT");
-
-
-
-
-
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit operator bool() const { return !fail(); }
-
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!() const { return fail(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate rdstate() const { return ios_base::rdstate(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void clear(iostate __state = goodbit) { ios_base::clear(__state); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void setstate(iostate __state) { ios_base::setstate(__state); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool good() const { return ios_base::good(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool eof() const { return ios_base::eof(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool fail() const { return ios_base::fail(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool bad() const { return ios_base::bad(); }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate exceptions() const { return ios_base::exceptions(); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void exceptions(iostate __iostate) { ios_base::exceptions(__iostate); }
-
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ios(basic_streambuf<char_type, traits_type>* __sb);
-  ~basic_ios() override;
-
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<char_type, traits_type>* tie() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<char_type, traits_type>* tie(basic_ostream<char_type, traits_type>* __tiestr);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<char_type, traits_type>* rdbuf() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<char_type, traits_type>* rdbuf(basic_streambuf<char_type, traits_type>* __sb);
-
-  basic_ios& copyfmt(const basic_ios& __rhs);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type fill() const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type fill(char_type __ch);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) locale imbue(const locale& __loc);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char narrow(char_type __c, char __dfault) const;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type widen(char __c) const;
-
-protected:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ios() {
-
-
-  }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void init(basic_streambuf<char_type, traits_type>* __sb);
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void move(basic_ios& __rhs);
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void move(basic_ios&& __rhs) { move(__rhs); }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ios& __rhs) noexcept;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void set_rdbuf(basic_streambuf<char_type, traits_type>* __sb);
-
-private:
-  basic_ostream<char_type, traits_type>* __tie_;
-
-
-
-
-  using _FillType = _SentinelValueFill<traits_type>;
-
-  mutable _FillType __fill_;
-};
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ios<_CharT, _Traits>::basic_ios(basic_streambuf<char_type, traits_type>* __sb) {
-  init(__sb);
-}
-
-template <class _CharT, class _Traits>
-basic_ios<_CharT, _Traits>::~basic_ios() {}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::init(basic_streambuf<char_type, traits_type>* __sb) {
-  ios_base::init(__sb);
-  __tie_ = nullptr;
-  __fill_.__init();
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>* basic_ios<_CharT, _Traits>::tie() const {
-  return __tie_;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>*
-basic_ios<_CharT, _Traits>::tie(basic_ostream<char_type, traits_type>* __tiestr) {
-  basic_ostream<char_type, traits_type>* __r = __tie_;
-  __tie_ = __tiestr;
-  return __r;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<_CharT, _Traits>* basic_ios<_CharT, _Traits>::rdbuf() const {
-  return static_cast<basic_streambuf<char_type, traits_type>*>(ios_base::rdbuf());
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<_CharT, _Traits>*
-basic_ios<_CharT, _Traits>::rdbuf(basic_streambuf<char_type, traits_type>* __sb) {
-  basic_streambuf<char_type, traits_type>* __r = rdbuf();
-  ios_base::rdbuf(__sb);
-  return __r;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) locale basic_ios<_CharT, _Traits>::imbue(const locale& __loc) {
-  locale __r = getloc();
-  ios_base::imbue(__loc);
-  if (rdbuf())
-    rdbuf()->pubimbue(__loc);
-  return __r;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char basic_ios<_CharT, _Traits>::narrow(char_type __c, char __dfault) const {
-  return std::use_facet<ctype<char_type> >(getloc()).narrow(__c, __dfault);
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::widen(char __c) const {
-  return std::use_facet<ctype<char_type> >(getloc()).widen(__c);
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::fill() const {
-  if (!__fill_.__is_set())
-    __fill_ = widen(' ');
-  return __fill_.__get();
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::fill(char_type __ch) {
-  if (!__fill_.__is_set())
-    __fill_ = widen(' ');
-  char_type __r = __fill_.__get();
-  __fill_ = __ch;
-  return __r;
-}
-
-template <class _CharT, class _Traits>
-basic_ios<_CharT, _Traits>& basic_ios<_CharT, _Traits>::copyfmt(const basic_ios& __rhs) {
-  if (this != &__rhs) {
-    __call_callbacks(erase_event);
-    ios_base::copyfmt(__rhs);
-    __tie_ = __rhs.__tie_;
-    __fill_ = __rhs.__fill_;
-    __call_callbacks(copyfmt_event);
-    exceptions(__rhs.exceptions());
-  }
-  return *this;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::move(basic_ios& __rhs) {
-  ios_base::move(__rhs);
-  __tie_ = __rhs.__tie_;
-  __rhs.__tie_ = nullptr;
-  __fill_ = __rhs.__fill_;
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::swap(basic_ios& __rhs) noexcept {
-  ios_base::swap(__rhs);
-  std::swap(__tie_, __rhs.__tie_);
-  std::swap(__fill_, __rhs.__fill_);
-}
-
-template <class _CharT, class _Traits>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::set_rdbuf(basic_streambuf<char_type, traits_type>* __sb) {
-  ios_base::set_rdbuf(__sb);
-}
-
-extern template class __attribute__((__visibility__("default"))) basic_ios<char>;
-
-
-extern template class __attribute__((__visibility__("default"))) basic_ios<wchar_t>;
-
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& boolalpha(ios_base& __str) {
-  __str.setf(ios_base::boolalpha);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noboolalpha(ios_base& __str) {
-  __str.unsetf(ios_base::boolalpha);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showbase(ios_base& __str) {
-  __str.setf(ios_base::showbase);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowbase(ios_base& __str) {
-  __str.unsetf(ios_base::showbase);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showpoint(ios_base& __str) {
-  __str.setf(ios_base::showpoint);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowpoint(ios_base& __str) {
-  __str.unsetf(ios_base::showpoint);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showpos(ios_base& __str) {
-  __str.setf(ios_base::showpos);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowpos(ios_base& __str) {
-  __str.unsetf(ios_base::showpos);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& skipws(ios_base& __str) {
-  __str.setf(ios_base::skipws);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noskipws(ios_base& __str) {
-  __str.unsetf(ios_base::skipws);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& uppercase(ios_base& __str) {
-  __str.setf(ios_base::uppercase);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& nouppercase(ios_base& __str) {
-  __str.unsetf(ios_base::uppercase);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& unitbuf(ios_base& __str) {
-  __str.setf(ios_base::unitbuf);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& nounitbuf(ios_base& __str) {
-  __str.unsetf(ios_base::unitbuf);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& internal(ios_base& __str) {
-  __str.setf(ios_base::internal, ios_base::adjustfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& left(ios_base& __str) {
-  __str.setf(ios_base::left, ios_base::adjustfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& right(ios_base& __str) {
-  __str.setf(ios_base::right, ios_base::adjustfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& dec(ios_base& __str) {
-  __str.setf(ios_base::dec, ios_base::basefield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& hex(ios_base& __str) {
-  __str.setf(ios_base::hex, ios_base::basefield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& oct(ios_base& __str) {
-  __str.setf(ios_base::oct, ios_base::basefield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& fixed(ios_base& __str) {
-  __str.setf(ios_base::fixed, ios_base::floatfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& scientific(ios_base& __str) {
-  __str.setf(ios_base::scientific, ios_base::floatfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& hexfloat(ios_base& __str) {
-  __str.setf(ios_base::fixed | ios_base::scientific, ios_base::floatfield);
-  return __str;
-}
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& defaultfloat(ios_base& __str) {
-  __str.unsetf(ios_base::floatfield);
-  return __str;
-}
-
-}}
-# 867 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-#pragma clang diagnostic pop
-# 881 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 1 3
-# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 1 3
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-
-
-
-
-#pragma clang diagnostic push
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-class __attribute__((__visibility__("default"))) mutex {
-  __libcpp_mutex_t __m_ = {0x32AAABA7, {0}};
-
-public:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr mutex() = default;
-
-  mutex(const mutex&) = delete;
-  mutex& operator=(const mutex&) = delete;
-
-
-
-
-  ~mutex() noexcept;
-
-
-  void lock() ;
-  bool try_lock() noexcept ;
-  void unlock() noexcept ;
-
-  typedef __libcpp_mutex_t* native_handle_type;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__m_; }
-};
-
-static_assert(is_nothrow_default_constructible<mutex>::value, "the default constructor for std::mutex must be nothrow");
-
-}}
-# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
-#pragma clang diagnostic pop
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 1 3
-# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-
-
-#pragma clang diagnostic push
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-struct __attribute__((__visibility__("default"))) defer_lock_t {
-  explicit defer_lock_t() = default;
-};
-
-struct __attribute__((__visibility__("default"))) try_to_lock_t {
-  explicit try_to_lock_t() = default;
-};
-
-struct __attribute__((__visibility__("default"))) adopt_lock_t {
-  explicit adopt_lock_t() = default;
-};
-
-
-
-
-
-
-constexpr defer_lock_t defer_lock = defer_lock_t();
-constexpr try_to_lock_t try_to_lock = try_to_lock_t();
-constexpr adopt_lock_t adopt_lock = adopt_lock_t();
-
-
-}}
-# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
-#pragma clang diagnostic pop
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 2 3
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-
-
-
-
-#pragma clang diagnostic push
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Mutex>
-class unique_lock {
-public:
-  typedef _Mutex mutex_type;
-
-private:
-  mutex_type* __m_;
-  bool __owns_;
-
-public:
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock() noexcept : __m_(nullptr), __owns_(false) {}
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit unique_lock(mutex_type& __m)
-      : __m_(std::addressof(__m)), __owns_(true) {
-    __m_->lock();
-  }
-
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, defer_lock_t) noexcept
-      : __m_(std::addressof(__m)),
-        __owns_(false) {}
-
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, try_to_lock_t)
-      : __m_(std::addressof(__m)), __owns_(__m.try_lock()) {}
-
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, adopt_lock_t)
-      : __m_(std::addressof(__m)), __owns_(true) {}
-
-  template <class _Clock, class _Duration>
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, const chrono::time_point<_Clock, _Duration>& __t)
-      : __m_(std::addressof(__m)), __owns_(__m.try_lock_until(__t)) {}
-
-  template <class _Rep, class _Period>
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, const chrono::duration<_Rep, _Period>& __d)
-      : __m_(std::addressof(__m)), __owns_(__m.try_lock_for(__d)) {}
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ~unique_lock() {
-    if (__owns_)
-      __m_->unlock();
-  }
-
-  unique_lock(unique_lock const&) = delete;
-  unique_lock& operator=(unique_lock const&) = delete;
-
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(unique_lock&& __u) noexcept
-      : __m_(__u.__m_),
-        __owns_(__u.__owns_) {
-    __u.__m_ = nullptr;
-    __u.__owns_ = false;
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock& operator=(unique_lock&& __u) noexcept {
-    if (__owns_)
-      __m_->unlock();
-
-    __m_ = __u.__m_;
-    __owns_ = __u.__owns_;
-    __u.__m_ = nullptr;
-    __u.__owns_ = false;
-    return *this;
-  }
-
-  void lock();
-  bool try_lock();
-
-  template <class _Rep, class _Period>
-  bool try_lock_for(const chrono::duration<_Rep, _Period>& __d);
-
-  template <class _Clock, class _Duration>
-  bool try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
-
-  void unlock();
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(unique_lock& __u) noexcept {
-    std::swap(__m_, __u.__m_);
-    std::swap(__owns_, __u.__owns_);
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) mutex_type* release() noexcept {
-    mutex_type* __m = __m_;
-    __m_ = nullptr;
-    __owns_ = false;
-    return __m;
-  }
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool owns_lock() const noexcept { return __owns_; }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit operator bool() const noexcept { return __owns_; }
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) mutex_type* mutex() const noexcept { return __m_; }
-};
-static_assert(true, "");
-
-template <class _Mutex>
-void unique_lock<_Mutex>::lock() {
-  if (__m_ == nullptr)
-    __throw_system_error(1, "unique_lock::lock: references null mutex");
-  if (__owns_)
-    __throw_system_error(11, "unique_lock::lock: already locked");
-  __m_->lock();
-  __owns_ = true;
-}
-
-template <class _Mutex>
-bool unique_lock<_Mutex>::try_lock() {
-  if (__m_ == nullptr)
-    __throw_system_error(1, "unique_lock::try_lock: references null mutex");
-  if (__owns_)
-    __throw_system_error(11, "unique_lock::try_lock: already locked");
-  __owns_ = __m_->try_lock();
-  return __owns_;
-}
-
-template <class _Mutex>
-template <class _Rep, class _Period>
-bool unique_lock<_Mutex>::try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
-  if (__m_ == nullptr)
-    __throw_system_error(1, "unique_lock::try_lock_for: references null mutex");
-  if (__owns_)
-    __throw_system_error(11, "unique_lock::try_lock_for: already locked");
-  __owns_ = __m_->try_lock_for(__d);
-  return __owns_;
-}
-
-template <class _Mutex>
-template <class _Clock, class _Duration>
-bool unique_lock<_Mutex>::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
-  if (__m_ == nullptr)
-    __throw_system_error(1, "unique_lock::try_lock_until: references null mutex");
-  if (__owns_)
-    __throw_system_error(11, "unique_lock::try_lock_until: already locked");
-  __owns_ = __m_->try_lock_until(__t);
-  return __owns_;
-}
-
-template <class _Mutex>
-void unique_lock<_Mutex>::unlock() {
-  if (!__owns_)
-    __throw_system_error(1, "unique_lock::unlock: not locked");
-  __m_->unlock();
-  __owns_ = false;
-}
-
-template <class _Mutex>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(unique_lock<_Mutex>& __x, unique_lock<_Mutex>& __y) noexcept {
-  __x.swap(__y);
-}
-
-}}
-# 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
-#pragma clang diagnostic pop
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
-# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
-
-#pragma clang diagnostic push
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-
-enum class cv_status{no_timeout, timeout};
-
-
-class __attribute__((__visibility__("default"))) condition_variable {
-  __libcpp_condvar_t __cv_ = {0x3CB0B1BB, {0}};
-
-public:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr condition_variable() noexcept = default;
-
-
-
-
-  ~condition_variable();
-
-
-  condition_variable(const condition_variable&) = delete;
-  condition_variable& operator=(const condition_variable&) = delete;
-
-  void notify_one() noexcept;
-  void notify_all() noexcept;
-
-  void wait(unique_lock<mutex>& __lk) noexcept;
-  template <class _Predicate>
-  inline __attribute__((__visibility__("hidden"))) void wait(unique_lock<mutex>& __lk, _Predicate __pred);
-
-  template <class _Clock, class _Duration>
-  inline __attribute__((__visibility__("hidden"))) cv_status
-  wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t);
-
-  template <class _Clock, class _Duration, class _Predicate>
-  inline __attribute__((__visibility__("hidden"))) bool
-  wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t, _Predicate __pred);
-
-  template <class _Rep, class _Period>
-  inline __attribute__((__visibility__("hidden"))) cv_status
-  wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d);
-
-  template <class _Rep, class _Period, class _Predicate>
-  bool __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102")))
-  wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d, _Predicate __pred);
-
-  typedef __libcpp_condvar_t* native_handle_type;
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__cv_; }
-
-private:
-  void
-  __do_timed_wait(unique_lock<mutex>& __lk, chrono::time_point<chrono::system_clock, chrono::nanoseconds>) noexcept;
-
-
-
-
-  template <class _Clock>
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void
-  __do_timed_wait(unique_lock<mutex>& __lk, chrono::time_point<_Clock, chrono::nanoseconds>) noexcept;
-};
-
-
-template <class _Rep, class _Period, __enable_if_t<is_floating_point<_Rep>::value, int> = 0>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) chrono::nanoseconds __safe_nanosecond_cast(chrono::duration<_Rep, _Period> __d) {
-  using namespace chrono;
-  using __ratio = ratio_divide<_Period, nano>;
-  using __ns_rep = nanoseconds::rep;
-  _Rep __result_float = __d.count() * __ratio::num / __ratio::den;
-
-  _Rep __result_max = numeric_limits<__ns_rep>::max();
-  if (__result_float >= __result_max) {
-    return nanoseconds::max();
-  }
-
-  _Rep __result_min = numeric_limits<__ns_rep>::min();
-  if (__result_float <= __result_min) {
-    return nanoseconds::min();
-  }
-
-  return nanoseconds(static_cast<__ns_rep>(__result_float));
-}
-
-template <class _Rep, class _Period, __enable_if_t<!is_floating_point<_Rep>::value, int> = 0>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) chrono::nanoseconds __safe_nanosecond_cast(chrono::duration<_Rep, _Period> __d) {
-  using namespace chrono;
-  if (__d.count() == 0) {
-    return nanoseconds(0);
-  }
-
-  using __ratio = ratio_divide<_Period, nano>;
-  using __ns_rep = nanoseconds::rep;
-  __ns_rep __result_max = numeric_limits<__ns_rep>::max();
-  if (__d.count() > 0 && __d.count() > __result_max / __ratio::num) {
-    return nanoseconds::max();
-  }
-
-  __ns_rep __result_min = numeric_limits<__ns_rep>::min();
-  if (__d.count() < 0 && __d.count() < __result_min / __ratio::num) {
-    return nanoseconds::min();
-  }
-
-  __ns_rep __result = __d.count() * __ratio::num / __ratio::den;
-  if (__result == 0) {
-    return nanoseconds(1);
-  }
-
-  return nanoseconds(__result);
-}
-
-
-template <class _Predicate>
-void condition_variable::wait(unique_lock<mutex>& __lk, _Predicate __pred) {
-  while (!__pred())
-    wait(__lk);
-}
-
-template <class _Clock, class _Duration>
-cv_status condition_variable::wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t) {
-  using namespace chrono;
-  using __clock_tp_ns = time_point<_Clock, nanoseconds>;
-
-  typename _Clock::time_point __now = _Clock::now();
-  if (__t <= __now)
-    return cv_status::timeout;
-
-  __clock_tp_ns __t_ns = __clock_tp_ns(std::__safe_nanosecond_cast(__t.time_since_epoch()));
-
-  __do_timed_wait(__lk, __t_ns);
-  return _Clock::now() < __t ? cv_status::no_timeout : cv_status::timeout;
-}
-
-template <class _Clock, class _Duration, class _Predicate>
-bool condition_variable::wait_until(
-    unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t, _Predicate __pred) {
-  while (!__pred()) {
-    if (wait_until(__lk, __t) == cv_status::timeout)
-      return __pred();
-  }
-  return true;
-}
-
-template <class _Rep, class _Period>
-cv_status condition_variable::wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d) {
-  using namespace chrono;
-  if (__d <= __d.zero())
-    return cv_status::timeout;
-  using __ns_rep = nanoseconds::rep;
-  steady_clock::time_point __c_now = steady_clock::now();
-
-
-
-
-
-  using __clock_tp_ns = time_point<system_clock, nanoseconds>;
-  __ns_rep __now_count_ns = std::__safe_nanosecond_cast(system_clock::now().time_since_epoch()).count();
-
-
-  __ns_rep __d_ns_count = std::__safe_nanosecond_cast(__d).count();
-
-  if (__now_count_ns > numeric_limits<__ns_rep>::max() - __d_ns_count) {
-    __do_timed_wait(__lk, __clock_tp_ns::max());
-  } else {
-    __do_timed_wait(__lk, __clock_tp_ns(nanoseconds(__now_count_ns + __d_ns_count)));
-  }
-
-  return steady_clock::now() - __c_now < __d ? cv_status::no_timeout : cv_status::timeout;
-}
-
-template <class _Rep, class _Period, class _Predicate>
-inline bool
-condition_variable::wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d, _Predicate __pred) {
-  return wait_until(__lk, chrono::steady_clock::now() + __d, std::move(__pred));
-}
-# 232 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-template <class _Clock>
-inline void condition_variable::__do_timed_wait(unique_lock<mutex>& __lk,
-                                                chrono::time_point<_Clock, chrono::nanoseconds> __tp) noexcept {
-  wait_for(__lk, __tp - _Clock::now());
-}
-
-
-
-}}
-# 240 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
-#pragma clang diagnostic pop
-# 192 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 1 3
-# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-
-
-#pragma clang diagnostic push
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-template <class _Mutex>
-class lock_guard {
-public:
-  typedef _Mutex mutex_type;
-
-private:
-  mutex_type& __m_;
-
-public:
-  [[__nodiscard__]]
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit lock_guard(mutex_type& __m)
-      : __m_(__m) {
-    __m_.lock();
-  }
-
-  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) lock_guard(mutex_type& __m, adopt_lock_t)
-
-      : __m_(__m) {}
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ~lock_guard() { __m_.unlock(); }
-
-  lock_guard(lock_guard const&) = delete;
-  lock_guard& operator=(lock_guard const&) = delete;
-};
-static_assert(true, "");
-
-}}
-# 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
-#pragma clang diagnostic pop
-# 195 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
-
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 1 3
-# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-
-
-#pragma clang diagnostic push
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-class __attribute__((__visibility__("default"))) __thread_id;
-
-namespace this_thread {
-
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id get_id() noexcept;
-
-}
-
-template <>
-struct hash<__thread_id>;
-
-class __thread_id {
-
-
-
-  __libcpp_thread_id __id_;
-
-  static __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool
-  __lt_impl(__thread_id __x, __thread_id __y) noexcept {
-    if (__x.__id_ == 0)
-      return __y.__id_ != 0;
-    if (__y.__id_ == 0)
-      return false;
-    return __libcpp_thread_id_less(__x.__id_, __y.__id_);
-  }
-
-public:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id() noexcept : __id_(0) {}
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __reset() { __id_ = 0; }
-
-  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(__thread_id __x, __thread_id __y) noexcept;
-
-  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(__thread_id __x, __thread_id __y) noexcept;
-
-
-
-
-  template <class _CharT, class _Traits>
-  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>&
-  operator<<(basic_ostream<_CharT, _Traits>& __os, __thread_id __id);
-
-private:
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id(__libcpp_thread_id __id) : __id_(__id) {}
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) friend __libcpp_thread_id __get_underlying_id(const __thread_id __id) { return __id.__id_; }
-
-  friend __thread_id this_thread::get_id() noexcept;
-  friend class __attribute__((__visibility__("default"))) thread;
-  friend struct hash<__thread_id>;
-};
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(__thread_id __x, __thread_id __y) noexcept {
-
-  if (__x.__id_ == 0)
-    return __y.__id_ == 0;
-  if (__y.__id_ == 0)
-    return false;
-  return __libcpp_thread_id_equal(__x.__id_, __y.__id_);
-}
-
-
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(__thread_id __x, __thread_id __y) noexcept { return !(__x == __y); }
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(__thread_id __x, __thread_id __y) noexcept {
-  return __thread_id::__lt_impl(__x.__id_, __y.__id_);
-}
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<=(__thread_id __x, __thread_id __y) noexcept { return !(__y < __x); }
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator>(__thread_id __x, __thread_id __y) noexcept { return __y < __x; }
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator>=(__thread_id __x, __thread_id __y) noexcept { return !(__x < __y); }
-# 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-namespace this_thread {
-
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id get_id() noexcept { return __libcpp_thread_get_current_id(); }
-
-}
-
-
-
-}}
-# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
-#pragma clang diagnostic pop
-# 200 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
-# 211 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-
-
-
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
-# 215 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
-
-#pragma clang diagnostic push
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic ignored "-Wc++11-extensions"
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic ignored "-Wc++14-extensions"
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic ignored "-Wc++17-extensions"
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic ignored "-Wc++20-extensions"
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic ignored "-Wc++23-extensions"
-# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
- namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
-
-
-
-class __attribute__((__visibility__("default"))) recursive_mutex {
-  __libcpp_recursive_mutex_t __m_;
-
-public:
-  recursive_mutex();
-  ~recursive_mutex();
-
-  recursive_mutex(const recursive_mutex&) = delete;
-  recursive_mutex& operator=(const recursive_mutex&) = delete;
-
-  void lock();
-  bool try_lock() noexcept;
-  void unlock() noexcept;
-
-  typedef __libcpp_recursive_mutex_t* native_handle_type;
-
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__m_; }
-};
-
-class __attribute__((__visibility__("default"))) timed_mutex {
-  mutex __m_;
-  condition_variable __cv_;
-  bool __locked_;
-
-public:
-  timed_mutex();
-  ~timed_mutex();
-
-  timed_mutex(const timed_mutex&) = delete;
-  timed_mutex& operator=(const timed_mutex&) = delete;
-
-public:
-  void lock();
-  bool try_lock() noexcept;
-  template <class _Rep, class _Period>
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
-    return try_lock_until(chrono::steady_clock::now() + __d);
-  }
-  template <class _Clock, class _Duration>
-  inline __attribute__((__visibility__("hidden"))) bool
-  try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
-  void unlock() noexcept;
-};
-
-template <class _Clock, class _Duration>
-bool timed_mutex::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
-  using namespace chrono;
-  unique_lock<mutex> __lk(__m_);
-  bool __no_timeout = _Clock::now() < __t;
-  while (__no_timeout && __locked_)
-    __no_timeout = __cv_.wait_until(__lk, __t) == cv_status::no_timeout;
-  if (!__locked_) {
-    __locked_ = true;
-    return true;
-  }
-  return false;
-}
-
-class __attribute__((__visibility__("default"))) recursive_timed_mutex {
-  mutex __m_;
-  condition_variable __cv_;
-  size_t __count_;
-  __thread_id __id_;
-
-public:
-  recursive_timed_mutex();
-  ~recursive_timed_mutex();
-
-  recursive_timed_mutex(const recursive_timed_mutex&) = delete;
-  recursive_timed_mutex& operator=(const recursive_timed_mutex&) = delete;
-
-  void lock();
-  bool try_lock() noexcept;
-  template <class _Rep, class _Period>
-  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
-    return try_lock_until(chrono::steady_clock::now() + __d);
-  }
-  template <class _Clock, class _Duration>
-  inline __attribute__((__visibility__("hidden"))) bool
-  try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
-  void unlock() noexcept;
-};
-
-template <class _Clock, class _Duration>
-bool recursive_timed_mutex::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
-  using namespace chrono;
-  __thread_id __id = this_thread::get_id();
-  unique_lock<mutex> __lk(__m_);
-  if (__id == __id_) {
-    if (__count_ == numeric_limits<size_t>::max())
-      return false;
-    ++__count_;
-    return true;
-  }
-  bool __no_timeout = _Clock::now() < __t;
-  while (__no_timeout && __count_ != 0)
-    __no_timeout = __cv_.wait_until(__lk, __t) == cv_status::no_timeout;
-  if (__count_ == 0) {
-    __count_ = 1;
-    __id_ = __id;
-    return true;
-  }
-  return false;
-}
-
-template <class _L0, class _L1>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) int try_lock(_L0& __l0, _L1& __l1) {
-  unique_lock<_L0> __u0(__l0, try_to_lock_t());
-  if (__u0.owns_lock()) {
-    if (__l1.try_lock()) {
-      __u0.release();
-      return -1;
-    } else
-      return 1;
-  }
-  return 0;
-}
-
-
-
-template <class _L0, class _L1, class _L2, class... _L3>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) int try_lock(_L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
-  int __r = 0;
-  unique_lock<_L0> __u0(__l0, try_to_lock);
-  if (__u0.owns_lock()) {
-    __r = std::try_lock(__l1, __l2, __l3...);
-    if (__r == -1)
-      __u0.release();
-    else
-      ++__r;
-  }
-  return __r;
-}
-
-
-
-template <class _L0, class _L1>
-__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void lock(_L0& __l0, _L1& __l1) {
-  while (true) {
-    {
-      unique_lock<_L0> __u0(__l0);
-      if (__l1.try_lock()) {
-        __u0.release();
-        break;
-      }
-    }
-    __libcpp_thread_yield();
-    {
-      unique_lock<_L1> __u1(__l1);
-      if (__l0.try_lock()) {
-        __u1.release();
-        break;
-      }
-    }
-    __libcpp_thread_yield();
-  }
-}
-
-
-
-template <class _L0, class _L1, class _L2, class... _L3>
-void __lock_first(int __i, _L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
-  while (true) {
-    switch (__i) {
-    case 0: {
-      unique_lock<_L0> __u0(__l0);
-      __i = std::try_lock(__l1, __l2, __l3...);
-      if (__i == -1) {
-        __u0.release();
-        return;
-      }
-    }
-      ++__i;
-      __libcpp_thread_yield();
-      break;
-    case 1: {
-      unique_lock<_L1> __u1(__l1);
-      __i = std::try_lock(__l2, __l3..., __l0);
-      if (__i == -1) {
-        __u1.release();
-        return;
-      }
-    }
-      if (__i == sizeof...(_L3) + 1)
-        __i = 0;
-      else
-        __i += 2;
-      __libcpp_thread_yield();
-      break;
-    default:
-      std::__lock_first(__i - 2, __l2, __l3..., __l0, __l1);
-      return;
-    }
-  }
-}
-
-template <class _L0, class _L1, class _L2, class... _L3>
-inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void lock(_L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
-  std::__lock_first(0, __l0, __l1, __l2, __l3...);
-}
-# 497 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-}}
-# 497 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-#pragma clang diagnostic pop
-# 511 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
-# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 1 3
+# 153 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 2 3
 # 162 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error" 3
-# 512 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
-# 882 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
-# 43 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 2 3
+# 575 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem" 2 3
+# 201 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream" 1 3
 # 164 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h" 1 3
@@ -47973,7 +46447,1509 @@ operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x);
 #pragma clang diagnostic pop
 # 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h" 2 3
 
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 1 3
+# 240 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
 
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 244 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
+
+#pragma clang diagnostic push
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+typedef ptrdiff_t streamsize;
+
+class __attribute__((__visibility__("default"))) ios_base {
+public:
+  class __attribute__((__visibility__("default"))) failure;
+
+  typedef unsigned int fmtflags;
+  static const fmtflags boolalpha = 0x0001;
+  static const fmtflags dec = 0x0002;
+  static const fmtflags fixed = 0x0004;
+  static const fmtflags hex = 0x0008;
+  static const fmtflags internal = 0x0010;
+  static const fmtflags left = 0x0020;
+  static const fmtflags oct = 0x0040;
+  static const fmtflags right = 0x0080;
+  static const fmtflags scientific = 0x0100;
+  static const fmtflags showbase = 0x0200;
+  static const fmtflags showpoint = 0x0400;
+  static const fmtflags showpos = 0x0800;
+  static const fmtflags skipws = 0x1000;
+  static const fmtflags unitbuf = 0x2000;
+  static const fmtflags uppercase = 0x4000;
+  static const fmtflags adjustfield = left | right | internal;
+  static const fmtflags basefield = dec | oct | hex;
+  static const fmtflags floatfield = scientific | fixed;
+
+  typedef unsigned int iostate;
+  static const iostate badbit = 0x1;
+  static const iostate eofbit = 0x2;
+  static const iostate failbit = 0x4;
+  static const iostate goodbit = 0x0;
+
+  typedef unsigned int openmode;
+  static const openmode app = 0x01;
+  static const openmode ate = 0x02;
+  static const openmode binary = 0x04;
+  static const openmode in = 0x08;
+  static const openmode out = 0x10;
+  static const openmode trunc = 0x20;
+
+
+
+
+  enum seekdir { beg, cur, end };
+
+
+  typedef iostate io_state;
+  typedef openmode open_mode;
+  typedef seekdir seek_dir;
+
+  typedef std::streamoff streamoff;
+  typedef std::streampos streampos;
+
+
+  class __attribute__((__visibility__("default"))) Init;
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags flags() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags flags(fmtflags __fmtfl);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags setf(fmtflags __fmtfl);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) fmtflags setf(fmtflags __fmtfl, fmtflags __mask);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void unsetf(fmtflags __mask);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize precision() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize precision(streamsize __prec);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize width() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize width(streamsize __wide);
+
+
+  locale imbue(const locale& __loc);
+  locale getloc() const;
+
+
+  static int xalloc();
+  long& iword(int __index);
+  void*& pword(int __index);
+
+
+  virtual ~ios_base();
+
+
+  enum event { erase_event, imbue_event, copyfmt_event };
+  typedef void (*event_callback)(event, ios_base&, int __index);
+  void register_callback(event_callback __fn, int __index);
+
+  ios_base(const ios_base&) = delete;
+  ios_base& operator=(const ios_base&) = delete;
+
+  static bool sync_with_stdio(bool __sync = true);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate rdstate() const;
+  void clear(iostate __state = goodbit);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void setstate(iostate __state);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool good() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool eof() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool fail() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool bad() const;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate exceptions() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void exceptions(iostate __iostate);
+
+  void __set_badbit_and_consider_rethrow();
+  void __set_failbit_and_consider_rethrow();
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __setstate_nothrow(iostate __state) {
+    if (__rdbuf_)
+      __rdstate_ |= __state;
+    else
+      __rdstate_ |= __state | ios_base::badbit;
+  }
+
+protected:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base() : __loc_(nullptr) {
+
+
+
+
+
+
+  }
+
+  void init(void* __sb);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void* rdbuf() const { return __rdbuf_; }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void rdbuf(void* __sb) {
+    __rdbuf_ = __sb;
+    clear();
+  }
+
+  void __call_callbacks(event);
+  void copyfmt(const ios_base&);
+  void move(ios_base&);
+  void swap(ios_base&) noexcept;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void set_rdbuf(void* __sb) { __rdbuf_ = __sb; }
+
+private:
+
+  fmtflags __fmtflags_;
+  streamsize __precision_;
+  streamsize __width_;
+  iostate __rdstate_;
+  iostate __exceptions_;
+  void* __rdbuf_;
+  void* __loc_;
+  event_callback* __fn_;
+  int* __index_;
+  size_t __event_size_;
+  size_t __event_cap_;
+
+
+
+  static atomic<int> __xindex_;
+
+
+
+  long* __iarray_;
+  size_t __iarray_size_;
+  size_t __iarray_cap_;
+  void** __parray_;
+  size_t __parray_size_;
+  size_t __parray_cap_;
+};
+
+
+enum class io_errc{stream = 1};
+
+
+template <>
+struct is_error_code_enum<io_errc> : public true_type {};
+
+
+
+
+
+
+__attribute__((__visibility__("default"))) const error_category& iostream_category() noexcept;
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) error_code make_error_code(io_errc __e) noexcept {
+  return error_code(static_cast<int>(__e), iostream_category());
+}
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) error_condition make_error_condition(io_errc __e) noexcept {
+  return error_condition(static_cast<int>(__e), iostream_category());
+}
+
+class __attribute__((__visibility__("default"))) ios_base::failure : public system_error {
+public:
+  explicit failure(const string& __msg, const error_code& __ec = io_errc::stream);
+  explicit failure(const char* __msg, const error_code& __ec = io_errc::stream);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) failure(const failure&) noexcept = default;
+  ~failure() noexcept override;
+};
+
+[[noreturn]] inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __throw_failure(char const* __msg) {
+
+  throw ios_base::failure(__msg);
+
+
+
+}
+
+class __attribute__((__visibility__("default"))) ios_base::Init {
+public:
+  Init();
+  ~Init();
+};
+
+
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::flags() const { return __fmtflags_; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::flags(fmtflags __fmtfl) {
+  fmtflags __r = __fmtflags_;
+  __fmtflags_ = __fmtfl;
+  return __r;
+}
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::setf(fmtflags __fmtfl) {
+  fmtflags __r = __fmtflags_;
+  __fmtflags_ |= __fmtfl;
+  return __r;
+}
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::unsetf(fmtflags __mask) { __fmtflags_ &= ~__mask; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::fmtflags ios_base::setf(fmtflags __fmtfl, fmtflags __mask) {
+  fmtflags __r = __fmtflags_;
+  unsetf(__mask);
+  __fmtflags_ |= __fmtfl & __mask;
+  return __r;
+}
+
+
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::precision() const { return __precision_; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::precision(streamsize __prec) {
+  streamsize __r = __precision_;
+  __precision_ = __prec;
+  return __r;
+}
+
+
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::width() const { return __width_; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) streamsize ios_base::width(streamsize __wide) {
+  streamsize __r = __width_;
+  __width_ = __wide;
+  return __r;
+}
+
+
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::iostate ios_base::rdstate() const { return __rdstate_; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::setstate(iostate __state) { clear(__rdstate_ | __state); }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::good() const { return __rdstate_ == 0; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::eof() const { return (__rdstate_ & eofbit) != 0; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::fail() const { return (__rdstate_ & (failbit | badbit)) != 0; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool ios_base::bad() const { return (__rdstate_ & badbit) != 0; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ios_base::iostate ios_base::exceptions() const { return __exceptions_; }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void ios_base::exceptions(iostate __iostate) {
+  __exceptions_ = __iostate;
+  clear(__rdstate_);
+}
+
+template <class _Traits>
+
+
+struct __attribute__((__packed__)) _FillHelper {
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __init() { __set_ = false; }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _FillHelper& operator=(typename _Traits::int_type __x) {
+    __set_ = true;
+    __fill_val_ = __x;
+    return *this;
+  }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool __is_set() const { return __set_; }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) typename _Traits::int_type __get() const { return __fill_val_; }
+
+private:
+  typename _Traits::int_type __fill_val_;
+  bool __set_;
+};
+
+template <class _Traits>
+struct __attribute__((__packed__)) _SentinelValueFill {
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __init() { __fill_val_ = _Traits::eof(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _SentinelValueFill& operator=(typename _Traits::int_type __x) {
+    __fill_val_ = __x;
+    return *this;
+  }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool __is_set() const { return __fill_val_ != _Traits::eof(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) typename _Traits::int_type __get() const { return __fill_val_; }
+
+private:
+  typename _Traits::int_type __fill_val_;
+};
+
+template <class _CharT, class _Traits>
+class basic_ios : public ios_base {
+public:
+
+  typedef _CharT char_type;
+  typedef _Traits traits_type;
+
+  typedef typename traits_type::int_type int_type;
+  typedef typename traits_type::pos_type pos_type;
+  typedef typename traits_type::off_type off_type;
+
+  static_assert(is_same<_CharT, typename traits_type::char_type>::value,
+                "traits_type::char_type must be the same type as CharT");
+
+
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit operator bool() const { return !fail(); }
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!() const { return fail(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate rdstate() const { return ios_base::rdstate(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void clear(iostate __state = goodbit) { ios_base::clear(__state); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void setstate(iostate __state) { ios_base::setstate(__state); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool good() const { return ios_base::good(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool eof() const { return ios_base::eof(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool fail() const { return ios_base::fail(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool bad() const { return ios_base::bad(); }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) iostate exceptions() const { return ios_base::exceptions(); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void exceptions(iostate __iostate) { ios_base::exceptions(__iostate); }
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ios(basic_streambuf<char_type, traits_type>* __sb);
+  ~basic_ios() override;
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<char_type, traits_type>* tie() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<char_type, traits_type>* tie(basic_ostream<char_type, traits_type>* __tiestr);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<char_type, traits_type>* rdbuf() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<char_type, traits_type>* rdbuf(basic_streambuf<char_type, traits_type>* __sb);
+
+  basic_ios& copyfmt(const basic_ios& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type fill() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type fill(char_type __ch);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) locale imbue(const locale& __loc);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char narrow(char_type __c, char __dfault) const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char_type widen(char __c) const;
+
+protected:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ios() {
+
+
+  }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void init(basic_streambuf<char_type, traits_type>* __sb);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void move(basic_ios& __rhs);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void move(basic_ios&& __rhs) { move(__rhs); }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ios& __rhs) noexcept;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void set_rdbuf(basic_streambuf<char_type, traits_type>* __sb);
+
+private:
+  basic_ostream<char_type, traits_type>* __tie_;
+
+
+
+
+  using _FillType = _SentinelValueFill<traits_type>;
+
+  mutable _FillType __fill_;
+};
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ios<_CharT, _Traits>::basic_ios(basic_streambuf<char_type, traits_type>* __sb) {
+  init(__sb);
+}
+
+template <class _CharT, class _Traits>
+basic_ios<_CharT, _Traits>::~basic_ios() {}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::init(basic_streambuf<char_type, traits_type>* __sb) {
+  ios_base::init(__sb);
+  __tie_ = nullptr;
+  __fill_.__init();
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>* basic_ios<_CharT, _Traits>::tie() const {
+  return __tie_;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>*
+basic_ios<_CharT, _Traits>::tie(basic_ostream<char_type, traits_type>* __tiestr) {
+  basic_ostream<char_type, traits_type>* __r = __tie_;
+  __tie_ = __tiestr;
+  return __r;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<_CharT, _Traits>* basic_ios<_CharT, _Traits>::rdbuf() const {
+  return static_cast<basic_streambuf<char_type, traits_type>*>(ios_base::rdbuf());
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_streambuf<_CharT, _Traits>*
+basic_ios<_CharT, _Traits>::rdbuf(basic_streambuf<char_type, traits_type>* __sb) {
+  basic_streambuf<char_type, traits_type>* __r = rdbuf();
+  ios_base::rdbuf(__sb);
+  return __r;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) locale basic_ios<_CharT, _Traits>::imbue(const locale& __loc) {
+  locale __r = getloc();
+  ios_base::imbue(__loc);
+  if (rdbuf())
+    rdbuf()->pubimbue(__loc);
+  return __r;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) char basic_ios<_CharT, _Traits>::narrow(char_type __c, char __dfault) const {
+  return std::use_facet<ctype<char_type> >(getloc()).narrow(__c, __dfault);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::widen(char __c) const {
+  return std::use_facet<ctype<char_type> >(getloc()).widen(__c);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::fill() const {
+  if (!__fill_.__is_set())
+    __fill_ = widen(' ');
+  return __fill_.__get();
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) _CharT basic_ios<_CharT, _Traits>::fill(char_type __ch) {
+  if (!__fill_.__is_set())
+    __fill_ = widen(' ');
+  char_type __r = __fill_.__get();
+  __fill_ = __ch;
+  return __r;
+}
+
+template <class _CharT, class _Traits>
+basic_ios<_CharT, _Traits>& basic_ios<_CharT, _Traits>::copyfmt(const basic_ios& __rhs) {
+  if (this != &__rhs) {
+    __call_callbacks(erase_event);
+    ios_base::copyfmt(__rhs);
+    __tie_ = __rhs.__tie_;
+    __fill_ = __rhs.__fill_;
+    __call_callbacks(copyfmt_event);
+    exceptions(__rhs.exceptions());
+  }
+  return *this;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::move(basic_ios& __rhs) {
+  ios_base::move(__rhs);
+  __tie_ = __rhs.__tie_;
+  __rhs.__tie_ = nullptr;
+  __fill_ = __rhs.__fill_;
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::swap(basic_ios& __rhs) noexcept {
+  ios_base::swap(__rhs);
+  std::swap(__tie_, __rhs.__tie_);
+  std::swap(__fill_, __rhs.__fill_);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void basic_ios<_CharT, _Traits>::set_rdbuf(basic_streambuf<char_type, traits_type>* __sb) {
+  ios_base::set_rdbuf(__sb);
+}
+
+extern template class __attribute__((__visibility__("default"))) basic_ios<char>;
+
+
+extern template class __attribute__((__visibility__("default"))) basic_ios<wchar_t>;
+
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& boolalpha(ios_base& __str) {
+  __str.setf(ios_base::boolalpha);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noboolalpha(ios_base& __str) {
+  __str.unsetf(ios_base::boolalpha);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showbase(ios_base& __str) {
+  __str.setf(ios_base::showbase);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowbase(ios_base& __str) {
+  __str.unsetf(ios_base::showbase);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showpoint(ios_base& __str) {
+  __str.setf(ios_base::showpoint);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowpoint(ios_base& __str) {
+  __str.unsetf(ios_base::showpoint);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& showpos(ios_base& __str) {
+  __str.setf(ios_base::showpos);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noshowpos(ios_base& __str) {
+  __str.unsetf(ios_base::showpos);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& skipws(ios_base& __str) {
+  __str.setf(ios_base::skipws);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& noskipws(ios_base& __str) {
+  __str.unsetf(ios_base::skipws);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& uppercase(ios_base& __str) {
+  __str.setf(ios_base::uppercase);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& nouppercase(ios_base& __str) {
+  __str.unsetf(ios_base::uppercase);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& unitbuf(ios_base& __str) {
+  __str.setf(ios_base::unitbuf);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& nounitbuf(ios_base& __str) {
+  __str.unsetf(ios_base::unitbuf);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& internal(ios_base& __str) {
+  __str.setf(ios_base::internal, ios_base::adjustfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& left(ios_base& __str) {
+  __str.setf(ios_base::left, ios_base::adjustfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& right(ios_base& __str) {
+  __str.setf(ios_base::right, ios_base::adjustfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& dec(ios_base& __str) {
+  __str.setf(ios_base::dec, ios_base::basefield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& hex(ios_base& __str) {
+  __str.setf(ios_base::hex, ios_base::basefield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& oct(ios_base& __str) {
+  __str.setf(ios_base::oct, ios_base::basefield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& fixed(ios_base& __str) {
+  __str.setf(ios_base::fixed, ios_base::floatfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& scientific(ios_base& __str) {
+  __str.setf(ios_base::scientific, ios_base::floatfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& hexfloat(ios_base& __str) {
+  __str.setf(ios_base::fixed | ios_base::scientific, ios_base::floatfield);
+  return __str;
+}
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline ios_base& defaultfloat(ios_base& __str) {
+  __str.unsetf(ios_base::floatfield);
+  return __str;
+}
+
+}}
+# 867 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+#pragma clang diagnostic pop
+# 881 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 1 3
+# 191 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 1 3
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+
+
+
+
+#pragma clang diagnostic push
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 22 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+class __attribute__((__visibility__("default"))) mutex {
+  __libcpp_mutex_t __m_ = {0x32AAABA7, {0}};
+
+public:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr mutex() = default;
+
+  mutex(const mutex&) = delete;
+  mutex& operator=(const mutex&) = delete;
+
+
+
+
+  ~mutex() noexcept;
+
+
+  void lock() ;
+  bool try_lock() noexcept ;
+  void unlock() noexcept ;
+
+  typedef __libcpp_mutex_t* native_handle_type;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__m_; }
+};
+
+static_assert(is_nothrow_default_constructible<mutex>::value, "the default constructor for std::mutex must be nothrow");
+
+}}
+# 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h" 3
+#pragma clang diagnostic pop
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 1 3
+# 16 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+
+
+#pragma clang diagnostic push
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 18 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+struct __attribute__((__visibility__("default"))) defer_lock_t {
+  explicit defer_lock_t() = default;
+};
+
+struct __attribute__((__visibility__("default"))) try_to_lock_t {
+  explicit try_to_lock_t() = default;
+};
+
+struct __attribute__((__visibility__("default"))) adopt_lock_t {
+  explicit adopt_lock_t() = default;
+};
+
+
+
+
+
+
+constexpr defer_lock_t defer_lock = defer_lock_t();
+constexpr try_to_lock_t try_to_lock = try_to_lock_t();
+constexpr adopt_lock_t adopt_lock = adopt_lock_t();
+
+
+}}
+# 42 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h" 3
+#pragma clang diagnostic pop
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 2 3
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+
+
+
+
+#pragma clang diagnostic push
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 27 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Mutex>
+class unique_lock {
+public:
+  typedef _Mutex mutex_type;
+
+private:
+  mutex_type* __m_;
+  bool __owns_;
+
+public:
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock() noexcept : __m_(nullptr), __owns_(false) {}
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit unique_lock(mutex_type& __m)
+      : __m_(std::addressof(__m)), __owns_(true) {
+    __m_->lock();
+  }
+
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, defer_lock_t) noexcept
+      : __m_(std::addressof(__m)),
+        __owns_(false) {}
+
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, try_to_lock_t)
+      : __m_(std::addressof(__m)), __owns_(__m.try_lock()) {}
+
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, adopt_lock_t)
+      : __m_(std::addressof(__m)), __owns_(true) {}
+
+  template <class _Clock, class _Duration>
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, const chrono::time_point<_Clock, _Duration>& __t)
+      : __m_(std::addressof(__m)), __owns_(__m.try_lock_until(__t)) {}
+
+  template <class _Rep, class _Period>
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(mutex_type& __m, const chrono::duration<_Rep, _Period>& __d)
+      : __m_(std::addressof(__m)), __owns_(__m.try_lock_for(__d)) {}
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ~unique_lock() {
+    if (__owns_)
+      __m_->unlock();
+  }
+
+  unique_lock(unique_lock const&) = delete;
+  unique_lock& operator=(unique_lock const&) = delete;
+
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock(unique_lock&& __u) noexcept
+      : __m_(__u.__m_),
+        __owns_(__u.__owns_) {
+    __u.__m_ = nullptr;
+    __u.__owns_ = false;
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) unique_lock& operator=(unique_lock&& __u) noexcept {
+    if (__owns_)
+      __m_->unlock();
+
+    __m_ = __u.__m_;
+    __owns_ = __u.__owns_;
+    __u.__m_ = nullptr;
+    __u.__owns_ = false;
+    return *this;
+  }
+
+  void lock();
+  bool try_lock();
+
+  template <class _Rep, class _Period>
+  bool try_lock_for(const chrono::duration<_Rep, _Period>& __d);
+
+  template <class _Clock, class _Duration>
+  bool try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
+
+  void unlock();
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(unique_lock& __u) noexcept {
+    std::swap(__m_, __u.__m_);
+    std::swap(__owns_, __u.__owns_);
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) mutex_type* release() noexcept {
+    mutex_type* __m = __m_;
+    __m_ = nullptr;
+    __owns_ = false;
+    return __m;
+  }
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool owns_lock() const noexcept { return __owns_; }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit operator bool() const noexcept { return __owns_; }
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) mutex_type* mutex() const noexcept { return __m_; }
+};
+static_assert(true, "");
+
+template <class _Mutex>
+void unique_lock<_Mutex>::lock() {
+  if (__m_ == nullptr)
+    __throw_system_error(1, "unique_lock::lock: references null mutex");
+  if (__owns_)
+    __throw_system_error(11, "unique_lock::lock: already locked");
+  __m_->lock();
+  __owns_ = true;
+}
+
+template <class _Mutex>
+bool unique_lock<_Mutex>::try_lock() {
+  if (__m_ == nullptr)
+    __throw_system_error(1, "unique_lock::try_lock: references null mutex");
+  if (__owns_)
+    __throw_system_error(11, "unique_lock::try_lock: already locked");
+  __owns_ = __m_->try_lock();
+  return __owns_;
+}
+
+template <class _Mutex>
+template <class _Rep, class _Period>
+bool unique_lock<_Mutex>::try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
+  if (__m_ == nullptr)
+    __throw_system_error(1, "unique_lock::try_lock_for: references null mutex");
+  if (__owns_)
+    __throw_system_error(11, "unique_lock::try_lock_for: already locked");
+  __owns_ = __m_->try_lock_for(__d);
+  return __owns_;
+}
+
+template <class _Mutex>
+template <class _Clock, class _Duration>
+bool unique_lock<_Mutex>::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
+  if (__m_ == nullptr)
+    __throw_system_error(1, "unique_lock::try_lock_until: references null mutex");
+  if (__owns_)
+    __throw_system_error(11, "unique_lock::try_lock_until: already locked");
+  __owns_ = __m_->try_lock_until(__t);
+  return __owns_;
+}
+
+template <class _Mutex>
+void unique_lock<_Mutex>::unlock() {
+  if (!__owns_)
+    __throw_system_error(1, "unique_lock::unlock: not locked");
+  __m_->unlock();
+  __owns_ = false;
+}
+
+template <class _Mutex>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(unique_lock<_Mutex>& __x, unique_lock<_Mutex>& __y) noexcept {
+  __x.swap(__y);
+}
+
+}}
+# 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h" 3
+#pragma clang diagnostic pop
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
+# 29 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 33 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 2 3
+
+#pragma clang diagnostic push
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 34 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+
+enum class cv_status{no_timeout, timeout};
+
+
+class __attribute__((__visibility__("default"))) condition_variable {
+  __libcpp_condvar_t __cv_ = {0x3CB0B1BB, {0}};
+
+public:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) constexpr condition_variable() noexcept = default;
+
+
+
+
+  ~condition_variable();
+
+
+  condition_variable(const condition_variable&) = delete;
+  condition_variable& operator=(const condition_variable&) = delete;
+
+  void notify_one() noexcept;
+  void notify_all() noexcept;
+
+  void wait(unique_lock<mutex>& __lk) noexcept;
+  template <class _Predicate>
+  inline __attribute__((__visibility__("hidden"))) void wait(unique_lock<mutex>& __lk, _Predicate __pred);
+
+  template <class _Clock, class _Duration>
+  inline __attribute__((__visibility__("hidden"))) cv_status
+  wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t);
+
+  template <class _Clock, class _Duration, class _Predicate>
+  inline __attribute__((__visibility__("hidden"))) bool
+  wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t, _Predicate __pred);
+
+  template <class _Rep, class _Period>
+  inline __attribute__((__visibility__("hidden"))) cv_status
+  wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d);
+
+  template <class _Rep, class _Period, class _Predicate>
+  bool __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102")))
+  wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d, _Predicate __pred);
+
+  typedef __libcpp_condvar_t* native_handle_type;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__cv_; }
+
+private:
+  void
+  __do_timed_wait(unique_lock<mutex>& __lk, chrono::time_point<chrono::system_clock, chrono::nanoseconds>) noexcept;
+
+
+
+
+  template <class _Clock>
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void
+  __do_timed_wait(unique_lock<mutex>& __lk, chrono::time_point<_Clock, chrono::nanoseconds>) noexcept;
+};
+
+
+template <class _Rep, class _Period, __enable_if_t<is_floating_point<_Rep>::value, int> = 0>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) chrono::nanoseconds __safe_nanosecond_cast(chrono::duration<_Rep, _Period> __d) {
+  using namespace chrono;
+  using __ratio = ratio_divide<_Period, nano>;
+  using __ns_rep = nanoseconds::rep;
+  _Rep __result_float = __d.count() * __ratio::num / __ratio::den;
+
+  _Rep __result_max = numeric_limits<__ns_rep>::max();
+  if (__result_float >= __result_max) {
+    return nanoseconds::max();
+  }
+
+  _Rep __result_min = numeric_limits<__ns_rep>::min();
+  if (__result_float <= __result_min) {
+    return nanoseconds::min();
+  }
+
+  return nanoseconds(static_cast<__ns_rep>(__result_float));
+}
+
+template <class _Rep, class _Period, __enable_if_t<!is_floating_point<_Rep>::value, int> = 0>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) chrono::nanoseconds __safe_nanosecond_cast(chrono::duration<_Rep, _Period> __d) {
+  using namespace chrono;
+  if (__d.count() == 0) {
+    return nanoseconds(0);
+  }
+
+  using __ratio = ratio_divide<_Period, nano>;
+  using __ns_rep = nanoseconds::rep;
+  __ns_rep __result_max = numeric_limits<__ns_rep>::max();
+  if (__d.count() > 0 && __d.count() > __result_max / __ratio::num) {
+    return nanoseconds::max();
+  }
+
+  __ns_rep __result_min = numeric_limits<__ns_rep>::min();
+  if (__d.count() < 0 && __d.count() < __result_min / __ratio::num) {
+    return nanoseconds::min();
+  }
+
+  __ns_rep __result = __d.count() * __ratio::num / __ratio::den;
+  if (__result == 0) {
+    return nanoseconds(1);
+  }
+
+  return nanoseconds(__result);
+}
+
+
+template <class _Predicate>
+void condition_variable::wait(unique_lock<mutex>& __lk, _Predicate __pred) {
+  while (!__pred())
+    wait(__lk);
+}
+
+template <class _Clock, class _Duration>
+cv_status condition_variable::wait_until(unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t) {
+  using namespace chrono;
+  using __clock_tp_ns = time_point<_Clock, nanoseconds>;
+
+  typename _Clock::time_point __now = _Clock::now();
+  if (__t <= __now)
+    return cv_status::timeout;
+
+  __clock_tp_ns __t_ns = __clock_tp_ns(std::__safe_nanosecond_cast(__t.time_since_epoch()));
+
+  __do_timed_wait(__lk, __t_ns);
+  return _Clock::now() < __t ? cv_status::no_timeout : cv_status::timeout;
+}
+
+template <class _Clock, class _Duration, class _Predicate>
+bool condition_variable::wait_until(
+    unique_lock<mutex>& __lk, const chrono::time_point<_Clock, _Duration>& __t, _Predicate __pred) {
+  while (!__pred()) {
+    if (wait_until(__lk, __t) == cv_status::timeout)
+      return __pred();
+  }
+  return true;
+}
+
+template <class _Rep, class _Period>
+cv_status condition_variable::wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d) {
+  using namespace chrono;
+  if (__d <= __d.zero())
+    return cv_status::timeout;
+  using __ns_rep = nanoseconds::rep;
+  steady_clock::time_point __c_now = steady_clock::now();
+
+
+
+
+
+  using __clock_tp_ns = time_point<system_clock, nanoseconds>;
+  __ns_rep __now_count_ns = std::__safe_nanosecond_cast(system_clock::now().time_since_epoch()).count();
+
+
+  __ns_rep __d_ns_count = std::__safe_nanosecond_cast(__d).count();
+
+  if (__now_count_ns > numeric_limits<__ns_rep>::max() - __d_ns_count) {
+    __do_timed_wait(__lk, __clock_tp_ns::max());
+  } else {
+    __do_timed_wait(__lk, __clock_tp_ns(nanoseconds(__now_count_ns + __d_ns_count)));
+  }
+
+  return steady_clock::now() - __c_now < __d ? cv_status::no_timeout : cv_status::timeout;
+}
+
+template <class _Rep, class _Period, class _Predicate>
+inline bool
+condition_variable::wait_for(unique_lock<mutex>& __lk, const chrono::duration<_Rep, _Period>& __d, _Predicate __pred) {
+  return wait_until(__lk, chrono::steady_clock::now() + __d, std::move(__pred));
+}
+# 232 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+template <class _Clock>
+inline void condition_variable::__do_timed_wait(unique_lock<mutex>& __lk,
+                                                chrono::time_point<_Clock, chrono::nanoseconds> __tp) noexcept {
+  wait_for(__lk, __tp - _Clock::now());
+}
+
+
+
+}}
+# 240 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h" 3
+#pragma clang diagnostic pop
+# 192 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 1 3
+# 17 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+
+
+#pragma clang diagnostic push
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 19 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+template <class _Mutex>
+class lock_guard {
+public:
+  typedef _Mutex mutex_type;
+
+private:
+  mutex_type& __m_;
+
+public:
+  [[__nodiscard__]]
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit lock_guard(mutex_type& __m)
+      : __m_(__m) {
+    __m_.lock();
+  }
+
+  [[__nodiscard__]] __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) lock_guard(mutex_type& __m, adopt_lock_t)
+
+      : __m_(__m) {}
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) ~lock_guard() { __m_.unlock(); }
+
+  lock_guard(lock_guard const&) = delete;
+  lock_guard& operator=(lock_guard const&) = delete;
+};
+static_assert(true, "");
+
+}}
+# 46 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h" 3
+#pragma clang diagnostic pop
+# 195 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
+
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 1 3
+# 21 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+
+
+#pragma clang diagnostic push
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 23 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+class __attribute__((__visibility__("default"))) __thread_id;
+
+namespace this_thread {
+
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id get_id() noexcept;
+
+}
+
+template <>
+struct hash<__thread_id>;
+
+class __thread_id {
+
+
+
+  __libcpp_thread_id __id_;
+
+  static __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool
+  __lt_impl(__thread_id __x, __thread_id __y) noexcept {
+    if (__x.__id_ == 0)
+      return __y.__id_ != 0;
+    if (__y.__id_ == 0)
+      return false;
+    return __libcpp_thread_id_less(__x.__id_, __y.__id_);
+  }
+
+public:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id() noexcept : __id_(0) {}
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __reset() { __id_ = 0; }
+
+  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(__thread_id __x, __thread_id __y) noexcept;
+
+  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(__thread_id __x, __thread_id __y) noexcept;
+
+
+
+
+  template <class _CharT, class _Traits>
+  friend __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ostream<_CharT, _Traits>&
+  operator<<(basic_ostream<_CharT, _Traits>& __os, __thread_id __id);
+
+private:
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id(__libcpp_thread_id __id) : __id_(__id) {}
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) friend __libcpp_thread_id __get_underlying_id(const __thread_id __id) { return __id.__id_; }
+
+  friend __thread_id this_thread::get_id() noexcept;
+  friend class __attribute__((__visibility__("default"))) thread;
+  friend struct hash<__thread_id>;
+};
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator==(__thread_id __x, __thread_id __y) noexcept {
+
+  if (__x.__id_ == 0)
+    return __y.__id_ == 0;
+  if (__y.__id_ == 0)
+    return false;
+  return __libcpp_thread_id_equal(__x.__id_, __y.__id_);
+}
+
+
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator!=(__thread_id __x, __thread_id __y) noexcept { return !(__x == __y); }
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<(__thread_id __x, __thread_id __y) noexcept {
+  return __thread_id::__lt_impl(__x.__id_, __y.__id_);
+}
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator<=(__thread_id __x, __thread_id __y) noexcept { return !(__y < __x); }
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator>(__thread_id __x, __thread_id __y) noexcept { return __y < __x; }
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool operator>=(__thread_id __x, __thread_id __y) noexcept { return !(__x < __y); }
+# 111 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+namespace this_thread {
+
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) __thread_id get_id() noexcept { return __libcpp_thread_get_current_id(); }
+
+}
+
+
+
+}}
+# 119 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h" 3
+#pragma clang diagnostic pop
+# 200 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
+# 211 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 215 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 2 3
+
+#pragma clang diagnostic push
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+class __attribute__((__visibility__("default"))) recursive_mutex {
+  __libcpp_recursive_mutex_t __m_;
+
+public:
+  recursive_mutex();
+  ~recursive_mutex();
+
+  recursive_mutex(const recursive_mutex&) = delete;
+  recursive_mutex& operator=(const recursive_mutex&) = delete;
+
+  void lock();
+  bool try_lock() noexcept;
+  void unlock() noexcept;
+
+  typedef __libcpp_recursive_mutex_t* native_handle_type;
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) native_handle_type native_handle() { return &__m_; }
+};
+
+class __attribute__((__visibility__("default"))) timed_mutex {
+  mutex __m_;
+  condition_variable __cv_;
+  bool __locked_;
+
+public:
+  timed_mutex();
+  ~timed_mutex();
+
+  timed_mutex(const timed_mutex&) = delete;
+  timed_mutex& operator=(const timed_mutex&) = delete;
+
+public:
+  void lock();
+  bool try_lock() noexcept;
+  template <class _Rep, class _Period>
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
+    return try_lock_until(chrono::steady_clock::now() + __d);
+  }
+  template <class _Clock, class _Duration>
+  inline __attribute__((__visibility__("hidden"))) bool
+  try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
+  void unlock() noexcept;
+};
+
+template <class _Clock, class _Duration>
+bool timed_mutex::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
+  using namespace chrono;
+  unique_lock<mutex> __lk(__m_);
+  bool __no_timeout = _Clock::now() < __t;
+  while (__no_timeout && __locked_)
+    __no_timeout = __cv_.wait_until(__lk, __t) == cv_status::no_timeout;
+  if (!__locked_) {
+    __locked_ = true;
+    return true;
+  }
+  return false;
+}
+
+class __attribute__((__visibility__("default"))) recursive_timed_mutex {
+  mutex __m_;
+  condition_variable __cv_;
+  size_t __count_;
+  __thread_id __id_;
+
+public:
+  recursive_timed_mutex();
+  ~recursive_timed_mutex();
+
+  recursive_timed_mutex(const recursive_timed_mutex&) = delete;
+  recursive_timed_mutex& operator=(const recursive_timed_mutex&) = delete;
+
+  void lock();
+  bool try_lock() noexcept;
+  template <class _Rep, class _Period>
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool try_lock_for(const chrono::duration<_Rep, _Period>& __d) {
+    return try_lock_until(chrono::steady_clock::now() + __d);
+  }
+  template <class _Clock, class _Duration>
+  inline __attribute__((__visibility__("hidden"))) bool
+  try_lock_until(const chrono::time_point<_Clock, _Duration>& __t);
+  void unlock() noexcept;
+};
+
+template <class _Clock, class _Duration>
+bool recursive_timed_mutex::try_lock_until(const chrono::time_point<_Clock, _Duration>& __t) {
+  using namespace chrono;
+  __thread_id __id = this_thread::get_id();
+  unique_lock<mutex> __lk(__m_);
+  if (__id == __id_) {
+    if (__count_ == numeric_limits<size_t>::max())
+      return false;
+    ++__count_;
+    return true;
+  }
+  bool __no_timeout = _Clock::now() < __t;
+  while (__no_timeout && __count_ != 0)
+    __no_timeout = __cv_.wait_until(__lk, __t) == cv_status::no_timeout;
+  if (__count_ == 0) {
+    __count_ = 1;
+    __id_ = __id;
+    return true;
+  }
+  return false;
+}
+
+template <class _L0, class _L1>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) int try_lock(_L0& __l0, _L1& __l1) {
+  unique_lock<_L0> __u0(__l0, try_to_lock_t());
+  if (__u0.owns_lock()) {
+    if (__l1.try_lock()) {
+      __u0.release();
+      return -1;
+    } else
+      return 1;
+  }
+  return 0;
+}
+
+
+
+template <class _L0, class _L1, class _L2, class... _L3>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) int try_lock(_L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
+  int __r = 0;
+  unique_lock<_L0> __u0(__l0, try_to_lock);
+  if (__u0.owns_lock()) {
+    __r = std::try_lock(__l1, __l2, __l3...);
+    if (__r == -1)
+      __u0.release();
+    else
+      ++__r;
+  }
+  return __r;
+}
+
+
+
+template <class _L0, class _L1>
+__attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void lock(_L0& __l0, _L1& __l1) {
+  while (true) {
+    {
+      unique_lock<_L0> __u0(__l0);
+      if (__l1.try_lock()) {
+        __u0.release();
+        break;
+      }
+    }
+    __libcpp_thread_yield();
+    {
+      unique_lock<_L1> __u1(__l1);
+      if (__l0.try_lock()) {
+        __u1.release();
+        break;
+      }
+    }
+    __libcpp_thread_yield();
+  }
+}
+
+
+
+template <class _L0, class _L1, class _L2, class... _L3>
+void __lock_first(int __i, _L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
+  while (true) {
+    switch (__i) {
+    case 0: {
+      unique_lock<_L0> __u0(__l0);
+      __i = std::try_lock(__l1, __l2, __l3...);
+      if (__i == -1) {
+        __u0.release();
+        return;
+      }
+    }
+      ++__i;
+      __libcpp_thread_yield();
+      break;
+    case 1: {
+      unique_lock<_L1> __u1(__l1);
+      __i = std::try_lock(__l2, __l3..., __l0);
+      if (__i == -1) {
+        __u1.release();
+        return;
+      }
+    }
+      if (__i == sizeof...(_L3) + 1)
+        __i = 0;
+      else
+        __i += 2;
+      __libcpp_thread_yield();
+      break;
+    default:
+      std::__lock_first(__i - 2, __l2, __l3..., __l0, __l1);
+      return;
+    }
+  }
+}
+
+template <class _L0, class _L1, class _L2, class... _L3>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void lock(_L0& __l0, _L1& __l1, _L2& __l2, _L3&... __l3) {
+  std::__lock_first(0, __l0, __l1, __l2, __l3...);
+}
+# 497 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+}}
+# 497 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex" 3
+#pragma clang diagnostic pop
+# 882 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios" 2 3
+# 25 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h" 2 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale" 1 3
 # 215 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale" 3
 # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf" 1 3
@@ -66256,7 +66232,1155 @@ __attribute__((__visibility__("default"))) bool __is_posix_terminal(FILE* __stre
 #pragma clang diagnostic pop
 # 198 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream" 2 3
 # 1368 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream" 2 3
-# 44 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 2 3
+# 202 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
+# 208 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+
+
+
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros" 1 3
+# 212 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 2 3
+
+
+
+
+
+
+
+#pragma clang diagnostic push
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic ignored "-Wc++11-extensions"
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic ignored "-Wc++14-extensions"
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic ignored "-Wc++17-extensions"
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic ignored "-Wc++20-extensions"
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic ignored "-Wc++23-extensions"
+# 219 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+ namespace __attribute__((__type_visibility__("default"))) std { inline namespace __1 {
+
+
+
+
+
+template <class _CharT, class _Traits>
+class basic_filebuf : public basic_streambuf<_CharT, _Traits> {
+public:
+  typedef _CharT char_type;
+  typedef _Traits traits_type;
+  typedef typename traits_type::int_type int_type;
+  typedef typename traits_type::pos_type pos_type;
+  typedef typename traits_type::off_type off_type;
+  typedef typename traits_type::state_type state_type;
+# 245 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  basic_filebuf();
+  basic_filebuf(basic_filebuf&& __rhs);
+  ~basic_filebuf() override;
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf& operator=(basic_filebuf&& __rhs);
+  void swap(basic_filebuf& __rhs);
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool is_open() const;
+  basic_filebuf* open(const char* __s, ios_base::openmode __mode);
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf* open(const string& __s, ios_base::openmode __mode);
+
+
+
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf* __open(int __fd, ios_base::openmode __mode);
+  basic_filebuf* close();
+# 282 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) inline static const char* __make_mdstring(ios_base::openmode __mode) noexcept;
+
+
+
+
+protected:
+
+  int_type underflow() override;
+  int_type pbackfail(int_type __c = traits_type::eof()) override;
+  int_type overflow(int_type __c = traits_type::eof()) override;
+  basic_streambuf<char_type, traits_type>* setbuf(char_type* __s, streamsize __n) override;
+  pos_type
+  seekoff(off_type __off, ios_base::seekdir __way, ios_base::openmode __wch = ios_base::in | ios_base::out) override;
+  pos_type seekpos(pos_type __sp, ios_base::openmode __wch = ios_base::in | ios_base::out) override;
+  int sync() override;
+  void imbue(const locale& __loc) override;
+
+private:
+  char* __extbuf_;
+  const char* __extbufnext_;
+  const char* __extbufend_;
+  char __extbuf_min_[8];
+  size_t __ebs_;
+  char_type* __intbuf_;
+  size_t __ibs_;
+  FILE* __file_;
+  const codecvt<char_type, char, state_type>* __cv_;
+  state_type __st_;
+  state_type __st_last_;
+  ios_base::openmode __om_;
+
+
+  static const ios_base::openmode __no_io_operations = ios_base::trunc;
+
+  static const ios_base::openmode __use_unbuffered_io = ios_base::ate;
+# 349 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  ios_base::openmode __cm_;
+  bool __owns_eb_;
+  bool __owns_ib_;
+  bool __always_noconv_;
+
+  bool __read_mode();
+  void __write_mode();
+
+  __attribute__((__visibility__("default"))) friend FILE* __get_ostream_file(ostream&);
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf* __do_open(FILE* __file, ios_base::openmode __mode) {
+    __file_ = __file;
+    if (!__file_)
+      return nullptr;
+
+    __om_ = __mode;
+    if (__cm_ == (__no_io_operations | __use_unbuffered_io)) {
+      std::setbuf(__file_, nullptr);
+      __cm_ = 0;
+    }
+
+    if (__mode & ios_base::ate) {
+      __cm_ = 0;
+      if (fseek(__file_, 0, 2)) {
+        fclose(__file_);
+        __file_ = nullptr;
+        return nullptr;
+      }
+    }
+
+    return this;
+  }
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __request_unbuffered_mode(char_type* __s, streamsize __n) {
+    if (__cm_ == __no_io_operations && __s == nullptr && __n == 0) {
+      if (__file_) {
+        std::setbuf(__file_, nullptr);
+        __cm_ = 0;
+      } else {
+        __cm_ = __no_io_operations | __use_unbuffered_io;
+      }
+    }
+  }
+};
+
+template <class _CharT, class _Traits>
+basic_filebuf<_CharT, _Traits>::basic_filebuf()
+    : __extbuf_(nullptr),
+      __extbufnext_(nullptr),
+      __extbufend_(nullptr),
+      __ebs_(0),
+      __intbuf_(nullptr),
+      __ibs_(0),
+      __file_(nullptr),
+      __cv_(nullptr),
+      __st_(),
+      __st_last_(),
+      __om_(0),
+      __cm_(__no_io_operations),
+      __owns_eb_(false),
+      __owns_ib_(false),
+      __always_noconv_(false) {
+  if (std::has_facet<codecvt<char_type, char, state_type> >(this->getloc())) {
+    __cv_ = &std::use_facet<codecvt<char_type, char, state_type> >(this->getloc());
+    __always_noconv_ = __cv_->always_noconv();
+  }
+  setbuf(nullptr, 4096);
+}
+
+template <class _CharT, class _Traits>
+basic_filebuf<_CharT, _Traits>::basic_filebuf(basic_filebuf&& __rhs) : basic_streambuf<_CharT, _Traits>(__rhs) {
+  if (__rhs.__extbuf_ == __rhs.__extbuf_min_) {
+    __extbuf_ = __extbuf_min_;
+    __extbufnext_ = __extbuf_ + (__rhs.__extbufnext_ - __rhs.__extbuf_);
+    __extbufend_ = __extbuf_ + (__rhs.__extbufend_ - __rhs.__extbuf_);
+  } else {
+    __extbuf_ = __rhs.__extbuf_;
+    __extbufnext_ = __rhs.__extbufnext_;
+    __extbufend_ = __rhs.__extbufend_;
+  }
+  __ebs_ = __rhs.__ebs_;
+  __intbuf_ = __rhs.__intbuf_;
+  __ibs_ = __rhs.__ibs_;
+  __file_ = __rhs.__file_;
+  __cv_ = __rhs.__cv_;
+  __st_ = __rhs.__st_;
+  __st_last_ = __rhs.__st_last_;
+  __om_ = __rhs.__om_;
+  __cm_ = __rhs.__cm_;
+  __owns_eb_ = __rhs.__owns_eb_;
+  __owns_ib_ = __rhs.__owns_ib_;
+  __always_noconv_ = __rhs.__always_noconv_;
+  if (__rhs.pbase()) {
+    if (__rhs.pbase() == __rhs.__intbuf_)
+      this->setp(__intbuf_, __intbuf_ + (__rhs.epptr() - __rhs.pbase()));
+    else
+      this->setp((char_type*)__extbuf_, (char_type*)__extbuf_ + (__rhs.epptr() - __rhs.pbase()));
+    this->__pbump(__rhs.pptr() - __rhs.pbase());
+  } else if (__rhs.eback()) {
+    if (__rhs.eback() == __rhs.__intbuf_)
+      this->setg(__intbuf_, __intbuf_ + (__rhs.gptr() - __rhs.eback()), __intbuf_ + (__rhs.egptr() - __rhs.eback()));
+    else
+      this->setg((char_type*)__extbuf_,
+                 (char_type*)__extbuf_ + (__rhs.gptr() - __rhs.eback()),
+                 (char_type*)__extbuf_ + (__rhs.egptr() - __rhs.eback()));
+  }
+  __rhs.__extbuf_ = nullptr;
+  __rhs.__extbufnext_ = nullptr;
+  __rhs.__extbufend_ = nullptr;
+  __rhs.__ebs_ = 0;
+  __rhs.__intbuf_ = 0;
+  __rhs.__ibs_ = 0;
+  __rhs.__file_ = nullptr;
+  __rhs.__st_ = state_type();
+  __rhs.__st_last_ = state_type();
+  __rhs.__om_ = 0;
+  __rhs.__cm_ = 0;
+  __rhs.__owns_eb_ = false;
+  __rhs.__owns_ib_ = false;
+  __rhs.setg(0, 0, 0);
+  __rhs.setp(0, 0);
+}
+
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>& basic_filebuf<_CharT, _Traits>::operator=(basic_filebuf&& __rhs) {
+  close();
+  swap(__rhs);
+  return *this;
+}
+
+template <class _CharT, class _Traits>
+basic_filebuf<_CharT, _Traits>::~basic_filebuf() {
+
+  try {
+
+    close();
+
+  } catch (...) {
+  }
+
+  if (__owns_eb_)
+    delete[] __extbuf_;
+  if (__owns_ib_)
+    delete[] __intbuf_;
+}
+
+template <class _CharT, class _Traits>
+void basic_filebuf<_CharT, _Traits>::swap(basic_filebuf& __rhs) {
+  basic_streambuf<char_type, traits_type>::swap(__rhs);
+  if (__extbuf_ != __extbuf_min_ && __rhs.__extbuf_ != __rhs.__extbuf_min_) {
+
+    std::swap(__extbuf_, __rhs.__extbuf_);
+    std::swap(__extbufnext_, __rhs.__extbufnext_);
+    std::swap(__extbufend_, __rhs.__extbufend_);
+  } else {
+    ptrdiff_t __ln = __extbufnext_ ? __extbufnext_ - __extbuf_ : 0;
+    ptrdiff_t __le = __extbufend_ ? __extbufend_ - __extbuf_ : 0;
+    ptrdiff_t __rn = __rhs.__extbufnext_ ? __rhs.__extbufnext_ - __rhs.__extbuf_ : 0;
+    ptrdiff_t __re = __rhs.__extbufend_ ? __rhs.__extbufend_ - __rhs.__extbuf_ : 0;
+    if (__extbuf_ == __extbuf_min_ && __rhs.__extbuf_ != __rhs.__extbuf_min_) {
+
+      __extbuf_ = __rhs.__extbuf_;
+      __rhs.__extbuf_ = __rhs.__extbuf_min_;
+      std::memmove(__rhs.__extbuf_min_, __extbuf_min_, sizeof(__extbuf_min_));
+    } else if (__extbuf_ != __extbuf_min_ && __rhs.__extbuf_ == __rhs.__extbuf_min_) {
+
+      __rhs.__extbuf_ = __extbuf_;
+      __extbuf_ = __extbuf_min_;
+      std::memmove(__extbuf_min_, __rhs.__extbuf_min_, sizeof(__extbuf_min_));
+    } else {
+
+      char __tmp[sizeof(__extbuf_min_)];
+      std::memmove(__tmp, __extbuf_min_, sizeof(__extbuf_min_));
+      std::memmove(__extbuf_min_, __rhs.__extbuf_min_, sizeof(__extbuf_min_));
+      std::memmove(__rhs.__extbuf_min_, __tmp, sizeof(__extbuf_min_));
+    }
+    __extbufnext_ = __extbuf_ + __rn;
+    __extbufend_ = __extbuf_ + __re;
+    __rhs.__extbufnext_ = __rhs.__extbuf_ + __ln;
+    __rhs.__extbufend_ = __rhs.__extbuf_ + __le;
+  }
+  std::swap(__ebs_, __rhs.__ebs_);
+  std::swap(__intbuf_, __rhs.__intbuf_);
+  std::swap(__ibs_, __rhs.__ibs_);
+  std::swap(__file_, __rhs.__file_);
+  std::swap(__cv_, __rhs.__cv_);
+  std::swap(__st_, __rhs.__st_);
+  std::swap(__st_last_, __rhs.__st_last_);
+  std::swap(__om_, __rhs.__om_);
+  std::swap(__cm_, __rhs.__cm_);
+  std::swap(__owns_eb_, __rhs.__owns_eb_);
+  std::swap(__owns_ib_, __rhs.__owns_ib_);
+  std::swap(__always_noconv_, __rhs.__always_noconv_);
+  if (this->eback() == (char_type*)__rhs.__extbuf_min_) {
+    ptrdiff_t __n = this->gptr() - this->eback();
+    ptrdiff_t __e = this->egptr() - this->eback();
+    this->setg((char_type*)__extbuf_min_, (char_type*)__extbuf_min_ + __n, (char_type*)__extbuf_min_ + __e);
+  } else if (this->pbase() == (char_type*)__rhs.__extbuf_min_) {
+    ptrdiff_t __n = this->pptr() - this->pbase();
+    ptrdiff_t __e = this->epptr() - this->pbase();
+    this->setp((char_type*)__extbuf_min_, (char_type*)__extbuf_min_ + __e);
+    this->__pbump(__n);
+  }
+  if (__rhs.eback() == (char_type*)__extbuf_min_) {
+    ptrdiff_t __n = __rhs.gptr() - __rhs.eback();
+    ptrdiff_t __e = __rhs.egptr() - __rhs.eback();
+    __rhs.setg(
+        (char_type*)__rhs.__extbuf_min_, (char_type*)__rhs.__extbuf_min_ + __n, (char_type*)__rhs.__extbuf_min_ + __e);
+  } else if (__rhs.pbase() == (char_type*)__extbuf_min_) {
+    ptrdiff_t __n = __rhs.pptr() - __rhs.pbase();
+    ptrdiff_t __e = __rhs.epptr() - __rhs.pbase();
+    __rhs.setp((char_type*)__rhs.__extbuf_min_, (char_type*)__rhs.__extbuf_min_ + __e);
+    __rhs.__pbump(__n);
+  }
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_filebuf<_CharT, _Traits>& __x, basic_filebuf<_CharT, _Traits>& __y) {
+  __x.swap(__y);
+}
+
+template <class _CharT, class _Traits>
+inline bool basic_filebuf<_CharT, _Traits>::is_open() const {
+  return __file_ != nullptr;
+}
+
+template <class _CharT, class _Traits>
+const char* basic_filebuf<_CharT, _Traits>::__make_mdstring(ios_base::openmode __mode) noexcept {
+  switch (__mode & ~ios_base::ate) {
+  case ios_base::out:
+  case ios_base::out | ios_base::trunc:
+    return "w" ;
+  case ios_base::out | ios_base::app:
+  case ios_base::app:
+    return "a" ;
+  case ios_base::in:
+    return "r" ;
+  case ios_base::in | ios_base::out:
+    return "r+" ;
+  case ios_base::in | ios_base::out | ios_base::trunc:
+    return "w+" ;
+  case ios_base::in | ios_base::out | ios_base::app:
+  case ios_base::in | ios_base::app:
+    return "a+" ;
+  case ios_base::out | ios_base::binary:
+  case ios_base::out | ios_base::trunc | ios_base::binary:
+    return "wb" ;
+  case ios_base::out | ios_base::app | ios_base::binary:
+  case ios_base::app | ios_base::binary:
+    return "ab" ;
+  case ios_base::in | ios_base::binary:
+    return "rb" ;
+  case ios_base::in | ios_base::out | ios_base::binary:
+    return "r+b" ;
+  case ios_base::in | ios_base::out | ios_base::trunc | ios_base::binary:
+    return "w+b" ;
+  case ios_base::in | ios_base::out | ios_base::app | ios_base::binary:
+  case ios_base::in | ios_base::app | ios_base::binary:
+    return "a+b" ;
+# 626 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  default:
+    return nullptr;
+  }
+  __libcpp_unreachable();
+}
+# 685 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+basic_filebuf<_CharT, _Traits>* basic_filebuf<_CharT, _Traits>::open(const char* __s, ios_base::openmode __mode) {
+  if (__file_)
+    return nullptr;
+  const char* __mdstr = __make_mdstring(__mode);
+  if (!__mdstr)
+    return nullptr;
+
+  return __do_open(fopen(__s, __mdstr), __mode);
+}
+
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>* basic_filebuf<_CharT, _Traits>::__open(int __fd, ios_base::openmode __mode) {
+  if (__file_)
+    return nullptr;
+  const char* __mdstr = __make_mdstring(__mode);
+  if (!__mdstr)
+    return nullptr;
+
+  return __do_open(fdopen(__fd, __mdstr), __mode);
+}
+# 722 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>*
+basic_filebuf<_CharT, _Traits>::open(const string& __s, ios_base::openmode __mode) {
+  return open(__s.c_str(), __mode);
+}
+
+template <class _CharT, class _Traits>
+basic_filebuf<_CharT, _Traits>* basic_filebuf<_CharT, _Traits>::close() {
+  basic_filebuf<_CharT, _Traits>* __rt = nullptr;
+  if (__file_) {
+    __rt = this;
+    unique_ptr<FILE, int (*)(FILE*)> __h(__file_, fclose);
+    if (sync())
+      __rt = nullptr;
+    if (fclose(__h.release()))
+      __rt = nullptr;
+    __file_ = nullptr;
+    setbuf(0, 0);
+  }
+  return __rt;
+}
+
+template <class _CharT, class _Traits>
+typename basic_filebuf<_CharT, _Traits>::int_type basic_filebuf<_CharT, _Traits>::underflow() {
+  if (__file_ == nullptr)
+    return traits_type::eof();
+  bool __initial = __read_mode();
+  char_type __1buf;
+  if (this->gptr() == nullptr)
+    this->setg(&__1buf, &__1buf + 1, &__1buf + 1);
+  const size_t __unget_sz = __initial ? 0 : std::min<size_t>((this->egptr() - this->eback()) / 2, 4);
+  int_type __c = traits_type::eof();
+  if (this->gptr() == this->egptr()) {
+    std::memmove(this->eback(), this->egptr() - __unget_sz, __unget_sz * sizeof(char_type));
+    if (__always_noconv_) {
+      size_t __nmemb = static_cast<size_t>(this->egptr() - this->eback() - __unget_sz);
+      __nmemb = ::fread(this->eback() + __unget_sz, 1, __nmemb, __file_);
+      if (__nmemb != 0) {
+        this->setg(this->eback(), this->eback() + __unget_sz, this->eback() + __unget_sz + __nmemb);
+        __c = traits_type::to_int_type(*this->gptr());
+      }
+    } else {
+      if (__extbufend_ != __extbufnext_) {
+        ((void)0);
+        ((void)0);
+        std::memmove(__extbuf_, __extbufnext_, __extbufend_ - __extbufnext_);
+      }
+      __extbufnext_ = __extbuf_ + (__extbufend_ - __extbufnext_);
+      __extbufend_ = __extbuf_ + (__extbuf_ == __extbuf_min_ ? sizeof(__extbuf_min_) : __ebs_);
+      size_t __nmemb =
+          std::min(static_cast<size_t>(__ibs_ - __unget_sz), static_cast<size_t>(__extbufend_ - __extbufnext_));
+      codecvt_base::result __r;
+      __st_last_ = __st_;
+      size_t __nr = fread((void*)const_cast<char*>(__extbufnext_), 1, __nmemb, __file_);
+      if (__nr != 0) {
+        if (!__cv_)
+          __throw_bad_cast();
+
+        __extbufend_ = __extbufnext_ + __nr;
+        char_type* __inext;
+        __r = __cv_->in(
+            __st_, __extbuf_, __extbufend_, __extbufnext_, this->eback() + __unget_sz, this->eback() + __ibs_, __inext);
+        if (__r == codecvt_base::noconv) {
+          this->setg((char_type*)__extbuf_, (char_type*)__extbuf_, (char_type*)const_cast<char*>(__extbufend_));
+          __c = traits_type::to_int_type(*this->gptr());
+        } else if (__inext != this->eback() + __unget_sz) {
+          this->setg(this->eback(), this->eback() + __unget_sz, __inext);
+          __c = traits_type::to_int_type(*this->gptr());
+        }
+      }
+    }
+  } else
+    __c = traits_type::to_int_type(*this->gptr());
+  if (this->eback() == &__1buf)
+    this->setg(nullptr, nullptr, nullptr);
+  return __c;
+}
+
+template <class _CharT, class _Traits>
+typename basic_filebuf<_CharT, _Traits>::int_type basic_filebuf<_CharT, _Traits>::pbackfail(int_type __c) {
+  if (__file_ && this->eback() < this->gptr()) {
+    if (traits_type::eq_int_type(__c, traits_type::eof())) {
+      this->gbump(-1);
+      return traits_type::not_eof(__c);
+    }
+    if ((__om_ & ios_base::out) || traits_type::eq(traits_type::to_char_type(__c), this->gptr()[-1])) {
+      this->gbump(-1);
+      *this->gptr() = traits_type::to_char_type(__c);
+      return __c;
+    }
+  }
+  return traits_type::eof();
+}
+
+template <class _CharT, class _Traits>
+typename basic_filebuf<_CharT, _Traits>::int_type basic_filebuf<_CharT, _Traits>::overflow(int_type __c) {
+  if (__file_ == nullptr)
+    return traits_type::eof();
+  __write_mode();
+  char_type __1buf;
+  char_type* __pb_save = this->pbase();
+  char_type* __epb_save = this->epptr();
+  if (!traits_type::eq_int_type(__c, traits_type::eof())) {
+    if (this->pptr() == nullptr)
+      this->setp(&__1buf, &__1buf + 1);
+    *this->pptr() = traits_type::to_char_type(__c);
+    this->pbump(1);
+  }
+  if (this->pptr() != this->pbase()) {
+    if (__always_noconv_) {
+      size_t __nmemb = static_cast<size_t>(this->pptr() - this->pbase());
+      if (std::fwrite(this->pbase(), sizeof(char_type), __nmemb, __file_) != __nmemb)
+        return traits_type::eof();
+    } else {
+      char* __extbe = __extbuf_;
+      codecvt_base::result __r;
+      do {
+        if (!__cv_)
+          __throw_bad_cast();
+
+        const char_type* __e;
+        __r = __cv_->out(__st_, this->pbase(), this->pptr(), __e, __extbuf_, __extbuf_ + __ebs_, __extbe);
+        if (__e == this->pbase())
+          return traits_type::eof();
+        if (__r == codecvt_base::noconv) {
+          size_t __nmemb = static_cast<size_t>(this->pptr() - this->pbase());
+          if (std::fwrite(this->pbase(), 1, __nmemb, __file_) != __nmemb)
+            return traits_type::eof();
+        } else if (__r == codecvt_base::ok || __r == codecvt_base::partial) {
+          size_t __nmemb = static_cast<size_t>(__extbe - __extbuf_);
+          if (fwrite(__extbuf_, 1, __nmemb, __file_) != __nmemb)
+            return traits_type::eof();
+          if (__r == codecvt_base::partial) {
+            this->setp(const_cast<char_type*>(__e), this->pptr());
+            this->__pbump(this->epptr() - this->pbase());
+          }
+        } else
+          return traits_type::eof();
+      } while (__r == codecvt_base::partial);
+    }
+    this->setp(__pb_save, __epb_save);
+  }
+  return traits_type::not_eof(__c);
+}
+
+template <class _CharT, class _Traits>
+basic_streambuf<_CharT, _Traits>* basic_filebuf<_CharT, _Traits>::setbuf(char_type* __s, streamsize __n) {
+  this->setg(nullptr, nullptr, nullptr);
+  this->setp(nullptr, nullptr);
+  __request_unbuffered_mode(__s, __n);
+  if (__owns_eb_)
+    delete[] __extbuf_;
+  if (__owns_ib_)
+    delete[] __intbuf_;
+  __ebs_ = __n;
+  if (__ebs_ > sizeof(__extbuf_min_)) {
+    if (__always_noconv_ && __s) {
+      __extbuf_ = (char*)__s;
+      __owns_eb_ = false;
+    } else {
+      __extbuf_ = new char[__ebs_];
+      __owns_eb_ = true;
+    }
+  } else {
+    __extbuf_ = __extbuf_min_;
+    __ebs_ = sizeof(__extbuf_min_);
+    __owns_eb_ = false;
+  }
+  if (!__always_noconv_) {
+    __ibs_ = max<streamsize>(__n, sizeof(__extbuf_min_));
+    if (__s && __ibs_ > sizeof(__extbuf_min_)) {
+      __intbuf_ = __s;
+      __owns_ib_ = false;
+    } else {
+      __intbuf_ = new char_type[__ibs_];
+      __owns_ib_ = true;
+    }
+  } else {
+    __ibs_ = 0;
+    __intbuf_ = nullptr;
+    __owns_ib_ = false;
+  }
+  return this;
+}
+
+template <class _CharT, class _Traits>
+typename basic_filebuf<_CharT, _Traits>::pos_type
+basic_filebuf<_CharT, _Traits>::seekoff(off_type __off, ios_base::seekdir __way, ios_base::openmode) {
+  if (!__cv_)
+    __throw_bad_cast();
+
+  int __width = __cv_->encoding();
+  if (__file_ == nullptr || (__width <= 0 && __off != 0) || sync())
+    return pos_type(off_type(-1));
+
+  int __whence;
+  switch (__way) {
+  case ios_base::beg:
+    __whence = 0;
+    break;
+  case ios_base::cur:
+    __whence = 1;
+    break;
+  case ios_base::end:
+    __whence = 2;
+    break;
+  default:
+    return pos_type(off_type(-1));
+  }
+
+
+
+
+
+  if (::fseeko(__file_, __width > 0 ? __width * __off : 0, __whence))
+    return pos_type(off_type(-1));
+  pos_type __r = ftello(__file_);
+
+  __r.state(__st_);
+  return __r;
+}
+
+template <class _CharT, class _Traits>
+typename basic_filebuf<_CharT, _Traits>::pos_type
+basic_filebuf<_CharT, _Traits>::seekpos(pos_type __sp, ios_base::openmode) {
+  if (__file_ == nullptr || sync())
+    return pos_type(off_type(-1));
+
+
+
+
+  if (::fseeko(__file_, __sp, 0))
+    return pos_type(off_type(-1));
+
+  __st_ = __sp.state();
+  return __sp;
+}
+
+template <class _CharT, class _Traits>
+int basic_filebuf<_CharT, _Traits>::sync() {
+  if (__file_ == nullptr)
+    return 0;
+  if (!__cv_)
+    __throw_bad_cast();
+
+  if (__cm_ & ios_base::out) {
+    if (this->pptr() != this->pbase())
+      if (overflow() == traits_type::eof())
+        return -1;
+    codecvt_base::result __r;
+    do {
+      char* __extbe;
+      __r = __cv_->unshift(__st_, __extbuf_, __extbuf_ + __ebs_, __extbe);
+      size_t __nmemb = static_cast<size_t>(__extbe - __extbuf_);
+      if (fwrite(__extbuf_, 1, __nmemb, __file_) != __nmemb)
+        return -1;
+    } while (__r == codecvt_base::partial);
+    if (__r == codecvt_base::error)
+      return -1;
+    if (fflush(__file_))
+      return -1;
+  } else if (__cm_ & ios_base::in) {
+    off_type __c;
+    state_type __state = __st_last_;
+    bool __update_st = false;
+    if (__always_noconv_)
+      __c = this->egptr() - this->gptr();
+    else {
+      int __width = __cv_->encoding();
+      __c = __extbufend_ - __extbufnext_;
+      if (__width > 0)
+        __c += __width * (this->egptr() - this->gptr());
+      else {
+        if (this->gptr() != this->egptr()) {
+          const int __off = __cv_->length(__state, __extbuf_, __extbufnext_, this->gptr() - this->eback());
+          __c += __extbufnext_ - __extbuf_ - __off;
+          __update_st = true;
+        }
+      }
+    }
+
+
+
+
+    if (::fseeko(__file_, -__c, 1))
+      return -1;
+
+    if (__update_st)
+      __st_ = __state;
+    __extbufnext_ = __extbufend_ = __extbuf_;
+    this->setg(nullptr, nullptr, nullptr);
+    __cm_ = 0;
+  }
+  return 0;
+}
+
+template <class _CharT, class _Traits>
+void basic_filebuf<_CharT, _Traits>::imbue(const locale& __loc) {
+  sync();
+  __cv_ = &std::use_facet<codecvt<char_type, char, state_type> >(__loc);
+  bool __old_anc = __always_noconv_;
+  __always_noconv_ = __cv_->always_noconv();
+  if (__old_anc != __always_noconv_) {
+    this->setg(nullptr, nullptr, nullptr);
+    this->setp(nullptr, nullptr);
+
+    if (__always_noconv_)
+    {
+      if (__owns_eb_)
+        delete[] __extbuf_;
+      __owns_eb_ = __owns_ib_;
+      __ebs_ = __ibs_;
+      __extbuf_ = (char*)__intbuf_;
+      __ibs_ = 0;
+      __intbuf_ = nullptr;
+      __owns_ib_ = false;
+    } else
+    {
+      if (!__owns_eb_ && __extbuf_ != __extbuf_min_) {
+        __ibs_ = __ebs_;
+        __intbuf_ = (char_type*)__extbuf_;
+        __owns_ib_ = false;
+        __extbuf_ = new char[__ebs_];
+        __owns_eb_ = true;
+      } else {
+        __ibs_ = __ebs_;
+        __intbuf_ = new char_type[__ibs_];
+        __owns_ib_ = true;
+      }
+    }
+  }
+}
+
+template <class _CharT, class _Traits>
+bool basic_filebuf<_CharT, _Traits>::__read_mode() {
+  if (!(__cm_ & ios_base::in)) {
+    this->setp(nullptr, nullptr);
+    if (__always_noconv_)
+      this->setg((char_type*)__extbuf_, (char_type*)__extbuf_ + __ebs_, (char_type*)__extbuf_ + __ebs_);
+    else
+      this->setg(__intbuf_, __intbuf_ + __ibs_, __intbuf_ + __ibs_);
+    __cm_ = ios_base::in;
+    return true;
+  }
+  return false;
+}
+
+template <class _CharT, class _Traits>
+void basic_filebuf<_CharT, _Traits>::__write_mode() {
+  if (!(__cm_ & ios_base::out)) {
+    this->setg(nullptr, nullptr, nullptr);
+    if (__ebs_ > sizeof(__extbuf_min_)) {
+      if (__always_noconv_)
+        this->setp((char_type*)__extbuf_, (char_type*)__extbuf_ + (__ebs_ - 1));
+      else
+        this->setp(__intbuf_, __intbuf_ + (__ibs_ - 1));
+    } else
+      this->setp(nullptr, nullptr);
+    __cm_ = ios_base::out;
+  }
+}
+
+
+
+template <class _CharT, class _Traits>
+class basic_ifstream : public basic_istream<_CharT, _Traits> {
+public:
+  typedef _CharT char_type;
+  typedef _Traits traits_type;
+  typedef typename traits_type::int_type int_type;
+  typedef typename traits_type::pos_type pos_type;
+  typedef typename traits_type::off_type off_type;
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ifstream();
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in);
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ifstream(const string& __s, ios_base::openmode __mode = ios_base::in);
+
+
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ifstream(basic_ifstream&& __rhs);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ifstream& operator=(basic_ifstream&& __rhs);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ifstream& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf<char_type, traits_type>* rdbuf() const;
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool is_open() const;
+  void open(const char* __s, ios_base::openmode __mode = ios_base::in);
+
+
+
+  void open(const string& __s, ios_base::openmode __mode = ios_base::in);
+
+
+
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __open(int __fd, ios_base::openmode __mode);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void close();
+
+private:
+  basic_filebuf<char_type, traits_type> __sb_;
+};
+
+template <class _CharT, class _Traits>
+inline basic_ifstream<_CharT, _Traits>::basic_ifstream() : basic_istream<char_type, traits_type>(&__sb_) {}
+
+template <class _CharT, class _Traits>
+inline basic_ifstream<_CharT, _Traits>::basic_ifstream(const char* __s, ios_base::openmode __mode)
+    : basic_istream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode | ios_base::in) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+# 1157 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+inline basic_ifstream<_CharT, _Traits>::basic_ifstream(const string& __s, ios_base::openmode __mode)
+    : basic_istream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode | ios_base::in) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline basic_ifstream<_CharT, _Traits>::basic_ifstream(basic_ifstream&& __rhs)
+    : basic_istream<char_type, traits_type>(std::move(__rhs)), __sb_(std::move(__rhs.__sb_)) {
+  this->set_rdbuf(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline basic_ifstream<_CharT, _Traits>& basic_ifstream<_CharT, _Traits>::operator=(basic_ifstream&& __rhs) {
+  basic_istream<char_type, traits_type>::operator=(std::move(__rhs));
+  __sb_ = std::move(__rhs.__sb_);
+  return *this;
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ifstream<_CharT, _Traits>::swap(basic_ifstream& __rhs) {
+  basic_istream<char_type, traits_type>::swap(__rhs);
+  __sb_.swap(__rhs.__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ifstream<_CharT, _Traits>& __x, basic_ifstream<_CharT, _Traits>& __y) {
+  __x.swap(__y);
+}
+
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>* basic_ifstream<_CharT, _Traits>::rdbuf() const {
+  return const_cast<basic_filebuf<char_type, traits_type>*>(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline bool basic_ifstream<_CharT, _Traits>::is_open() const {
+  return __sb_.is_open();
+}
+
+template <class _CharT, class _Traits>
+void basic_ifstream<_CharT, _Traits>::open(const char* __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode | ios_base::in))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+# 1216 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+void basic_ifstream<_CharT, _Traits>::open(const string& __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode | ios_base::in))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ifstream<_CharT, _Traits>::__open(int __fd, ios_base::openmode __mode) {
+  if (__sb_.__open(__fd, __mode | ios_base::in))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ifstream<_CharT, _Traits>::close() {
+  if (__sb_.close() == 0)
+    this->setstate(ios_base::failbit);
+}
+
+
+
+template <class _CharT, class _Traits>
+class basic_ofstream : public basic_ostream<_CharT, _Traits> {
+public:
+  typedef _CharT char_type;
+  typedef _Traits traits_type;
+  typedef typename traits_type::int_type int_type;
+  typedef typename traits_type::pos_type pos_type;
+  typedef typename traits_type::off_type off_type;
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ofstream();
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ofstream(const char* __s, ios_base::openmode __mode = ios_base::out);
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_ofstream(const string& __s, ios_base::openmode __mode = ios_base::out);
+# 1266 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ofstream(basic_ofstream&& __rhs);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_ofstream& operator=(basic_ofstream&& __rhs);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ofstream& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf<char_type, traits_type>* rdbuf() const;
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool is_open() const;
+  void open(const char* __s, ios_base::openmode __mode = ios_base::out);
+
+
+
+  void open(const string& __s, ios_base::openmode __mode = ios_base::out);
+# 1288 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void __open(int __fd, ios_base::openmode __mode);
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void close();
+
+private:
+  basic_filebuf<char_type, traits_type> __sb_;
+};
+
+template <class _CharT, class _Traits>
+inline basic_ofstream<_CharT, _Traits>::basic_ofstream() : basic_ostream<char_type, traits_type>(&__sb_) {}
+
+template <class _CharT, class _Traits>
+inline basic_ofstream<_CharT, _Traits>::basic_ofstream(const char* __s, ios_base::openmode __mode)
+    : basic_ostream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode | ios_base::out) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+# 1314 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+inline basic_ofstream<_CharT, _Traits>::basic_ofstream(const string& __s, ios_base::openmode __mode)
+    : basic_ostream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode | ios_base::out) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline basic_ofstream<_CharT, _Traits>::basic_ofstream(basic_ofstream&& __rhs)
+    : basic_ostream<char_type, traits_type>(std::move(__rhs)), __sb_(std::move(__rhs.__sb_)) {
+  this->set_rdbuf(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline basic_ofstream<_CharT, _Traits>& basic_ofstream<_CharT, _Traits>::operator=(basic_ofstream&& __rhs) {
+  basic_ostream<char_type, traits_type>::operator=(std::move(__rhs));
+  __sb_ = std::move(__rhs.__sb_);
+  return *this;
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ofstream<_CharT, _Traits>::swap(basic_ofstream& __rhs) {
+  basic_ostream<char_type, traits_type>::swap(__rhs);
+  __sb_.swap(__rhs.__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_ofstream<_CharT, _Traits>& __x, basic_ofstream<_CharT, _Traits>& __y) {
+  __x.swap(__y);
+}
+
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>* basic_ofstream<_CharT, _Traits>::rdbuf() const {
+  return const_cast<basic_filebuf<char_type, traits_type>*>(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline bool basic_ofstream<_CharT, _Traits>::is_open() const {
+  return __sb_.is_open();
+}
+
+template <class _CharT, class _Traits>
+void basic_ofstream<_CharT, _Traits>::open(const char* __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode | ios_base::out))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+# 1373 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+void basic_ofstream<_CharT, _Traits>::open(const string& __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode | ios_base::out))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ofstream<_CharT, _Traits>::__open(int __fd, ios_base::openmode __mode) {
+  if (__sb_.__open(__fd, __mode | ios_base::out))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline void basic_ofstream<_CharT, _Traits>::close() {
+  if (__sb_.close() == nullptr)
+    this->setstate(ios_base::failbit);
+}
+
+
+
+template <class _CharT, class _Traits>
+class basic_fstream : public basic_iostream<_CharT, _Traits> {
+public:
+  typedef _CharT char_type;
+  typedef _Traits traits_type;
+  typedef typename traits_type::int_type int_type;
+  typedef typename traits_type::pos_type pos_type;
+  typedef typename traits_type::off_type off_type;
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_fstream();
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_fstream(const char* __s,
+                                               ios_base::openmode __mode = ios_base::in | ios_base::out);
+
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) explicit basic_fstream(const string& __s,
+                                               ios_base::openmode __mode = ios_base::in | ios_base::out);
+# 1426 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_fstream(basic_fstream&& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_fstream& operator=(basic_fstream&& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_fstream& __rhs);
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) basic_filebuf<char_type, traits_type>* rdbuf() const;
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) bool is_open() const;
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void open(const char* __s, ios_base::openmode __mode = ios_base::in | ios_base::out);
+
+
+
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void open(const string& __s, ios_base::openmode __mode = ios_base::in | ios_base::out);
+# 1450 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+  __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void close();
+
+private:
+  basic_filebuf<char_type, traits_type> __sb_;
+};
+
+template <class _CharT, class _Traits>
+inline basic_fstream<_CharT, _Traits>::basic_fstream() : basic_iostream<char_type, traits_type>(&__sb_) {}
+
+template <class _CharT, class _Traits>
+inline basic_fstream<_CharT, _Traits>::basic_fstream(const char* __s, ios_base::openmode __mode)
+    : basic_iostream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+# 1475 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+inline basic_fstream<_CharT, _Traits>::basic_fstream(const string& __s, ios_base::openmode __mode)
+    : basic_iostream<char_type, traits_type>(&__sb_) {
+  if (__sb_.open(__s, __mode) == nullptr)
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline basic_fstream<_CharT, _Traits>::basic_fstream(basic_fstream&& __rhs)
+    : basic_iostream<char_type, traits_type>(std::move(__rhs)), __sb_(std::move(__rhs.__sb_)) {
+  this->set_rdbuf(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline basic_fstream<_CharT, _Traits>& basic_fstream<_CharT, _Traits>::operator=(basic_fstream&& __rhs) {
+  basic_iostream<char_type, traits_type>::operator=(std::move(__rhs));
+  __sb_ = std::move(__rhs.__sb_);
+  return *this;
+}
+
+template <class _CharT, class _Traits>
+inline void basic_fstream<_CharT, _Traits>::swap(basic_fstream& __rhs) {
+  basic_iostream<char_type, traits_type>::swap(__rhs);
+  __sb_.swap(__rhs.__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline __attribute__((__visibility__("hidden"))) __attribute__((__exclude_from_explicit_instantiation__)) __attribute__((__abi_tag__("ne190102"))) void swap(basic_fstream<_CharT, _Traits>& __x, basic_fstream<_CharT, _Traits>& __y) {
+  __x.swap(__y);
+}
+
+template <class _CharT, class _Traits>
+inline basic_filebuf<_CharT, _Traits>* basic_fstream<_CharT, _Traits>::rdbuf() const {
+  return const_cast<basic_filebuf<char_type, traits_type>*>(&__sb_);
+}
+
+template <class _CharT, class _Traits>
+inline bool basic_fstream<_CharT, _Traits>::is_open() const {
+  return __sb_.is_open();
+}
+
+template <class _CharT, class _Traits>
+void basic_fstream<_CharT, _Traits>::open(const char* __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+# 1534 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+template <class _CharT, class _Traits>
+void basic_fstream<_CharT, _Traits>::open(const string& __s, ios_base::openmode __mode) {
+  if (__sb_.open(__s, __mode))
+    this->clear();
+  else
+    this->setstate(ios_base::failbit);
+}
+
+template <class _CharT, class _Traits>
+inline void basic_fstream<_CharT, _Traits>::close() {
+  if (__sb_.close() == nullptr)
+    this->setstate(ios_base::failbit);
+}
+
+
+extern template class __attribute__((__visibility__("default"))) basic_ifstream<char>;
+extern template class __attribute__((__visibility__("default"))) basic_ofstream<char>;
+extern template class __attribute__((__visibility__("default"))) basic_filebuf<char>;
+
+
+}}
+# 1554 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream" 3
+#pragma clang diagnostic pop
+# 2 "main.cpp" 2
+# 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 1 3
 # 49 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 3
 
 
@@ -66289,7 +67413,7 @@ extern __attribute__((__visibility__("default"))) wostream wclog;
 }}
 # 65 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream" 3
 #pragma clang diagnostic pop
-# 2 "main.cpp" 2
+# 3 "main.cpp" 2
 using namespace std;
 int main()
 {
